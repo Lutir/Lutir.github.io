@@ -1,0 +1,37 @@
+#container{
+background-image:url('grid.png');
+}
+.codrops-header img{
+width:100px;
+height:130px;
+}
+#top a{
+color:grey;
+}
+#footer{
+width:110%;
+background-color:rgb(200,200,200);
+}
+#footer{
+color:white;
+}
+#up a{
+font-family:Josefin Slab;
+color:white;
+font-size:32px;
+}
+#socialBar a{
+padding-left:6%;
+}
+#socialText a{
+font-size:25px ;
+margin-left:4%;
+}
+#downText p{
+padding-bottom:20px;
+}
+#socialBar a img{
+width:100px;
+height:100px;
+}
+
