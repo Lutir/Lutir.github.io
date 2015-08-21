@@ -9,7 +9,7 @@ height:130px;
 color:grey;
 }
 #footer{
-width:110%;
+width:100%;
 background-color:rgb(200,200,200);
 }
 #footer{
@@ -18,20 +18,20 @@ color:white;
 #up a{
 font-family:Josefin Slab;
 color:white;
-font-size:32px;
+font-size:26px;
 }
 #socialBar a{
 padding-left:6%;
 }
 #socialText a{
-font-size:25px ;
+font-size:20px ;
 margin-left:4%;
 }
 #downText p{
 padding-bottom:20px;
 }
 #socialBar a img{
-width:100px;
-height:100px;
+width:60px;
+height:60px;
 }
 
