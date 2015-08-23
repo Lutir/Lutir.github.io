@@ -1,0 +1,147 @@
+@font-face {
+    font-family:Josefin Slab;
+    src: url(../JosefinSlab-Regular.ttf);
+}
+a{
+text-decoration:none;}
+#downText a:link,#downText a:visited,#downText a:hover,#downText a:active{
+color:white;
+font-weight:bold;
+}
+#header{
+width:auto;
+height:50px;
+left:0px;
+top:-20px;
+font-family:Josefin Slab;
+background:white;	
+opacity:0.89;
+-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+position:relative;
+}
+#header #headerDetails1{
+font-size:23px;
+padding-top:10px;
+padding-right:20px;
+float:right;
+}
+#header #headerDetails2{
+font-size:23px;
+padding-top:10px;
+padding-left:20px;
+}
+#test{
+bottom:-100px;
+font-family:Josefin Slab;
+font-size:25px;
+color:white;
+width:auto;
+height:320px;
+background-color:black;
+opacity:.9;
+display:block;
+text-align:center;
+}
+#test #up{
+font-weight:bold;
+width:auto;
+height:250px;
+background-color:rgb(15,58,108);
+opacity:1;
+}
+#test #up #social{
+text-align:center;
+font-size:40px;
+padding:20px;
+position:relative;
+lezft:450px;
+}
+
+
+#test #up #socialBar img{
+padding-left:60px;
+paddicng-top:10px;
+text-align:center;
+}
+#facebook,#twitter,#youtube,#google{
+position:relative;
+lesft:300px;
+}
+#socialText{
+font-weight:bold;
+}
+#fbtext,#twtext,#gtext,#youtext{
+position:relative;
+flocat:right;
+padding-right:20px;
+left:50px;
+}
+#fbtext{
+righct:1020px;}
+#twtext{
+righct:720px;}
+#gtext{
+righct:420px;}
+#youtext{
+righct:120px;}
+
+	#socialText{
+text-align:center;}
+
+#downText a,#downText p{
+padding-left:80px;
+text-align:center;
+position:relative;
+left:-10px;
+}
+#slideclose{
+ cursor: pointer;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+}
+
+#menuButton{
+color: #ffff;
+  cursor: pointer;
+  font-family:Josefin Slab;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#sidelist {
+  background: #202024;
+  left: -285px;  /* start off behind the scenes */
+  height: 100%;
+  position: fixed;
+  width: 285px;
+}
+
+
+#sidelist ul {
+  border-top: 1px solid #636366;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#sidelist li,#slideclose {
+  border-bottom: 1px solid #636366;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 45px;
+  padding-bottom: 3px;
+  padding-left: 20px;
+  padding-top: 3px;
+}
+
+#sidelist a {
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+

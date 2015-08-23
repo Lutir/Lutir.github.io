@@ -1,0 +1,195 @@
+#img{
+
+width:auto;
+height:500px;
+background-image:url('../images/bg-place.jpg');
+-webkit-background-size: cover;
+}
+
+#main1{
+width:1000px;
+height:250px;
+left:250px;
+top:100px;
+
+background:white;	
+opacity:0.75;
+-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+position:relative;
+}
+#main1 h1{
+font-size:40px;
+font-family:Josefin Slab;
+text-align:center;
+padding:20px;
+}
+#main1 p{
+font-size:26px;
+font-family:Josefin Slab;
+text-align:center;
+}
+#menuBody{
+width:auto;
+height:1000px;
+background-color:white;
+opacity:.95;
+position:relative;
+}
+#menuBody h1{
+font-size:40px;
+font-family:Josefin Slab;
+text-align:center;
+padding:20px;
+}
+.rightmenu{
+width:600px;
+height:auto;
+left:0px;
+background-color:#ffffb7;
+float:right;
+margin-left:50px;	
+}
+
+.leftmenu{
+width:600px;
+height:auto;
+background-color:#ffffb7;
+float:left;
+margin-left:50px;	
+}
+ul
+{
+    list-style-type: none;
+}
+
+.variety current,.variety{
+font-size:25px;
+font-family:Josefin Slab;
+
+text-align:center;
+}
+
+.title{
+font-size:32px;
+}
+#menuDes{
+font-size:22px;
+}
+#total{
+
+text-align:center;
+font-family:Josefin Slab;
+position:absolute;
+left:655px;
+font-size:35px;
+}
+#submitOrder{
+background-color:white;
+opacity:0.95;
+height:auto;
+font-size:32px;
+font-family:Josefin Slab;
+text-align:center;
+bottom:100px;
+position:relative;
+}
+#submitOrder a{
+font-weight:bold;
+}
+#submitOrder a:hover{
+cursor:pointer;
+}
+#userData{
+width:auto;
+height:200px;
+background-color:white;
+opacity:0.95;
+}
+#userData a{
+padding-top:50px;
+font-size:34px;
+font-family:Josefin Slab;
+text-align:center;
+}
+#userData p,#placeName{
+font-size:30px;
+font-family:Josefin Slab;
+text-align:center;
+}
+#userData select{
+font-size:25px;
+font-family:Josefin Slab;
+text-align:center;
+}
+#total input{
+border:none;
+width:60px;
+
+font-size:30px;
+font-family:Josefin Slab;
+}
+.leftmenu :hover,.rightmenu :hover{
+cursor:pointer;
+}
+.description{
+}
+#container{
+height:1000px;
+width:auto;
+background-color:white;
+opacity:0.95;
+}
+#submitButton{
+outline:none;
+font-size:20px;
+outline:none;
+border:none;
+
+opacity:0.95;
+font-family:Josefin Slab;
+font-size:29px;
+font-weight:bold;
+bottom:20px;
+position:relative;
+}
+#submitButton:hover{
+color:green;
+cursor:pointer;
+}
+#ordername input{
+border:none;
+width:200px;
+
+font-size:30px;
+font-family:Josefin Slab;
+
+}
+#order1{
+font-size:20px;
+font-family:Josefin Slab;
+margin-left:100px;
+color:green;
+}
+#submitButton1{
+outline:none;
+font-size:20px;
+outline:none;
+border:none;
+
+opacity:0.95;
+font-family:Josefin Slab;
+font-size:29px;
+font-weight:bold;
+bottom:20px;
+position:relative;
+}
+#submitButton1:hover{
+cursor:pointer;
+}
+#form1{
+position:relative;
+bottom:100px;
+}

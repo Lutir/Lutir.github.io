@@ -1,0 +1,35 @@
+#register{
+width:auto;
+height:600px;
+background-color:white;
+font-size:30px;
+font-family:Josefin Slab;
+text-align:centker;
+padding:20px;
+padding-left:500px;
+position:relative;
+color:rgb(2,57,0);
+}
+#register h1{
+padding-left:0px;
+color:black;
+}
+#header{
+top:0px;
+}
+
+#form button{
+outline:none;
+border:none;
+background-color:white;
+opacity:0.95;
+font-family:Josefin Slab;
+font-size:29px;
+font-weight:bold;
+left:100px;
+position:relative;
+}
+#form button:hover{
+cursor:pointer;
+color:blue;
+}

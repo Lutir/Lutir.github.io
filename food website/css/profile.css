@@ -1,0 +1,199 @@
+#slideclose{
+ cursor: pointer;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+}
+
+#menuButton{
+color: #ffff;
+  cursor: pointer;
+  font-family:Josefin Slab;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+#sidelist {
+  background: black ;
+  left: -400px;  /* start off behind the scenes */
+  height: 100%;
+  position: fixed;
+  width: 400px;
+}
+#sidelist a{
+font-size:21px;
+
+}
+#sidelist #proPic{
+width:150px;
+height:175px;
+left: 25%;
+top:5%;
+position:relative;
+background:url("../images/pro.jpg");
+background-size: cover;
+}
+#sidelist button{
+position:relative;
+top:75px;
+left:15%;
+margin:10px;
+}
+
+#sideInfo{
+  text-transform: lowercase;
+width:300px;
+height:auto;
+background-color:black;
+color:white;
+position:relative;
+top:12%;
+left:7%;
+font-family:Josefin Slab;
+}
+
+#sidelist #sideInfo a{
+opacity:.90;
+color:white;
+font-family:Josefin Slab;
+position:relative;
+top:5%;
+left:-30px;
+z-index:100;
+text-align:center;
+display:block;
+}
+#sideclose a{
+z-index:100;
+font-family:Josefin Slab;
+position:relative;
+left:50px;
+}
+#sideInfo img{
+position:relative;
+left:10px;
+padding:10px;
+} 
+
+#sideInfo img:hover{
+cursor:pointer;}
+
+#sidelist button{
+outline:none;
+border:none;
+color:black;
+background-color:white;
+opacity:0.95;
+font-family:Josefin Slab;
+font-size:19px;
+
+font-weight:bold;
+}
+body{
+background:rgb(251,248,194);
+left: 0;
+  margin: 0;
+  overlow: hidden;(to stop page going down)
+position: relative;
+
+}
+#content{
+font-size:30px;
+height:700px;
+width:1000px;
+border-radius:25px;
+background-color:white;
+margin:30px;
+float:left;
+font-family:Josefin Slab;
+}
+#content h1{
+text-align:center;
+}
+#content a{
+color:green;
+margin:30px;
+}
+#content #changePassword:hover{
+cursor:pointer;
+}
+
+#rightContent{
+font-family:Josefin Slab;
+height:700px;
+width:250px;
+background-color:white;
+margin-top:30px;
+margin-right:20px;
+float:right;
+text-align:center;
+}
+#rightContent li{
+font-size:25px;
+text-align:left;
+margin-left:20px;
+padding:5px;
+
+}
+#picForm #pic{
+outline:none;
+border:none;
+color:black;
+background-color:white;
+opacity:0.95;
+font-family:Josefin Slab;
+font-size:12px;
+font-weight:bold;
+position:relative;
+top:40px;
+left:100px;
+}
+#picForm input{
+outline:none;
+border:none;
+color:black;
+background-color:white;
+opacity:0.95;
+font-family:Josefin Slab;
+font-size:12px;
+position:relative;
+top:50px;
+left:30px;	
+}
+#setting{
+position:relative;
+top:55px;
+left:25%;
+
+}
+#sidelist a {
+  color: #fff;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+#passForm{
+font-family:Josefin Slab;
+font-size:27px;
+padding:10px;
+margin-left:50px;
+}
+#newPassword{
+font-size:30px;
+}
+#passForm button{
+outline:none;
+border:none;
+color:black;
+background-color:white;
+opacity:0.95;
+font-family:Josefin Slab;
+font-size:26px;
+position:relative;
+top:20px;
+left:30px;	
+}
+#changePassword a:hover{
+cursor:pointer;
+}
