@@ -649,7 +649,16 @@ ul.custom-list-style li {
   text-align: center;
   padding: 0;
 }
+.department-menu{
+  width:500px;
+  background-color: black;
+}
 /* ======= Header ======= */
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
 .header .top-bar {
   background: #2f506c;
 }
@@ -683,9 +692,13 @@ ul.custom-list-style li {
 }
 .header .header-main {
   padding:0;
-  background: #1e2a35;
+  background: #2F506C;
   width: 100%;
   margin: 0;
+}
+.header .head-topic{
+  padding-top: 10px;
+  color:white;
 }
 .header h1.logo {
   margin-top: 0;
@@ -1297,31 +1310,31 @@ ul.custom-list-style li {
   font-size: 14px;
   margin-top: 0;
 }
-.page-wrapper .page-sidebar .testimonials-carousel {
+.page-wrapper .page-sidebar .testimonials-carousel .testimonial-carousel {
   position: relative;
 }
-.page-wrapper .page-sidebar .testimonials-carousel .fa {
+.page-wrapper .page-sidebar .testimonials-carousel .fa .testimonial .testimonial-carousel{
   color: #6091ba;
   margin-right: 5px;
   font-size: 18px;
 }
-.page-wrapper .page-sidebar .testimonials-carousel .carousel .item {
+.page-wrapper .page-sidebar .testimonials-carousel .carousel .item .testimonial .testimonial-carousel{
   min-height: 300px;
 }
-.page-wrapper .page-sidebar .testimonials-carousel .people {
+.page-wrapper .page-sidebar .testimonials-carousel .people .testimonial .testimonial-carousel{
   margin-top: 10px;
 }
-.page-wrapper .page-sidebar .testimonials-carousel .people .name {
+.page-wrapper .page-sidebar .testimonials-carousel .people .name .testimonial .testimonial-carousel{
   color: #6091ba;
 }
-.page-wrapper .page-sidebar .testimonials-carousel .people .title {
+.page-wrapper .page-sidebar .testimonials-carousel .people .title .testimonial .testimonial-carousel{
   color: #999;
 }
-.page-wrapper .page-sidebar .testimonials-carousel .carousel-controls {
+.page-wrapper .page-sidebar .testimonials-carousel .carousel-controls .testimonial .testimonial-carousel{
   margin-top: 20px;
   text-align: right;
 }
-.page-wrapper .page-sidebar .testimonials-carousel .carousel-controls a .fa {
+.page-wrapper .page-sidebar .testimonials-carousel .carousel-controls a .fa .testimonial .testimonial-carousel{
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
@@ -1335,15 +1348,15 @@ ul.custom-list-style li {
   margin-right: 0;
   font-size: 15px;
 }
-.page-wrapper .page-sidebar .testimonials-carousel .carousel-controls a.next .fa {
+.page-wrapper .page-sidebar .testimonials-carousel .carousel-controls a.next .fa .testimonial .testimonial-carousel{
   padding-top: 2px;
   padding-right: 1px;
 }
-.page-wrapper .page-sidebar .testimonials-carousel .carousel-controls a.prev .fa {
+.page-wrapper .page-sidebar .testimonials-carousel .carousel-controls a.prev .fa .testimonial .testimonial-carousel{
   padding-top: 2px;
   padding-right: 1px;
 }
-.page-wrapper .page-sidebar .testimonials-carousel .carousel-controls a:hover .fa {
+.page-wrapper .page-sidebar .testimonials-carousel .carousel-controls a:hover .fa .testimonial .testimonial-carousel{
   background: #6091ba;
 }
 /* ======= Configure Style ======= */
@@ -1627,29 +1640,28 @@ ul.custom-list-style li {
 .home-page .links .fa {
   margin-right: 5px;
 }
-.home-page .testimonials {
+.home-page .testimonials .testimonial{
   position: relative;
 }
-.home-page .testimonials .carousel-controls {
+.home-page .testimonials .carousel-controls .testimonial{
   position: absolute;
   right: 10px;
   top: 10px;
 }
-.home-page .testimonials .fa {
+.home-page .testimonials .fa .testimonial{
   color: #6091ba;
-  margin-right: 5px;
-  font-size: 18px;
+  margin-right: 5px;.testimonial
 }
-.home-page .testimonials .carousel .item {
+.home-page .testimonials .carousel .item .testimonial{
   min-height: 298px;
 }
-.home-page .testimonials .people {
+.home-page .testimonials .people .testimonial{
   margin-top: 10px;
 }
-.home-page .testimonials .people .name {
+.home-page .testimonials .people .name .testimonial{
   color: #6091ba;
 }
-.home-page .testimonials .people .title {
+.home-page .testimonials .people .title .testimonial{
   color: #999;
 }
 .home-page .awards {
@@ -1897,7 +1909,7 @@ ul.custom-list-style li {
   .home-page .video .video-iframe {
     height: auto;
   }
-  .home-page .testimonials .carousel .item {
+  .home-page .testimonials .carousel .item .testimonial{
     min-height: inherit;
   }
   .home-page .events .section-content {
@@ -1969,7 +1981,7 @@ ul.custom-list-style li {
   .footer-col-inner {
     margin-bottom: 15px;
   }
-  .home-page .testimonials .carousel .item {
+  .home-page .testimonials .carousel .item .testimonial{
     min-height: inherit;
   }
   .home-page .events .section-content {
@@ -1984,7 +1996,7 @@ ul.custom-list-style li {
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .home-page .testimonials .carousel .item {
+  .home-page .testimonials .carousel .item .testimonial{
     min-height: 298px;
   }
   .home-page .events .section-content {
