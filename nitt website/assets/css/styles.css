@@ -654,11 +654,26 @@ ul.custom-list-style li {
   background-color: black;
 }
 /* ======= Header ======= */
+
 #nav.affix {
     position: fixed;
     top: 0;
     width: 100%
+    opacity:1;
+    background-color:#6091BA;
+    z-index: 9999999999999999999;
 }
+#dashboard{
+    font-size: 14px;
+    padding: 0 0 10px 0;
+  background-color: #2F506C;
+}
+#dashboard .dash{
+  
+  float: right;
+  padding-right: 100px;
+}
+
 .header .top-bar {
   background: #2f506c;
 }
