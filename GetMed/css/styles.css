@@ -1,0 +1,22 @@
+*{
+	margin:0;
+	padding: 0;
+	
+}
+body{
+	background-color: rgb(253,253,253);
+}
+#search{
+	padding-left: 30%;
+}
+#search #submit{
+	margin-left: 25%;
+	padding-right: 1%;
+	padding-left: 1%;
+}
+#order{
+	margin: 5% 0 5% 0;
+	position: relative;
+	text-align: center;
+	
+}

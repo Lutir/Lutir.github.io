@@ -1,0 +1,48 @@
+.cubeslider2-navarea{
+font-size:20px;
+font-weight:bold;
+text-align:center;			
+}
+ul.cubeslider2-navarea{
+			list-style: none;
+			overflow: hidden;
+			}
+
+ul.cubeslider2-navarea li{
+			display: block;
+			float: left;
+			cursor: pointer;
+			padding: 7px;
+			margin:right: 5px;
+			}
+
+ul.cubeslider2-navarea li:hover{
+			background: lightyellow;
+			}
+#coloumn {
+margin:10
+}
+#coloumn h1,#coloumn a{
+display: inline-block;
+vertical-align: middle;
+line-height: normal;
+text-align:center;
+}
+#codrops-header h1,span{
+text-align:center;
+}
+.left-coloumn{
+width:300px;
+height:auto;
+
+float:left;
+}
+.left-coloumn h1,.left-coloumn a{
+display: inline-block;
+vertical-align: middle;
+line-height: normal;
+text-align:center;
+}
+#showMenu{
+font-size:0.8em;
+}

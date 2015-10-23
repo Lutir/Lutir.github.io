@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Store Locator</title>
+		<meta name="description" content="Perspective Page View Navigation: Transforms the page in 3D to reveal a menu" />
+		<meta name="keywords" content="3d page, menu, navigation, mobile, perspective, css transform, web development, web design" />
+		<meta name="author" content="Codrops" />
+		<meta http-equiv=”Page-Enter” content=”blendtrans(duration=1.5)” /> <meta http-equiv=”Page-Exit” content=”blendtrans(duration=1.5″ /> 
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" href="font-awesome-4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin+Slab">
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		
+		<!-- csstransforms3d-shiv-cssclasses-prefixed-teststyles-testprop-testallprops-prefixes-domprefixes-load --> 
+		<script src="js/modernizr.custom.25376.js"></script>
+		
+		<script src="js/jquery.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/order.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<a href="index.html"><button >Go Back To Home</button></a>
+		<h1>Welcome To Order's Page</h1>
+		<a style="position:relative;left:30%">To Place Order,Fill out the below metioned details</a>
+		<div id="form">
+			<span>Select Your Store:</span>
+			<select id="selector" required>
+				<option id="s1">Apollo Pharmacy</option>
+				<option id="s2">Selva Vinayagar Medicals</option>
+				<option id="s3">Bharani Medicals</option>
+				<option id="s4">Murugan Medical Stores</option>
+				<option id="s5">Sri Shakthi Pharmacy</option>
+			</select><br>
+			<span>Delivery Availability:</span><a id="delivary1 delivary4 delivary 5">Available</a><br>
+			<span>Delivary Options:&nbsp;&nbsp;</span>
+			<select id="option" required>
+				<option value="Take Away">Take Away</option>
+				<option value="Home Delivery">Home Delivery</option>
+			</select><br>
+			<span style="font-size:20px">Quantity Of Medicine:&nbsp;&nbsp;<span>
+				<input type="number" required/><br>
+			<script>
+			</script>
+			<span>Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+			<input type="text" required/><br>
+			<span>Email Id:</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" required /><br>
+			<span>Contact Number:</span>
+			&nbsp;&nbsp;<input type="tel" required /><br>
+			<span>Upload Doctor's Prescription:</span><br>
+			 <input type="file" name="pic" accept="image/* " required><br><br>
+			 <button onclick="compare()">Submit Order</button>
+			 <script>
+			 	function compare(){
+			 			var x=document.getElementById('option').value;
+			 			if(x=='Home Delivery'){
+			 				
+window.location.replace("homeDelivery.html");
+			 			}
+			 			else{
+			 				window.location.replace("takeAway.html");
+			 				
+			 			}
+			 	}
+			 </script>
+		</div>
+</div>
+	</body>
