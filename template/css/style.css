@@ -46,10 +46,10 @@ h1 a:hover, h1 a:focus, h2 a:hover, h2 a:focus, h3 a:hover, h3 a:focus, h4 a:hov
 .title-median a { display: block; }
 /* == END titles, titles custom == */
 .myheader,#k-head{
-	background-color: rgb(250,249,245);
+	background-color: #ffffff;
 }
 .no-gutter{
-	background-color: ;
+	background-color: #ffffff;
 }
 /* == custom buttons == */
 .custom-button { display: block; position: relative; overflow: hidden; padding: 15px 20px; margin: 20px 0; -webkit-transition: 0.25s ease-in-out all; -moz-transition: 0.15s ease-in-out all; -o-transition: 0.15s ease-in-out all; transition: 0.15s ease-in-out all; }
@@ -124,7 +124,7 @@ img.alignleft, img.aligncenter, img.alignright { margin-bottom: 5px; }
 
 /* == dropdown-menu kustom style == */
 .k-main-navig { margin-top: 55px; line-height: 20px; }
-.k-dropdown-menu { background: none; text-align: left; }
+.k-dropdown-menu { background: none; text-align: center; width:100%;}
 .k-dropdown-menu .k-item-desc { display: block; font-size: 12px; font-weight: 300; }
 .k-dropdown-menu, .k-dropdown-menu ul { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
 .k-dropdown-menu li:hover, .k-dropdown-menu li.dropdown-menu-hover { background-color: transparent; }
@@ -505,7 +505,12 @@ textarea { resize: none; }
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus { background-color: #666; }
 pre { -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; }
 /* == END bootstrap tabs and pills == */
-
+.duck a:hover{
+	color: white;
+}
+.duck a{
+	color:#cc0033;
+}
 /* == bootstrap modals == */
 .modal-backdrop.in { z-index: 99998; opacity: 0.7; }
 .modal { z-index: 99999; }
