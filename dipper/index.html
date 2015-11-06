@@ -1,0 +1,564 @@
+
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    <title>Easygaadi</title>
+
+    <!-- CSS animate -->
+    <!--font-add-->
+    
+    <!-- CSS revolution -->
+    <link rel="stylesheet" type="text/css" href="css/revolution.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+
+
+</head>
+
+
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+
+    <div id="warp">
+        <!-- Header -->
+        <div class="subMenu subMenu2">
+            <div class="container">
+                <nav class="navbar navbar-default" role="navigation">
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <a href="index.php"><img class="logo" src="images/logo.png" alt=""></a>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <div class="navigation">
+
+                            <ul class="nav navbar-nav navbar-right ">
+                                <li><a id="s3" href="#">Home </a></li>
+                                <li><a href="#about_us">About us</a></li>
+                                <li><a href="#howitworks">HOW IT WORKS</a></li>
+                                <li><a href="#contact"> Contact us</a></li>
+                                <li><a id="s4" href="#." data-toggle="modal" data-target="#myModal">SIGN IN </a></li>
+                                <li><a id="s4" href="#." class="end" data-toggle="modal" data-target="#myModal2"> SIGN UP </a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                    <!-- /.container-fluid -->
+                </nav>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <!-- Header End -->
+
+        <div class="main_slider_img" style="background:url('1.jpg');width:auto;">
+            <div class="QOverlay"></div>
+
+
+            <div class="slider_popup animated wow fadeInRightBig" data-x="220" data-y="350" data-speed="1000" data-start="1700" data-easing="easeOutExpo">
+                <h3>UseDipper</h3>
+                <h6></h6>
+                <p>We use internet of things (IOT) Device & other technologies to bring in efficiency in to the logistics space</p>
+            </div>
+
+            <div class="tab_add " id="banner">
+                <!-- tab_add tabs -->
+                <div class="container">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs top_main_s animated wow fadeInLeftBig" role="tablist">
+                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><span class="serch_span">Search A Truck</span></a></li>
+                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><span class="serch_span">Post A Truck</span></a></li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content animated wow fadeInLeftBig">
+                        <div role="tabpanel" class="tab-pane active" id="home">
+                            <form action="login.php" method="post">
+                                <div class="col-md-3 ">
+                                    <input type="source" class="form-control" id="source" placeholder="Source" required>
+                                </div>
+                                <div class="col-md-3 ">
+                                    <input type="destination" class="form-control" id="destination" placeholder="Destination" required>
+                                </div>
+                                <div class="col-md-3 ">
+                                    <select class="form-control" required>
+                                        <option value="">Truck type</option>
+                                        <option value="feet14o">14 Feet Open</option>
+                                        <option value="feet14c">14 Feet Close</option>
+                                        <option value="feet17o">17 Feet Open</option>
+                                        <option value="feet17c">17 Feet Close</option>
+                                        <option value="feet19o">19 Feet Open</option>
+                                        <option value="feet19c">19 Feet Close</option>
+                                        <option value="taurus10">10 Tyre Taurus</option>
+                                        <option value="taurus12">12 Feet Taurus</option>
+                                        <option value="feet20h">20 Feet Trailer High Bed</option>
+                                        <option value="feet20l">20 Feet Trailer Low Bed</option>
+                                        <option value="taurus12">34 Feet Single Axle</option>
+                                        <option value="taurus12">34 Feet Multi Axle</option>
+                                        <option value="taurus12">28 Feet Single Axle</option>
+                                        <option value="taurus12">28 Feet Multi Axle</option>
+                                    </select>
+                                    <!-- <input type="trucktype" class="form-control" id="trucktype" placeholder="Truck Type">-->
+                                </div>
+
+
+                                <div class="col-sm-3">
+                                    <button type="submit" class="btn btn-default btn-danger col-md-12">Get Quote</button>
+                                </div>
+                            </form>
+
+                        </div>
+                        <div role="tabpanel" class="tab-pane " id="profile">
+                            <form action="login.php">
+                                <div class="col-md-3 ">
+                                    <input type="source" class="form-control" id="source1" placeholder="Source" required>
+                                </div>
+                                <div class="col-md-3 ">
+                                    <input type="destination" class="form-control" id="destination1" placeholder="Destination" required>
+                                </div>
+                                <div class="col-md-3 ">
+                                    <select class="form-control" required>
+                                        <option value="">Truck type</option>
+                                        <option value="feet14o">14 Feet Open</option>
+                                        <option value="feet14c">14 Feet Close</option>
+                                        <option value="feet17o">17 Feet Open</option>
+                                        <option value="feet17c">17 Feet Close</option>
+                                        <option value="feet19o">19 Feet Open</option>
+                                        <option value="feet19c">19 Feet Close</option>
+                                        <option value="taurus10">10 Tyre Taurus</option>
+                                        <option value="taurus12">12 Feet Taurus</option>
+                                        <option value="feet20h">20 Feet Trailer High Bed</option>
+                                        <option value="feet20l">20 Feet Trailer Low Bed</option>
+                                        <option value="taurus12">34 Feet Single Axle</option>
+                                        <option value="taurus12">34 Feet Multi Axle</option>
+                                        <option value="taurus12">28 Feet Single Axle</option>
+                                        <option value="taurus12">28 Feet Multi Axle</option>
+                                    </select>
+                                    <!-- <input type="trucktype" class="form-control" id="trucktype" placeholder="Truck Type">-->
+                                </div>
+                                <div class="col-md-3 ">
+                                    <button type="submit" class="btn btn-default btn-danger col-md-12">Get Quote</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- tab_add tabs end -->
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="content_main_design space_top_btm" id="about_us">
+        <div class="container text-center new_font_add animated wow slideInUp" id="intro">
+            <h4> <p>Shippers get faster access to lot of verified trucks at competitive price. </p>
+         <p>Carriers get a chance to do more trips resulting in more monthly revenues. </p>
+                <p>We use advanced analytics to bring in the change in driver behavior, </p>
+            <p> improve truck transit times and provide hassle free experience.</p></h4>
+        </div>
+
+    </div>
+
+    <div class="content_main_design">
+        <div class="container">
+            <hr>
+        </div>
+    </div>
+
+    <div class="content_main_design space_top_btm" id="howitworks">
+        <div class="container text-center new_font_add">
+            <h1 class="paddin_btong">How it works?</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <i class="animated wow slideInLeft"><img src="images/cart_icon.png" alt="" /></i>
+                    <p class="font_main">Easy to book online or through a call</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="animated wow slideInDown"><img src="images/tobook.png" alt="" /></i>
+                    <p class="font_main">Book instantly at the lowest rate</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="animated wow slideInRight"><img src="images/track_local.png" alt="" /></i>
+                    <p class="font_main">Track and get proof of delivery</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="shiping_load">
+        <div class="row" style="width:101%;">
+            <div class="col-md-6 left_shipping space_top_btm" id="second">
+
+                <div class="col-md-12 box">
+
+                    <h2 class="animated wow slideInLeft text-center">I HAVE A TRUCK,
+HOW DOES
+<span class="org_color">EASYGAADI</span> HELP ME?</h2>
+
+                    <ul>
+                        <li> More trips per months resulting in more revenues</li>
+                        <li> Accessibility to market pricing</li>
+                        <li> Accurate delivery estimation with real time tracking</li>
+                        <li> Free posting of truck availability</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-md-6 right_load space_top_btm" id="second">
+                <div class="col-md-12 box">
+                    <h2 class="animated wow slideInRight text-center">I AM A SHIPPER, HOW DOES
+<span  class="org_color">EASYGAADI</span> HELP ME?</h2>
+
+                    <ul>
+                        <li> Easy access to a lot of verified truckers</li>
+                        <li>Best quote guaranteed and easy price comparison</li>
+
+                        <li> Accurate delivery estimation with real time tracking</li>
+                        <li>Insurance coverage with best premiums</li>
+
+                        <li>Customer support when you need it</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    
+     
+    <div class="contact_div_main space_top_btm" id="contact">
+
+        <div class="container">
+
+            <div class="col-md-8 col-md-offset-2 contact_us_mains content_maind animated wow bounceInRight">
+                <h3 class="text-center">CONTACT US</h3>
+                                            <form title="" id="contact_form" name="contact_form" method="post">
+                                <input type="name" name="name" class="form-control" id="name" placeholder="Name" required>
+
+                                <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
+                                <input type="tel" name="mobile" class="form-control" id="mobile" placeholder="Mobile Number" required>
+                                <textarea name="message" class="form-control " rows="3"></textarea>
+
+                                <button type="button" id="submit_btn" class="btn btn-danger col-md-12" onclick="fnsubmit()">Send</button>
+                            </form>
+                            <div class="clearfix"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer_div_main space_top_btm">
+        <div class="container text-center ">
+            <p class="animated wow bounceInLeft"><img src="images/logo.png" alt="" /></p>
+            <p>Gaadi Technologies Pvt. Ltd. #302, Pl.no.158, Varenya Abodes, Sarojini Naidu Nagar , Madhapur, Hyderabad, Telangana, India, 500081
+
+            </p>
+            <p>Customer care: 040-3291 0606, 040-3292 0606, 040-6526 0606; 24x7 Helpline: +91-7671 060606</p>
+
+
+        </div>
+    </div>
+
+    <div class="footer_bottom_main">
+        <div class="container">
+            <div class="col-md-4 animated bounceInRight">&copy;EasyGaadi.com</div>
+            <div class="col-md-4 pull-right  text-right">
+                <div class="socile_icons animated bounceInLeft">
+                    <a href="https://www.facebook.com/easygaadi" target="_blank"><i class="fa fa-facebook facebook_icon text-center"></i></a>
+                    <a href="https://twitter.com/easygaadi" target="_blank"><i class="fa fa-twitter twitter_icon text-center"></i></a>
+                    <a href="https://www.linkedin.com/company/easygaadi" target="_blank"><i class="fa fa-linkedin linkedin_icon text-center"></i></a>
+                    <a href="https://angel.co/easygaadi" target="_blank"><img src="images/angellist-icon.png" width="30px" height="30px"> </a>
+                    <a href="https://www.crunchbase.com/organization/easygaadi" target="_blank"><img src="images/O2mWKocb.png" class="img-circle" width="30px" height="30px"> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Add fancyBox main JS and CSS files -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    
+
+    <script type="text/javascript">
+        //stickey header
+       
+        jQuery(function () {
+
+            jQuery(window).scroll(function () {
+                var windscroll = jQuery(window).scrollTop();
+                if (windscroll >= 100) {
+                    jQuery('#warp .section').each(function (i) {
+                        if (jQuery(this).position().top <= windscroll + 150) {
+                            jQuery('.navbar-nav li.active').removeClass('active');
+                            jQuery('.navbar-nav li').eq(i).addClass('active');
+                        }
+                    });
+
+                } else {
+
+                    jQuery('.navbar-nav').removeClass('');
+                    jQuery('.navbar-nav li.active').removeClass('active');
+                    jQuery('.navbar-nav li:first').addClass('active');
+                }
+
+            }).scroll();
+
+            jQuery(window).scroll(function () {
+                var scroll = jQuery(window).scrollTop();
+                if (scroll >= 40) {
+                    jQuery(".subMenu").addClass("smallheader");
+                } else {
+                    jQuery(".subMenu").removeClass("smallheader");
+                }
+            });
+        });
+        jQuery(document).ready(function () {
+            jQuery('#nav').localScroll(800);
+
+
+        });
+        (jQuery);
+
+    </script>
+
+    <script>
+        jQuery(function () {
+            jQuery('.subMenu').smint({
+                'scrollSpeed': 1000
+            });
+            jQuery('.carousel').carousel({
+                interval: 2000
+            });
+
+            //navigation menu on mobile hide
+            jQuery(".navbar-default .navbar-nav > li > a").click(function () {
+                jQuery(".navbar-collapse").removeClass('in');
+
+
+            });
+
+
+        });
+
+        jQuery(document).ready(function () {
+            jQuery('ul.da-thumbs > li').hoverdir();
+            //smooth scroll to href value
+            jQuery(".scroll").click(function (event) {
+                event.preventDefault();
+                //calculate destination place
+                var dest = 0;
+                if (jQuery(this.hash).offset().top > jQuery(document).height() - jQuery(window).height()) {
+                    dest = jQuery(document).height() - jQuery(window).height();
+                } else {
+                    dest = jQuery(this.hash).offset().top;
+                }
+                //go to destination
+                jQuery('html,body').animate({
+                    scrollTop: dest
+                }, 1000, 'swing');
+            });
+        });
+        (jQuery);
+    </script>
+    <script>
+        jQuery(window).scroll(function () {
+            jQuery('#animatedElement').each(function () {
+                var imagePos = $(this).offset().top;
+
+                var topOfWindow = $(window).scrollTop();
+                if (imagePos < topOfWindow + 400) {
+                    jQuery(this).addClass("slideUp");
+                }
+            });
+
+            jQuery(document).ready(function () {
+                jQuery('.skillbar').each(function () {
+                    jQuery(this).find('.skillbar-bar').animate({
+                        width: jQuery(this).attr('data-percent')
+                    }, 6000);
+                });
+            });
+        });
+        (jQuery);
+
+    </script>
+   
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places" type="text/javascript"></script>
+    <script type="text/javascript">
+        function initialize() {
+            var input = document.getElementById('source');
+            var autocomplete = new google.maps.places.Autocomplete(input);
+
+            var input1 = document.getElementById('destination');
+            var autocomplete = new google.maps.places.Autocomplete(input1);
+
+            var input = document.getElementById('source1');
+            var autocomplete = new google.maps.places.Autocomplete(input);
+
+            var input1 = document.getElementById('destination1');
+            var autocomplete = new google.maps.places.Autocomplete(input1);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+    <script>
+        function fnsubmit() {
+            if (document.getElementById('name').value == "") {
+                alert("Please enter Name");
+                document.getElementById('name').focus();
+                return false;
+            }
+
+            if (document.getElementById('mobile').value == "") {
+                alert("Please enter Mobile No");
+                document.getElementById('mobile').focus();
+                return false;
+            }
+
+            if (document.getElementById('email').value == "") {
+                alert("Please enter E-mail Address");
+                document.getElementById('email').focus();
+                return false;
+            }
+
+            document.contact_form.action = "sendmail.php";
+            document.contact_form.submit();
+
+            //document.contactformpage.action="/rfqhub/index.php/account/forgotpassword";
+            //document.contactformpage.submit();
+
+        }
+    </script>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title text-center" id="myModalLabel"><strong>Sign In</strong></h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="col-md-12">
+                        <form action="invalid_login.php">
+                            <div class="form-group">
+                                <!--  <label for="email">Email address</label>-->
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <!--  <label for="password">Password</label>-->
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+
+
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">Close </button>
+                        </form>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <section class="wow fadeIn ptb ptb-sm-80">
+            <div class="container">
+                <h3 class="text-center">In the news</h3>
+                <div class="spacer-30"></div>
+                <div class="owl-carousel client-carousel nf-carousel-theme ">
+                    <div class="item">
+                        <div class="client-logo">
+                        <a href="http://economictimes.indiatimes.com/small-biz/startups/startups-like-trucksuvidha-truckmandi-take-on-sector-of-truck-transportation/articleshow/47451109.cms?intenttarget=no" target="_blank">
+                            <img src="/images/ET-min.jpg" alt="Economic times truckmandi" /></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="client-logo">
+                        <a href="http://yourstory.com/2015/06/truckmandi/" target="_blank">
+                            <img src="/images/YourStory_Logo_closeup-min.jpg" alt="Your story truckmandi" /></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="client-logo">
+                        <a href="http://www.kntvnews.in/new-startup-truckmandi-targets-transport-sector/" target="_blank">
+                            <img src="/images/logonew.png" alt="kntv news truckmandi" /></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="client-logo">
+                        <a href="http://www.sunday-guardian.com/technologic/the-ultimate-portal-for-fuss-free-trucking" target="_blank">
+                            <img src="/images/SundayGuardian-2-min.jpg" alt="sunday guardian truckmandi" /></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="client-logo">
+                        <a href="https://in.news.yahoo.com/startup-truckmandi-targets-transport-sector-071804025--finance.html" target="_blank">
+                            <img src="/images/yahoo-news-logo.png" alt="yahoo truckmandi" /></a>
+                        </div>
+                    </div>
+    <!-- Sign_up modal -->
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title text-center" id="myModalLabel"><strong>Sign Up-Options</strong></h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="col-sm-12 text-center">
+
+                        <a href="truck_owner_sign_up.php" class="btn btn-primary" role="button"><strong>Truck owner</strong></a>
+                    </div>
+                    <div class="col-sm-12 text-center">
+                        <a href="load_owner_sign_up.php" class="btn btn-primary" role="button"><strong>Load owner</strong></a>
+                    </div>
+                    <div class="col-sm-12 text-center">
+                        <a href="transporter_sign_up.php" class="btn btn-primary" role="button"><strong>Transporter</strong></a>
+                    </div>
+
+                    <div class="col-sm-12 text-center">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">Close </button>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!--end modal-->
+
+
+
+</body>
+
+</html>
