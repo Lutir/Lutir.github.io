@@ -14,6 +14,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"><!-- Bootstrap -->
     <link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css"><!-- Fancybox -->
     <link href="css/style.css" rel="stylesheet" type="text/css"><!-- theme styles -->
+    <link rel="stylesheet" type="text/css" href="css/myStyle.css" />
     <link rel="icon" type="image/png" href="image/logo.png">
 
   </head>
@@ -73,8 +74,8 @@
                            <a href="#" title="">Contact</a>
                         </li>
                         <li>
-                            <a href="#"  title="">Departments</a>
-                            <ul class="sub-menu">
+                            <a href="#"  title="" class="department">Departments</a>
+                            <ul class="sub-menu visible-xs">
                                 <li><a href="#">Computer Science & Engineering</a></li>
                                 <li><a href="#">Electrical & Electronics Engineering</a></li>
                                 <li><a href="#">Electronics & Communication Engineering</a></li>
@@ -118,7 +119,37 @@
             </div>
             
         </div><!-- row end -->
-    
+    <section class="visible-lg">
+                <div class="container dep">
+                    <div class="col-md-2">
+                        <a href="#">Architecture</a><br>
+                        <a href="#">CECASE</a><br>
+                        <a href="#">Chemical Engineering</a><br>
+                        <a href="#">Chemistry</a><br>
+                </div>  
+                <div class="col-md-3">
+                    <a href="#">Civil Engineering</a><br>
+                        <a href="#">Computer Applications</a><br>
+                        <a href="#">Computer Science & Engineering</a><br>
+                        <a href="#">DEE</a><br>
+                </div>
+                <div class="col-md-4">
+                    <a href="#">Electrical & Electronics Engineering</a><br>
+                        <a href="#">Electronics & Communications Engineering</a><br>
+                        <a href="#">Humanities</a><br>
+                        <a href="#">Instrumentation & Control Engineering</a><br>
+                        <a href="#">Management Studies</a><br>
+                </div>
+                <div class="col-md-3">
+                    
+                        <a href="#">Mathematics</a><br>
+                        <a href="#">Mechanical Engineering</a><br>
+                        <a href="#">Metalurgical & Materials Engineering</a><br>
+                        <a href="#">Production Engineering</a><br>
+                        <a href="#">Physics</a><br>
+                        
+                </div>
+            </section>
     </div><!-- container + head wrapper end -->
     
     <div id="k-body"><!-- content wrapper -->
@@ -126,7 +157,7 @@
     	<div class="container"><!-- container -->
         
         	<div class="row"><!-- row -->
-            
+
                 <div id="k-top-search" class="col-lg-12 clearfix"><!-- top search -->
                 
                     <form action="#" id="top-searchform" method="get" role="search">
@@ -521,11 +552,13 @@
                     </div>
                     
                 </div><!-- widgets column center end -->
-                <script type="text/javascript">/*
+                <script type="text/javascript">
+                /*
                 <div class="col-lg-4 col-md-4"><!-- widgets column right -->
                 
                     <div class="col-padded col-naked">
-                    
+             
+
                         <ul class="list-unstyled clear-margins"><!-- widgets -->
                         
                         	<li class="widget-container widget_sofa_flickr"><!-- widgets list -->
@@ -543,6 +576,7 @@
                     </div>
                 
                 </div><!-- widgets column right end -->
+                */
                 </script>
 
             
@@ -627,6 +661,7 @@
         </div><!-- container end -->
     
     </div><!-- subfooter end -->
+    
 
     <!-- jQuery -->
     <script src="js/jquery-2.1.1.min.js"></script>
@@ -652,7 +687,13 @@
     <script src="js/jquery.easy-pie-chart.js"></script>
     
     <!-- Google Maps -->
-    
+    <script type="text/javascript">
+        $('.dep').hide();
+            $('.department').click(function(){
+                $('.dep').toggle("slow");
+            });
+        
+    </script>
     
     <!-- Theme -->
     <script src="js/theme.js"></script>
