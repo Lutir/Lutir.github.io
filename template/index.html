@@ -16,7 +16,10 @@
     <link href="css/style.css" rel="stylesheet" type="text/css"><!-- theme styles -->
     <link rel="stylesheet" type="text/css" href="css/myStyle.css" />
     <link rel="icon" type="image/png" href="image/logo.png">
-
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript">
+            $('.dep').hide();
+            </script>
   </head>
   
   <body role="document">
@@ -58,7 +61,7 @@
             
             	</div><!-- site logo end -->
 
-            	<nav id="k-menu" class="k-main-navig"><!-- main navig -->
+            	<nav id="k-menu affix" class="k-main-navig"><!-- main navig -->
         
                     <ul id="drop-down-left" class="k-dropdown-menu">
                         <li>
@@ -150,6 +153,7 @@
                         
                 </div>
             </section>
+
     </div><!-- container + head wrapper end -->
     
     <div id="k-body"><!-- content wrapper -->
@@ -664,7 +668,7 @@
     
 
     <!-- jQuery -->
-    <script src="js/jquery-2.1.1.min.js"></script>
+
     <script src="js/jquery-migrate-1.2.1.min.js"></script>
     
     <!-- Bootstrap -->
@@ -688,7 +692,7 @@
     
     <!-- Google Maps -->
     <script type="text/javascript">
-        $('.dep').hide();
+        //$('.dep').hide();
             $('.department').click(function(){
                 $('.dep').toggle("slow");
             });
