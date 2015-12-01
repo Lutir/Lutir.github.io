@@ -16,12 +16,15 @@
     <link href="css/style.css" rel="stylesheet" type="text/css"><!-- theme styles -->
     <link rel="stylesheet" type="text/css" href="css/myStyle.css" />
     <link rel="icon" type="image/png" href="image/logo.png">
-
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript">
+            $('.dep').hide();
+        </script>
   </head>
   
   <body role="document">
     <header class="myheader" >
-        <img src="image/header.png" style="position:relative;top:25px;" />
+        <img src="image/header.png" style="position:relative;top:35px;" />
     </header>
   
     <!-- device test, don't remove. javascript needed! -->
@@ -120,7 +123,7 @@
             
         </div><!-- row end -->
     <section class="visible-lg">
-                <div class="container dep">
+                <div class="container dep" style="display:none;">
                     <div class="col-md-2">
                         <a href="#">Architecture</a><br>
                         <a href="#">CECASE</a><br>
@@ -664,7 +667,7 @@
     
 
     <!-- jQuery -->
-    <script src="js/jquery-2.1.1.min.js"></script>
+
     <script src="js/jquery-migrate-1.2.1.min.js"></script>
     
     <!-- Bootstrap -->
