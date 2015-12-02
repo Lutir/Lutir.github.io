@@ -1,0 +1,134 @@
+#mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9000;
+  background-color: #000;
+  display: none;
+}
+
+#boxes .window {
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 400px;
+  height: 200px;
+  display: none;
+  z-index: 9999;
+  padding: 20px;
+  
+  text-align: center;
+}
+
+#boxes #dialog {
+  width: 750px;
+  height: 300px;
+  padding: 10px;
+  background-color: #ffffff;
+  font-family: 'Segoe UI Light', sans-serif;
+  font-size: 15pt;
+}
+
+.myButtons{
+  padding-top: 50px;
+  margin: 0 auto;
+  opacity: 1;
+}
+.myButtons button{
+  opacity: 1;
+}
+.myButtons button:hover{
+  opacity: 1;
+}
+
+/*
+.myButtons button{
+ padding: 4px 10px 4px 10px;
+  width: 100px;
+  font-weight: 100 !important;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: none;
+  background-color:  #E55B25;
+  opacity: 0.8;
+  float: none !important;
+}
+
+.myButtons button:hover{
+ padding: 4px 10px 4px 10px;
+  width: 100px;
+  font-weight: 100 !important;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: none;
+  background-color:  #de4c12;
+  opacity: 0.8;
+  float: none !important;
+}*/
+.colOrange{
+  color: #E55B25;
+}
+.eng{
+  padding: 4px 10px 4px 10px;
+  width: 100px;
+  font-weight: 100 !important;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: none;
+  background-color:  #E55B25;
+  opacity: 0.8;
+  float: none !important;
+}
+.eng:hover,.eng:active{
+  padding: 4px 10px 4px 10px;
+  width: 100px;
+  font-weight: 100 !important;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: none;
+  background-color:  #E55B25;
+  opacity: 0.8;
+  float: none !important; 
+}
+.hin{
+  padding: 4px 30px 4px 30px;
+  width: 100px;
+  font-weight: 100 !important;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: none;
+  background-color:  grey;
+  opacity: 0.8;
+  float: none !important;
+}
+.hin:hover,.hin:active{
+  padding: 4px 30px 4px 30px;
+  width: 100px;
+  font-weight: 100 !important;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: none;
+  background-color:  grey;
+  opacity: 0.8;
+  float: none !important; 
+}
+@media only screen and (max-width: 500px){
+  .myButtons{
+  padding-top: 5px;
+} 
+
+}
+
