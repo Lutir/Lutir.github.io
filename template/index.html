@@ -20,6 +20,7 @@
         <script type="text/javascript">
             $('.dep').hide();
         </script>
+		<script type="text/javascript" src="js/fix_nav.js"></script>
   </head>
   
   <body role="document">
@@ -43,6 +44,8 @@
                     <li><a href="#">Dashboard</a></li>
                     <li><a href="#">Webmail</a></li>
                     <li><a href="#">Sitemap</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Translate</a></li>
                 </ul>
         
             </nav><!-- functional navig end -->
@@ -57,27 +60,48 @@
                         </a>
                     </h1>
         -->            
-                    <a id="mobile-nav-switch" href="#drop-down-left"><span class="alter-menu-icon"><i class="fa fa-bars"></i></span></a><!-- alternative menu button -->
+                    <a id="mobile-nav-switch" href="#drop-down-left"><span class="alter-menu-icon"><i class="fa fa-bars" style="color: #000000"></i></span></a><!-- alternative menu button -->
             
             	</div><!-- site logo end -->
 
-            	<nav id="k-menu" class="k-main-navig"><!-- main navig -->
+            	<nav id="k-menu affix" class="k-main-navig"><!-- main navig -->
         
                     <ul id="drop-down-left" class="k-dropdown-menu">
                         <li>
                             <a href="#" title="">Homepage</a>
                         </li>
                         <li>
-                            <a href="#" title="">News</a>
+                            <a href="#" title=""><i class="fa fa-caret-down"></i> About</a>
+							<ul class="sub-menu">
+                                <li><a href="#"> Mission & Vision </a></li>
+                                <li><a href="#"> Alumni </a></li>
+                            </ul>
                         </li>
                         <li>
-                            <a href="#" title="">Events</a>
+                            <a href="#" title=""><i class="fa fa-caret-down"></i> Student Links</a>
+							<ul class="sub-menu">
+                                <li><a href="#">Forms & Downloads </a></li>
+                                <li><a href="#">Scholarships </a></li>
+                                <li><a href="#">Semester Results</a></li>
+                                <li><a href="#">Time Table</a></li>
+								<li><a href="#">Clubs</a></li>
+                                <li><a href="#">Sports</a></li>
+                                <li><a href="#">Portals</a></li>
+                                <li><a href="#">Important Contacts</a></li>
+                            </ul>
                         </li>
                         <li>
-                           <a href="#" title="">Contact</a>
+                           <a href="#" title=""><i class="fa fa-caret-down"></i> Admissions</a>
+						   <ul class="sub-menu">
+                                <li><a href="#">B.Tech. </a></li>
+                                <li><a href="#">M.Tech. </a></li>
+                                <li><a href="#">Ph.D.</a></li>
+                                <li><a href="#">MCA</a></li>
+                            </ul>
                         </li>
                         <li>
-                            <a href="#"  title="" class="department">Departments</a>
+                            <a id="d" href="#" title="" class="department"><i class="fa fa-toggle-off"></i> Department</a>
+							<script>$('#d').click(function(){$(this).find('i').toggleClass('fa-toggle-off fa-toggle-on');});</script>
                             <ul class="sub-menu visible-xs">
                                 <li><a href="#">Computer Science & Engineering</a></li>
                                 <li><a href="#">Electrical & Electronics Engineering</a></li>
@@ -102,18 +126,25 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#" title="">About Us</a>
-                            <!--<ul class="sub-menu">
-                                <li><a href="#">Full Width Page</a></li>
-                                <li><a href="#">Sidebar on Left</a></li>
-                                <li><a href="#">Formatting</a></li>
-                                <li><a href="#">School Leadership</a></li>
-                                <li><a href="#">Gallery</a></li>
-                                <li><a href="#">404 Error</a></li>
-                            </ul>-->
+                            <a href="#" title=""><i class="fa fa-caret-down"></i> Initiatives</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">CEDI </a></li>
+                                <li><a href="#">Startup Weekend</a></li>
+                                <li><a href="#">Internet Of Things</a></li>
+                                <li><a href="#">Innovation Center</a></li>
+                                <li><a href="#">Green Campus</a></li>
+                            </ul>
                         </li>
                         <li>
-                            <a href="#" title="">Contact Us</a>
+                            <a href="#" title=""><i class="fa fa-caret-down"></i> Industry</a>
+							<ul class="sub-menu">
+                                <li><a href="#">Placements at NITT </a></li>
+                                <li><a href="#">Scholarships </a></li>
+                                <li><a href="#">Consultancy & Research</a></li>
+                                <li><a href="#">MoU's signed</a></li>
+								<li><a href="#">Tender Invitations</a></li>
+                                <li><a href="#">Vendor Registrations</a></li>
+                            </ul>
                         </li>
                     </ul>
         
@@ -169,14 +200,14 @@
                         </div>
                     </form>
                     
-                    <div id="bt-toggle-search" class="search-icon text-center"><i class="s-open fa fa-search"></i><i class="s-close fa fa-times"></i></div><!-- toggle search button -->
+                    <div id="bt-toggle-search" class="search-icon text-center"><i class="s-open fa fa-search"> Search </i><i class="s-close fa fa-times"> Search </i></div><!-- toggle search button -->
                 
                 </div><!-- top search end -->
             
             	<div class="k-breadcrumbs col-lg-12 clearfix"><!-- breadcrumbs -->
                 
                 	<ol class="breadcrumb">
-                    	<li><a href="#">Home</a></li>
+                    	<li><a href="#">HOME</a></li>
                         
                     </ol>
                     
@@ -596,11 +627,11 @@
                     <div class="footer-col-inner">
                         <h3>Academics</h3>
                         <ul>
-                            <li><a href="#"><i class="fa fa-caret-right"></i>Academics Programmes</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i>Departments</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i>Faculty</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i>Rules & Regulations</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i>Scholarships</a></li>
+                            <li><a href="#"><i class="fa fa-caret-right"></i> Academics Programmes</a></li>
+                            <li><a href="#"><i class="fa fa-caret-right"></i> Departments</a></li>
+                            <li><a href="#"><i class="fa fa-caret-right"></i> Faculty</a></li>
+                            <li><a href="#"><i class="fa fa-caret-right"></i> Rules & Regulations</a></li>
+                            <li><a href="#"><i class="fa fa-caret-right"></i> Scholarships</a></li>
                         </ul>
                     </div><!--//footer-col-inner-->
                 </div><!--//foooter-col-->
@@ -609,11 +640,11 @@
                     <div class="footer-col-inner">
                         <h3>Admissions</h3>
                         <ul>
-                            <li><a href="#"><i class="fa fa-caret-right"></i>B.Tech/B.Arc</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i>M.Tech/M.Sc</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i>MCA/MBA</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i>MS(research)</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i>Ph.D</a></li>
+                            <li><a href="#"><i class="fa fa-caret-right"></i> B.Tech/B.Arc</a></li>
+                            <li><a href="#"><i class="fa fa-caret-right"></i> M.Tech/M.Sc</a></li>
+                            <li><a href="#"><i class="fa fa-caret-right"></i> MCA/MBA</a></li>
+                            <li><a href="#"><i class="fa fa-caret-right"></i> MS(research)</a></li>
+                            <li><a href="#"><i class="fa fa-caret-right"></i> Ph.D</a></li>
                         </ul>
                     </div><!--//footer-col-inner-->
                 </div><!--//foooter-col-->
@@ -622,10 +653,10 @@
                     <div class="footer-col-inner ">
                         <h3>Students Life</h3>
                         <ul >
-                            <li><a href="#"><i class="fa fa-caret-right"></i>Events</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i>Clubs & Associations</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i>Hostel & Messes</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i>Office Of Dean(students)</a></li>
+                            <li><a href="#"><i class="fa fa-caret-right"></i> Events</a></li>
+                            <li><a href="#"><i class="fa fa-caret-right"></i> Clubs & Associations</a></li>
+                            <li><a href="#"><i class="fa fa-caret-right"></i> Hostel & Messes</a></li>
+                            <li><a href="#"><i class="fa fa-caret-right"></i> Office Of Dean(students)</a></li>
                             
                         </ul>
                     </div><!--//footer-col-inner-->
@@ -635,11 +666,11 @@
                     <div class="footer-col-inner">
                         <h3>Other Links</h3>
                         <ul>
-                            <li><a href="#"><i class="fa fa-caret-right"></i>Tenders & Notices</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i>Job Opportunities</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i>RTI</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i>Recal-Alumini</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i>SiteMap</a></li>
+                            <li><a href="#"><i class="fa fa-caret-right"></i> Tenders & Notices</a></li>
+                            <li><a href="#"><i class="fa fa-caret-right"></i> Job Opportunities</a></li>
+                            <li><a href="#"><i class="fa fa-caret-right"></i> RTI</a></li>
+                            <li><a href="#"><i class="fa fa-caret-right"></i> Recal-Alumini</a></li>
+                            <li><a href="#"><i class="fa fa-caret-right"></i> SiteMap</a></li>
                             
                         </ul>
                     </div><!--//footer-col-inner-->
