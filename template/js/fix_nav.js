@@ -24,3 +24,14 @@ $(document).scroll(function scroll_fix_nav	() {
 // 	$(".k-main-navig").css("visibility", "hidden");
 // }
 });
+window.onload = nav_resize;
+window.onresize = nav_resize;
+function nav_resize(){
+if($(window).width()<=900)
+{
+  $('[id="k-menu affix"]').css("display","none");
+}
+else{
+  $('[id="k-menu affix"]').css("display","block"); 
+}
+}
