@@ -17,9 +17,11 @@ $(document).scroll(function scroll_fix_nav	() {
 	 $('.k-main-navig').css("background-color" , '#FFFFFF')
 	 }
 		
-	}
+	
+  }
 
 }
+});
 
 // else {
 // 	$(".k-main-navig").css("visibility", "hidden");
