@@ -41,17 +41,31 @@
                 <ul class="list-inline pull-right">
                     <li><a href="#">Departments</a></li>
                     <li><a href="#">Placements</a></li>
-                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#" onclick="toggleDash()">Dashboard</a></li>
                     <li><a href="#">Webmail</a></li>
                     <li><a href="#">Sitemap</a></li>
 					<li><a href="#">Contact</a></li>
 					<li><a href="#">Translate</a></li>
                 </ul>
-        
+            
             </nav><!-- functional navig end -->
         
         	<div class="col-lg-12">
-        
+            <div class="container-fluid text-center dashboard"  hidden>
+                            <div class="col-md-1"><a href="#"> View</a></div>
+                            <div class="col-md-8"></div>
+                            <div class="col-md-1"><a href="#"> Login </a></div>
+                            <div class="col-md-1"><a href="#"> Register </a></div>
+                            <div class="col-md-1"> <a href="#"> Search</a></div>
+
+                        </div>
+                        <script type="text/javascript">
+                    $('.dashboard').hide();
+                    function toggleDash(){
+
+                        $('.dashboard').toggle('fast');
+                    }
+                    </script>
         		<div id="k-site-logo" class="pull-left"><!-- site logo -->
     <!--            
                     <h1 class="k-logo">
@@ -269,7 +283,7 @@
                 </div><!-- featured posts slider end -->
                 
             </div><!-- row end -->
-            
+           
             <div class="row no-gutter"><!-- row -->
                 
                 <div class="col-lg-4 col-md-4"><!-- upcoming events wrapper -->
@@ -281,6 +295,113 @@
                         	<li class="widget-container widget_up_events"><!-- widgets list -->
                     
                                 <h1 class="title-widget">Upcoming Events</h1>
+                                <div class="carousel-controls">
+                            <a class="prev" href="#testimonial-carousel" data-slide="prev"><i class="fa fa-caret-left"></i></a>
+                            <a class="next" href="#testimonial-carousel" data-slide="next"><i class="fa fa-caret-right"></i></a>
+                        </div><!--//carousel-controls-->
+                        <div class="section-content downloads">
+                            <div id="testimonial-carousel" class="testimonial-carousel carousel slide">
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <h1 class="title-median"><a href="#" title="">Workshops</a></h1>
+                                        
+                                        <div class="up-event-meta clearfix">
+                                            <div class="up-event-date">Oct 30, 2015</div><div class="up-event-time">9:00 - 11:00</div>
+                                        </div>
+                                        
+                                        <p>
+                                        Workshop on Tools and Techniques for Information Processing Research <a href="#" class="moretag" title="read more">MORE</a> 
+                                        </p>
+                                    
+                                        <h1 class="title-median"><a href="#" title="">Horizons</a></h1>
+                                        
+                                        <div class="up-event-meta clearfix">
+                                            <div class="up-event-date">Nov 12, 2015</div><div class="up-event-time">8:30 - 10:30</div>
+                                        </div>
+                                        
+                                        <p>
+                                       Horizon 2015 - A National Level Student's Symposium on Innovative Catalysis... <a href="#" class="moretag" title="read more">MORE</a> 
+                                        </p>  
+                                         <h1 class="title-median"><a href="#" title="">International Conference on Disaster Management</a></h1>
+                                        
+                                        <div class="up-event-meta clearfix">
+                                            <div class="up-event-date">Nov 21, 2015</div><div class="up-event-date">Nov 21, 2015</div>
+                                        </div>
+                                        
+                                        <p>
+                                       International Conference on Disaster Mitigation and Management for Sustainable Development & Risk Reduction,... <a href="#" class="moretag" title="read more">MORE</a> 
+                                        </p>                           
+                                    </div><!--//item-->
+
+                                    <div class="item">
+                                         <h1 class="title-median"><a href="#" title="">Workshops</a></h1>
+                                        
+                                        <div class="up-event-meta clearfix">
+                                            <div class="up-event-date">Oct 30, 2015</div><div class="up-event-time">9:00 - 11:00</div>
+                                        </div>
+                                        
+                                        <p>
+                                        Workshop on Tools and Techniques for Information Processing Research <a href="#" class="moretag" title="read more">MORE</a> 
+                                        </p>
+                                    
+                                        <h1 class="title-median"><a href="#" title="">Horizons</a></h1>
+                                        
+                                        <div class="up-event-meta clearfix">
+                                            <div class="up-event-date">Nov 12, 2015</div><div class="up-event-time">8:30 - 10:30</div>
+                                        </div>
+                                        
+                                        <p>
+                                       Horizon 2015 - A National Level Student's Symposium on Innovative Catalysis... <a href="#" class="moretag" title="read more">MORE</a> 
+                                        </p>  
+                                         <h1 class="title-median"><a href="#" title="">International Conference on Disaster Management</a></h1>
+                                        
+                                        <div class="up-event-meta clearfix">
+                                            <div class="up-event-date">Nov 21, 2015</div><div class="up-event-date">Nov 21, 2015</div>
+                                        </div>
+                                        
+                                        <p>
+                                       International Conference on Disaster Mitigation and Management for Sustainable Development & Risk Reduction,... <a href="#" class="moretag" title="read more">MORE</a> 
+                                        </p>                           
+                                        
+                                    </div><!--//item-->
+                                    <div class="item">
+                                        <h1 class="title-median"><a href="#" title="">Workshops</a></h1>
+                                        
+                                        <div class="up-event-meta clearfix">
+                                            <div class="up-event-date">Oct 30, 2015</div><div class="up-event-time">9:00 - 11:00</div>
+                                        </div>
+                                        
+                                        <p>
+                                        Workshop on Tools and Techniques for Information Processing Research <a href="#" class="moretag" title="read more">MORE</a> 
+                                        </p>
+                                    
+                                        <h1 class="title-median"><a href="#" title="">Horizons</a></h1>
+                                        
+                                        <div class="up-event-meta clearfix">
+                                            <div class="up-event-date">Nov 12, 2015</div><div class="up-event-time">8:30 - 10:30</div>
+                                        </div>
+                                        
+                                        <p>
+                                       Horizon 2015 - A National Level Student's Symposium on Innovative Catalysis... <a href="#" class="moretag" title="read more">MORE</a> 
+                                        </p>  
+                                         <h1 class="title-median"><a href="#" title="">International Conference on Disaster Management</a></h1>
+                                        
+                                        <div class="up-event-meta clearfix">
+                                            <div class="up-event-date">Nov 21, 2015</div><div class="up-event-date">Nov 21, 2015</div>
+                                        </div>
+                                        
+                                        <p>
+                                       International Conference on Disaster Mitigation and Management for Sustainable Development & Risk Reduction,... <a href="#" class="moretag" title="read more">MORE</a> 
+                                        </p>                                      
+                                    </div><!--//item-->
+                                    
+                                </div><!--//carousel-inner-->
+                            </div><!--//testimonials-carousel-->
+                        </div><!--//section-content-->
+                                <script type="text/javascript">
+                                        /*
+                                        
+                                
                                 
                                 <ul class="list-unstyled">
                                 
@@ -327,6 +448,8 @@
                                     </li>
                                 
                                 </ul>
+                                */
+                                </script>
                             
                             </li><!-- widgets list end -->
                         
@@ -335,6 +458,8 @@
                     </div><!-- inner custom column end -->
                     
                 </div><!-- upcoming events wrapper end -->
+        
+
                 
                 <div class="col-lg-4 col-md-4"><!-- recent news wrapper -->
                 	
