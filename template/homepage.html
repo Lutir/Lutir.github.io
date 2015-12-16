@@ -41,7 +41,8 @@
                 <ul class="list-inline pull-right">
                     <li><a href="#">Departments</a></li>
                     <li><a href="#">Placements</a></li>
-                    <li><a href="#" onclick="toggleDash()">Dashboard</a></li>
+                   <li><a id="dash" href="#" title="" class="dash"><i class="fa fa-toggle-off"></i> Dashboard </a></li>
++                   <script>$('#dash').click(function(){$(this).find('i').toggleClass('fa-toggle-off fa-toggle-on');});</script>
                     <li><a href="#">Webmail</a></li>
                     <li><a href="#">Sitemap</a></li>
 					<li><a href="#">Contact</a></li>
