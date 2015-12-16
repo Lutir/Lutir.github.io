@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en" manifest="manifest.appcache"> 
   <head>
@@ -21,6 +20,7 @@
             $('.dep').hide();
         </script>
 		<script type="text/javascript" src="js/fix_nav.js"></script>
+
   </head>
   
   <body role="document">
@@ -35,24 +35,43 @@
     <div id="k-head" class="container-fluid"><!-- container + head wrapper -->
     
     	<div class="row"><!-- row -->
-        
             <nav class="k-functional-navig"><!-- functional navig -->
-        
                 <ul class="list-inline pull-right">
                     <li><a href="#">Departments</a></li>
                     <li><a href="#">Placements</a></li>
-                    <li><a id="dash" href="#" title="" class="dash"><i class="fa fa-toggle-off"></i> Dashboard </a></li>
-					<script>$('#dash').click(function(){$(this).find('i').toggleClass('fa-toggle-off fa-toggle-on');});</script>
+                   <li><a id="dash" href="#" title="" class="dash"><i class="fa fa-toggle-off"></i> Dashboard </a></li>
+				   <script>
+			       $('#dash').click(function(){$(this).find('i').toggleClass('fa-toggle-off fa-toggle-on');
+				   $('.dashboard').toggle('fast');
+				   });
+				   </script>
                     <li><a href="#">Webmail</a></li>
                     <li><a href="#">Sitemap</a></li>
 					<li><a href="#">Contact</a></li>
 					<li><a href="#">Translate</a></li>
                 </ul>
-        
+            
+                
+                
+
             </nav><!-- functional navig end -->
         
         	<div class="col-lg-12">
-        
+            <div class="container-fluid text-center dashboard"  hidden >
+                            <div class="col-md-1"><a href="#" style="color:black;"> View</a></div>
+                            <div class="col-md-8"></div>
+                            <div class="col-md-1"><a href="#" style="color:black;" > Login </a></div>
+                            <div class="col-md-1"><a href="#" style="color:black;"> Register </a></div>
+                            <div class="col-md-1"> <a href="#" style="color:black;"> Search</a></div>
+
+                        </div>
+                        <script type="text/javascript">
+                    $('.dashboard').hide();
+                    function toggleDash(){
+
+                    
+                    }
+                    </script>
         		<div id="k-site-logo" class="pull-left"><!-- site logo -->
     <!--            
                     <h1 class="k-logo">
@@ -186,7 +205,7 @@
                 </div>
             </section>
     </div><!-- container + head wrapper end -->
-    
+
     <div id="k-body"><!-- content wrapper -->
     
     	<div class="container"><!-- container -->
@@ -201,7 +220,7 @@
                         </div>
                     </form>
                     
-                    <div id="bt-toggle-search" class="search-icon text-center"><i class="s-open fa fa-search"> Search </i><i class="s-close fa fa-times"> Search </i></div><!-- toggle search button -->
+                    <div id="bt-toggle-search" class="search-icon text-center"><i class="s-open fa fa-search"><a href="#">Search</a></i><i class="s-close fa fa-times"></i></div><!-- toggle search button -->
                 
                 </div><!-- top search end -->
             
@@ -261,8 +280,8 @@
                         </div><!-- Wrapper for slides end -->
                     
                         <!-- Controls -->
-                        <a class="left carousel-control" href="#carousel-featured" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
-                        <a class="right carousel-control" href="#carousel-featured" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+                        <a class="left carousel-control" href="#carousel-featured" data-slide="prev"><i class="fa fa-chevron-left  fa-2x"></i></a>
+                        <a class="right carousel-control" href="#carousel-featured" data-slide="next"><i class="fa fa-chevron-right  fa-2x"></i></a>
                         <!-- Controls end -->
                         
                     </div><!-- featured posts slider wrapper end -->
@@ -270,7 +289,7 @@
                 </div><!-- featured posts slider end -->
                 
             </div><!-- row end -->
-            
+           
             <div class="row no-gutter"><!-- row -->
                 
                 <div class="col-lg-4 col-md-4"><!-- upcoming events wrapper -->
@@ -282,6 +301,113 @@
                         	<li class="widget-container widget_up_events"><!-- widgets list -->
                     
                                 <h1 class="title-widget">Upcoming Events</h1>
+                                <div class="carousel-controls">
+                            <a class="prev" href="#events-carousel" data-slide="prev"><i class="fa fa-caret-left  fa-2x"></i></a>
+                            <a class="next" href="#events-carousel" data-slide="next"><i class="fa fa-caret-right  fa-2x"></i></a>
+                        </div><!--//carousel-controls-->
+                        <div class="section-content downloads">
+                            <div id="events-carousel" class="testimonial-carousel carousel slide">
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <h1 class="title-median"><a href="#" title="">Workshops</a></h1>
+                                        
+                                        <div class="up-event-meta clearfix">
+                                            <div class="up-event-date">Oct 30, 2015</div><div class="up-event-time">9:00 - 11:00</div>
+                                        </div>
+                                        
+                                        <p>
+                                        Workshop on Tools and Techniques for Information Processing Research <a href="#" class="moretag" title="read more">MORE</a> 
+                                        </p>
+                                    
+                                        <h1 class="title-median"><a href="#" title="">Horizons</a></h1>
+                                        
+                                        <div class="up-event-meta clearfix">
+                                            <div class="up-event-date">Nov 12, 2015</div><div class="up-event-time">8:30 - 10:30</div>
+                                        </div>
+                                        
+                                        <p>
+                                       Horizon 2015 - A National Level Student's Symposium on Innovative Catalysis... <a href="#" class="moretag" title="read more">MORE</a> 
+                                        </p>  
+                                         <h1 class="title-median"><a href="#" title="">International Conference on Disaster Management</a></h1>
+                                        
+                                        <div class="up-event-meta clearfix">
+                                            <div class="up-event-date">Nov 21, 2015</div><div class="up-event-date">Nov 21, 2015</div>
+                                        </div>
+                                        
+                                        <p>
+                                       International Conference on Disaster Mitigation and Management for Sustainable Development & Risk Reduction,... <a href="#" class="moretag" title="read more">MORE</a> 
+                                        </p>                           
+                                    </div><!--//item-->
+
+                                    <div class="item">
+                                         <h1 class="title-median"><a href="#" title="">Workshops</a></h1>
+                                        
+                                        <div class="up-event-meta clearfix">
+                                            <div class="up-event-date">Oct 30, 2015</div><div class="up-event-time">9:00 - 11:00</div>
+                                        </div>
+                                        
+                                        <p>
+                                        Workshop on Tools and Techniques for Information Processing Research <a href="#" class="moretag" title="read more">MORE</a> 
+                                        </p>
+                                    
+                                        <h1 class="title-median"><a href="#" title="">Horizons</a></h1>
+                                        
+                                        <div class="up-event-meta clearfix">
+                                            <div class="up-event-date">Nov 12, 2015</div><div class="up-event-time">8:30 - 10:30</div>
+                                        </div>
+                                        
+                                        <p>
+                                       Horizon 2015 - A National Level Student's Symposium on Innovative Catalysis... <a href="#" class="moretag" title="read more">MORE</a> 
+                                        </p>  
+                                         <h1 class="title-median"><a href="#" title="">International Conference on Disaster Management</a></h1>
+                                        
+                                        <div class="up-event-meta clearfix">
+                                            <div class="up-event-date">Nov 21, 2015</div><div class="up-event-date">Nov 21, 2015</div>
+                                        </div>
+                                        
+                                        <p>
+                                       International Conference on Disaster Mitigation and Management for Sustainable Development & Risk Reduction,... <a href="#" class="moretag" title="read more">MORE</a> 
+                                        </p>                           
+                                        
+                                    </div><!--//item-->
+                                    <div class="item">
+                                        <h1 class="title-median"><a href="#" title="">Workshops</a></h1>
+                                        
+                                        <div class="up-event-meta clearfix">
+                                            <div class="up-event-date">Oct 30, 2015</div><div class="up-event-time">9:00 - 11:00</div>
+                                        </div>
+                                        
+                                        <p>
+                                        Workshop on Tools and Techniques for Information Processing Research <a href="#" class="moretag" title="read more">MORE</a> 
+                                        </p>
+                                    
+                                        <h1 class="title-median"><a href="#" title="">Horizons</a></h1>
+                                        
+                                        <div class="up-event-meta clearfix">
+                                            <div class="up-event-date">Nov 12, 2015</div><div class="up-event-time">8:30 - 10:30</div>
+                                        </div>
+                                        
+                                        <p>
+                                       Horizon 2015 - A National Level Student's Symposium on Innovative Catalysis... <a href="#" class="moretag" title="read more">MORE</a> 
+                                        </p>  
+                                         <h1 class="title-median"><a href="#" title="">International Conference on Disaster Management</a></h1>
+                                        
+                                        <div class="up-event-meta clearfix">
+                                            <div class="up-event-date">Nov 21, 2015</div><div class="up-event-date">Nov 21, 2015</div>
+                                        </div>
+                                        
+                                        <p>
+                                       International Conference on Disaster Mitigation and Management for Sustainable Development & Risk Reduction,... <a href="#" class="moretag" title="read more">MORE</a> 
+                                        </p>                                      
+                                    </div><!--//item-->
+                                    
+                                </div><!--//carousel-inner-->
+                            </div><!--//testimonials-carousel-->
+                        </div><!--//section-content-->
+                                <script type="text/javascript">
+                                        /*
+                                        
+                                
                                 
                                 <ul class="list-unstyled">
                                 
@@ -328,14 +454,43 @@
                                     </li>
                                 
                                 </ul>
+                                */
+                                </script>
                             
                             </li><!-- widgets list end -->
+                            <li>
+                                <h1 class="title-median">Quicklinks</h1>
+                                <div class="carousel-controls">
+                            <a class="prev" href="#quicklinks-carousel" data-slide="prev"><i class="fa fa-caret-left fa-2x"></i></a>
+                            <a class="next" href="#quicklinks-carousel" data-slide="next"><i class="fa fa-caret-right fa-2x"></i></a>
+                        </div><!--//carousel-controls-->
+                        <div class="section-content downloads">
+                            <div id="quicklinks-carousel" class="testimonial-carousel carousel slide">
+                                <div class="carousel-inner">
+                                    <div class="item active" style="font-size:14px;">
+                                        <a href="#" style="color:black;">Alumni - RECAL website</a><br>
+                                        <a href="#" style="color:black;">Institute Development</a><br>
+                                        <a href="#" style="color:black;">Institute Employees Directory (August 2015)</a><br>
+                                        <a href="#" style="color:black;">Connect NIT</a><br>
+                                        
+                                    </div><!--//item-->
+
+                                    <div class="item" style="font-size:14px;">
+                                        <a href="#" style="color:black;">Alumni - RECAL website</a><br>
+                                        <a href="#" style="color:black;">Institute Development</a><br>
+                                        <a href="#" style="color:black;">Institute Employees Directory (August 2015)</a><br>
+                                        <a href="#" style="color:black;">Connect NIT</a><br>
+                                        
+                                    </div><!--//item-->
+                            </li>
                         
                         </ul><!-- widgets end -->
                     
                     </div><!-- inner custom column end -->
                     
                 </div><!-- upcoming events wrapper end -->
+        
+
                 
                 <div class="col-lg-4 col-md-4"><!-- recent news wrapper -->
                 	
@@ -390,6 +545,27 @@
                                         </div>
                                     
                                     </li>
+
+                                    <li class="recent-news-wrap">
+                                
+                                        <h1 class="title-median"><a href="#" title="">Notice</a></h1>
+                                        
+                                        <div class="recent-news-meta">
+                                            <div class="recent-news-date">Nov 26, 2015</div>
+                                        </div>
+                                        
+                                        <div class="recent-news-content clearfix">
+                                            <figure class="recent-news-thumb">
+                                                <a href="#" title=""></a>
+                                            </figure>
+                                            <div class="recent-news-text">
+                                                <p>
+                                               Semester reopens for B.Tech Students from 5th January 2017 <a href="#" class="moretag" title="read more">MORE</a> 
+                                                </p>
+                                            </div>
+                                        </div>
+                                    
+                                    </li>
                                     
 									<li class="recent-news-wrap">
                                 
@@ -427,15 +603,9 @@
                         
                         	<li class="widget-container widget_course_search"><!-- widget -->
                             
-                            	<h1 class="title-titan">Search</h1>
-                                
-                                <form role="search" method="get" id="course-finder" action="#">
-                                    <div class="input-group">
-                                        <input type="text" placeholder="Enter keyword for search" autocomplete="off" class="form-control" id="find-course" name="find-course" />
-                                        <span class="input-group-btn"><button type="submit" class="btn btn-default">GO!</button></span>
-                                    </div>
-                                    <span class="help-block">* Enter Department, professor's name or document ID to get related material</span>
-                                </form>
+                            	<h1 class="title-widget">Videos</h1>
+                                <img src="http://placehold.it/350x200">
+                                <p><a href="#" >View</a> more video's from Nit Trichy</p>
                              
                             </li><!-- widget end -->
                             
@@ -444,8 +614,8 @@
                 <section class="testimonial" style="min-height:420px">
                         <h1 class="title-widget">Downloads</h1>
                         <div class="carousel-controls">
-                            <a class="prev" href="#testimonial-carousel" data-slide="prev"><i class="fa fa-caret-left"></i></a>
-                            <a class="next" href="#testimonial-carousel" data-slide="next"><i class="fa fa-caret-right"></i></a>
+                            <a class="prev" href="#testimonial-carousel" data-slide="prev"><i class="fa fa-caret-left fa-2x "></i></a>
+                            <a class="next" href="#testimonial-carousel" data-slide="next"><i class="fa fa-caret-right fa-2x "></i></a>
                         </div><!--//carousel-controls-->
                         <div class="section-content downloads">
                             <div id="testimonial-carousel" class="testimonial-carousel carousel slide">
@@ -705,8 +875,9 @@
     <!-- Bootstrap -->
     <script src="js/bootstrap.min.js"></script>
     
-    <!-- Drop-down -->
+        <!-- Drop-down -->
     <script src="js/dropdown-menu.js"></script>
+    
     
     <!-- Fancybox -->
 	<script src="js/jquery.fancybox.pack.js"></script>

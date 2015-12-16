@@ -25,10 +25,20 @@
 	
 	/* ---------- handle navigation for smaller devices */
 	CHEF.mobileMenuClone = '';
-	if( $( 'nav#k-menu' ).length ) CHEF.mobileMenuClone = $( 'nav#k-menu' ).clone().attr( 'id', 'navigation-mobile' );
+	if( $(window).width()<1001){ CHEF.mobileMenuClone = $( '[id="k-menu affix"]' ).clone().attr( 'id', 'navigation-mobile' );}
+	else {$('.k-main-navig').show();}
 	CHEF.mobileNav = function() {
+<<<<<<< HEAD
 		CHEF.mobileMenuClone.insertAfter( 'nav#k-menu ' );
 		if( $( 'nav#navigation-mobile' ).length ) {
+=======
+
+		
+		if( CHEF.mobileMenuClone!='' ) {
+			CHEF.mobileMenuClone.insertAfter( '[id="k-menu affix"]' );
+			$('.k-main-navig').hide();
+
+>>>>>>> a6ae281a1006c710c879075b3d053a0c45d0764a
 			$( 'nav#navigation-mobile' ).removeClass( 'k-main-navig' );
 			$( 'nav#navigation-mobile > ul' ).removeAttr( 'id' ).removeClass( 'k-dropdown-menu' ).addClass( 'list-unstyled' );
 		}

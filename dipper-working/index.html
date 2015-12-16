@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- title and meta -->
+<meta charset="utf-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="" />
+<title>Dipper | Homepage</title>
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,500,700,900|Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/animate.css">    
+<link rel="stylesheet" type="text/css" href="css/carousel-1.css">
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/main.css" />
+<link rel="stylesheet" type="text/css" href="css/popup.css">
+<link rel="icon" type="image/png" href="assets/favicon_trans.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/j.carousel.js"></script>
+<script type="text/javascript" src="js/carousel.res.js"></script>
+<script type="text/javascript" src="js/popup.js"></script>
+<!-- js -->
+<script src="js/classie.js"></script>
+<script>
+    function init() {
+
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 200,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+
+
+<script type="text/javascript">
+    function toggle_visibilityof3(id,id1,id2,id8,id9,id10){
+        var e= document.getElementById(id);
+        e.style.display='block';
+        var f= document.getElementById(id1);
+        f.style.display='none';
+        var f= document.getElementById(id2);
+        f.style.display='none';
+        var myClassName=" lighter";
+        var d=document.getElementById(id8);
+        d.className=d.className.replace(myClassName,"");
+        d.className=d.className+myClassName;
+        var f=document.getElementById(id9);
+        f.className=f.className.replace(myClassName,"");
+        f.className=f.className+myClassName;
+        var e=document.getElementById(id10);
+        e.className=e.className.replace(myClassName,"");        
+    }
+    function toggle2(){
+        var e=$('.testimonial');
+        var f=$('.blog');
+        e.style.display='none';
+        f.style.display='block';
+    }
+    </script>
+
+<script type="text/javascript">
+    function switchman(id4,id5){
+        var myClassName=" darker";
+        var d=document.getElementById(id4);
+        d.className=d.className.replace(myClassName,"");
+        var e=document.getElementById(id5);
+        e.className=e.className.replace(myClassName,"");
+        e.className=e.className+myClassName;
+    }
+       function switchman2(id4,id5){
+        $('.testimonial').hide();
+        $('.tescircle').hide();
+        $('.blog').show();
+    }
+    function switchman3(id4,id5){
+        $('.testimonial').show();
+        $('.tescircle').show();
+        $('.blog').hide();
+    }
+</script>
+
+</head>
+
+
+
+<body>
+<div>
+
+<header>
+    <div class="container clearfix">
+        <h1 id="logo">
+            <img id="logoimg" src="assets/logo.gif">
+        </h1>
+        <nav>
+            <a href="" class="t0">Shipper</a>
+            <a href="" class="t0">Trucker</a>
+            <a href="" class="bolder t0">Login/Register</a>
+        </nav>
+    </div>
+</header><!-- /header -->
+<!--
+<div id="boxes">
+  <div id="dialog" class="window">
+    <img src="assets/logo.gif">
+    <div class="container row popBlock">
+        <div class="col-md-6"><a class="colOrange">Drive</a> your own Freight</div>
+        <div class="col-md-6">वक़्त से <a class="colOrange">पहले</a> ,समय से <a class="colOrange">आगे</a></div>
+    </div>
+    <div class="container myButtons">
+        <div class="col-md-6"><span class="btn-default close eng">ENGLISH</span></div>
+        <div class="col-md-6"><span class="btn-default close hin">हिंदी</span></div>
+    </div>
+  </div>
+  <div id="mask"></div>
+</div>
+-->
+<section id="topcontainer" class="hidden-lg mobView">
+    <span class="btn btn-default">Shipper</span>
+    <span class="btn btn-default">Trucker   </span>
+</section>
+
+<section id="topcontainer" class="visible-lg" >
+    <div >
+    <span class="">
+        <section id="ssec">
+            <section class="headtext">
+            <p class="headin">SHIPPER</p>
+            <p class="toptext">Move your frieght,<br>hassle-free</p>
+            <a href="#" class="regbutton">REGISTER</a>
+            </section>
+            <section class="truck">
+                <section class="truckpad">
+            <img class="truckimg" src="assets/truck1.png"></section></section>
+        </section>
+        <section id="tsec">
+            <section class="headtext1">
+            <p class="headin1">TRUCKER</p>
+            <p class="toptext1">Never wait for<br>load again</p>
+            <a href="#" class="regbutton">REGISTER</a>
+            </section>
+            <img class="truckimg1" src="assets/truck2.png">
+        </section>
+        <section id="ssecback"></section>
+        <section id="tsecback"></section>
+    </span>
+
+    <!--carosel for mobile-->
+
+    <span class="visible-xs" id="carousel-x">
+        <span id="carousel-x" style="height:600px;">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="height:600px">
+
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      </ol>
+
+
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="assets/truck1.png">
+        </div>
+        <div class="item">
+          <img src="assets/truck2.png" >
+        </div>
+        
+      </div>
+
+
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      </div>
+      </span>
+    
+    </span> -->
+    </div>
+</section>
+
+
+<section class="mainbody">
+<section class="benefits">
+    <p id="benefit" class="wow animated fadeIn" data-wow-delay="0.3s">BENEFITS</p>
+    <section id="circles">
+        <div class="col-sm-4">
+            <section class="cir wow animated fadeInUpBig" data-wow-delay="0.4s">
+                <section class="cirimgback"><img class="cirimg" src="assets/search.png"></section>
+                <p class="cirtext">Transparency</p>
+                <p class="text-center cirtext1">
+                No hidden costs, complete information.<br>We believe you should know everything about <strong><em>your</em></strong> business</p>
+            </section>
+        </div>
+        <div class="col-sm-4">
+            <section class="cir wow animated fadeInUpBig" data-wow-delay="0.8s">
+                <section class="cirimgback"><img class="cirimg" src="assets/rupee.png"></section>
+                <p class="cirtext">Increased Margins</p>
+                <p class="cirtext1 text-center">Lower operational costs & higher utilization of resources means larger profits in your pocket.
+            </section>
+        </div>
+        <div class="col-sm-4">
+            <section class="cir wow animated fadeInUpBig" data-wow-delay="1.2s">
+                <section class="cirimgback">
+                    <img class="cirimg" src="assets/Quality.png">
+                </section>
+                <p class="cirtext">Quality</p>
+                <p class="cirtext1 text-center">Stringent verification, backed by our customer centricity ensures premium performance.</p>
+            </section>
+        </div>
+    </section>  
+</section>
+<section class="infosec hidden-lg mob"></section>
+<section class="infosec visible-lg">
+    <div class="container-fluid">
+        
+            <div class="head1">
+                <h4>HASSLE FREE BOOKING</h4>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Complete bookings in just a few clicks.<br>
+                    Dipper picks the nearest match at the best price.
+                </p>
+            </div>
+            <div class="head2">
+                <h4>NO HAGGLING</h4>
+                <p>
+                    Dipper gives you best real time rates.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No Brokers involved.
+                </p>
+            </div>
+           
+           
+            <div class="head3">
+                <h4>NEVER LOOSE SIGHT</h4>
+                <p>
+                Know in real-time the exact location of your freight.<br>
+                    Our GPS enabled dashboard provides you updates.
+                </p>
+            </div>
+            <div class="head4">
+                <h4>DIPPER HANDLES IT ALL</h4>
+                <p>
+                    Leave the nitty gritty tasks to us- document<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exchange,contact & payment support.
+                </p>
+            </div>
+            <div class="headMain"><h3 class="storeUnder">WHAT'S IN STORE ?</h3></div>
+    </div>
+    <!--
+<p id="store" class="animate wow fadeInDownBig" data-wow-duration="0.6s">WHAT'S IN STORE?</p>
+    <section class="holder1 wow animated fadeInLeft" data-wow-duration="1.3s" data-wow-delay="0.4s">
+        <section class="hold1img">
+            <img class="h1img1" src="assets/phone.gif">
+        </section>
+        <section class="hold1text">
+            <p class="h1text1"><b>HASSLE FREE BOOKING</b></p>
+            <p class="h1text2">Book trucks in just a few clicks. Dipper picks<br>
+the nearest match available <br>
+at the lowest price.</p>
+        </section>
+    </section>
+
+<section class="holder1 wow animated fadeInLeft" data-wow-duration="1.3s" data-wow-delay="0.7s">
+        <section class="hold1img">
+            <img class="h1img2" src="assets/pin.gif">
+        </section>
+        <section class="hold1text">
+            <p class="h1text1"><b>NEVER LOOSE SIGHT</b></p>
+            <p class="h1text2">Know what and where of your freight.<br>Our GPS enabled dashboard provides you comprehensive updates.<br></p>
+        </section>
+    </section>
+
+<section class="holder1 wow animated fadeInLeft" data-wow-duration="1.3s" data-wow-delay="1s">
+        <section class="hold1img">
+            <img class="h1img3" src="assets/tag.gif">
+        </section>
+        <section class="hold1text">
+            <p class="h1text1"><b>NO HAGGLING</b></p>
+            <p class="h1text2">Dipper gives you best real time rates.<br> No brokers involved.</p>
+        </section>
+    </section>
+
+<section class="holder1 wow animated fadeInLeft" data-wow-duration="1.3s" data-wow-delay="1.3s">
+        <section class="hold1img">
+            <img class="h1img4" src="assets/tick.gif">
+        </section>
+        <section class="hold1text">
+            <p class="h1text1"><b>DIPPER HANDLES IT ALL</b></p>
+            <p class="h1text2">Leave the nitty gritty tasks to us-<br> document exchange, contact, and payment support.<br></p>
+        </section>
+    </section>
+
+-->
+</section><!--infosec close-->
+<!--
+<section class="tesblog">
+    <section class="switch">
+        <a id="tswitch" class="init darker slant" onclick="switchman('bswitch','tswitch');switchman3('testimonial','blog')">TESTIMONIALS</a>
+        <a  class="init" class="noSlant" onclick="switchman('tswitch','bswitch');switchman2('blog','testimonial')" id="bswitch">BLOGS</a>
+    </section>
+    <section class="testimonial">
+        <section id="test1">
+            <p class="comma">"</p>
+            <p class="review">1 v m cvv m vm vxm mvxnvkx vm xvk zvkv v, ,v  vx  g xkx  mfnzkjnzfm knfzk zfnz gfmknfkf kzfnkxf oxgf 
+kdgnkdgnkdgn kfjmf mfnmf xkxgh  khsf fkjksf mfnksf ndfknvdsmhg </p>
+<p class="name"><b>Jade Rube</b><br>Pharma CFO</p>
+        </section>
+        <section id="test2">
+            <p class="comma">"</p>
+            <p class="review">2 v m cvv m vm vxm mvxnvkx vm xvk zvkv v, ,v  vx  g xkx  mfnzkjnzfm knfzk zfnz gfmknfkf kzfnkxf oxgf 
+kdgnkdgnkdgn kfjmf mfnmf xkxgh  khsf fkjksf mfnksf ndfknvdsmhg </p>
+<p class="name"><b>John Cena</b><br>Spacex CEO</p>
+        </section>
+        <section id="test3">
+            <p class="comma">"</p>
+            <p class="review">3 v m cvv m vm vxm mvxnvkx vm xvk zvkv v, ,v  vx  g xkx  mfnzkjnzfm knfzk zfnz gfmknfkf kzfnkxf oxgf 
+kdgnkdgnkdgn kfjmf mfnmf xkxgh  khsf fkjksf mfnksf ndfknvdsmhg </p>
+<p class="name"><b>Anonymous</b><br>Hadoop CEO</p>
+        </section>
+    </section>
+<section class="tescircle">
+    <img  onclick="toggle_visibilityof3('test1','test2','test3','trans2','trans3','trans1')" id="trans1" class="circle1 lighter" src="assets/blogback.png">
+    <img  onclick="toggle_visibilityof3('test2','test1','test3','trans1','trans3','trans2')" id="trans2" class="circle1" src="assets/blogback.png">
+    <img  onclick="toggle_visibilityof3('test3','test2','test1','trans2','trans1','trans3')" id="trans3" class="circle1 lighter" src="assets/blogback.png">
+</section>
+<section class="blog">
+    <div class="container-fluid">
+        <div class="col-md-3 blogged">
+            <div class="col-sx-10"><img src="http://placehold.it/250x200"></div>
+            <div class="col-sx-2"><p>How To solve problem efficiently</p><br>
+                
+            </div>
+        </div>
+        <div class="col-md-3 blogged">
+            <div class="col-sx-10"><img src="http://placehold.it/250x200"></div>
+            <div class="col-sx-2"><p>How To solve problem efficiently</p></div>
+        </div>
+        <div class="col-md-3 blogged">
+            <div class="col-sx-10"><img src="http://placehold.it/250x200"></div>
+            <div class="col-sx-2"><p>How To solve problem efficiently</p></div>
+        </div>
+        <div class="col-md-3 blogged">
+            <div class="col-sx-10"><img src="http://placehold.it/250x200"></div>
+            <div class="col-sx-2"><p>How To solve problem efficiently</p></div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <p id="benefits">FEATURED IN</p>
+    <div class="jcarousel-wrapper myCaro">
+
+                <div class="jcarousel">
+                    <ul>
+                        <li><img src="http://placehold.it/350x200"></li>
+                        <li><img src="http://placehold.it/350x200"></li>
+                        <li><img src="http://placehold.it/350x200"></li>
+                        <li><img src="http://placehold.it/350x200"></li>
+                        <li><img src="http://placehold.it/350x200"></li>
+                       
+                       
+                    </ul>
+                </div>
+
+                <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+
+                <p class="jcarousel-pagination"></p>
+            </div>
+</section>
+</section>
+<!--
+<section class="sponsors">
+
+   
+    <section class="featured">
+        <img src="assets/tc.gif">
+        <img src="assets/tc.gif">
+        <img src="assets/tc.gif">
+        <img src="assets/tc.gif">
+    </section>
+
+</section>
+-->
+
+<section class="contact">
+    <p id="contacts">CONTACT US</p>
+    
+    <section class="contactform">
+        <div class="vertical-align ">
+        <div class="col-sm-12 form-group">
+            <input placeholder="Your Name" type="text" name="name" class="form-control">
+        </div>
+        <div class="col-sm-12 form-group">
+            <input type="text" placeholder="Company" name="company" class="form-control">
+        </div>
+        <div class="col-sm-6 form-group">
+            <input placeholder="Phone No." type="text" name="phone" class="form-control">
+        </div>
+        <div class="col-sm-6 form-group">
+            <input type="text" placeholder="Email id" name="mail" class="form-control">
+        </div>
+        <div class="col-sm-12 form-group">
+            <textarea rows="6" cols="40" placeholder="Your Message" class="form-control"></textarea>
+        </div>
+        <div class="col-sm-12 form-group">
+            <a href="" id="submit" class="btn btn-success">SUBMIT</a>
+        </div>
+    </div>
+    </section>
+
+</section>
+<script type="text/javascript">/*
+<footer>
+    <div class="panel panel-default footer-panel">
+        <div class="panel-body">
+           <div class="container-fluid">
+                <div class="col-md-3"><br>
+                        <div class="footTopMenu col-xs-3"><a href="#">Help</a></div>
+                        <div class="col-xs-3 footTopMenu"><a href="#">Blog</a></div>
+                        <div class=" col-xs-3 footTopMenu"><a href="#">About</a></div>
+                        <div class=" col-xs-3 footTopMenu"><a href="#"><span style="color: #E55B25;">English</span>/Hindi</a></div>
+                </div>
+                <div class="col-md-3 col-md-offset-1">
+                    <div class="col-sm-10 col-sm-offset-1 pull-right middle">
+                        <div class="col-xs-3 col-xs-offset-3 footMidMenu"><a href="#"><img class="social" src="assets/social1.png"></a></div>
+
+                        <!-- <div class="col-xs-3 footMidMenu"><a href="#"><img class="social" src="assets/social2.png"></a></div> -->
+                        <div class="col-xs-3 footMidMenu"><a href="#"><img class="social" src="assets/linkedin.png"></a></div>
+                        <div class="col-xs-3 footMidMenu"><a href="#"><img class="social" src="assets/social3.png"></a></div>
+                        <!-- <div class="col-xs-3 footMidMenu"><a href="#"><img class="social" src="assets/social4.png"></a></div> -->
+                    </div>
+                </div>
+                <div class="col-md-5"><br>
+                        <div class=" col-xs-3 col-xs-offset-1 footDownMenu">  <a href="#">Privacy Policy</a></div>
+                        <div class="col-xs-3 footDownMenu"> <a href="#">Terms of Use</a></div>   
+                        <div class="col-xs-5 footDownMenu"> <a href="#">Copyright &copy;&nbsp; Dipper2015</a></div>   
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+*/
+</script>
+
+<footer class="foot">
+    <div class="panel panel-default footer-panel">
+        <div class="panel-body">
+           <div class="container-fluid">
+                <div class="col-md-4"><br>
+                        <div class="footTopMenu col-xs-4"><a href="#">Help</a></div>
+                        <div class="col-xs-4 footTopMenu"><a href="#">Blog</a></div>
+                        <div class=" col-xs-4 footTopMenu"><a href="#">About</a></div>
+                        
+                </div>
+                <div class="col-md-4 myCol"><br>
+                        <div class="col-md-3 col-xs-3"></div>
+                        <div class="col-md-2 col-xs-2 w1"><img class="sociall" src="assets/social1.png"></div>
+                        <div class="col-md-2 col-xs-2 w2"><img class="sociall" src="assets/linkedin.png"></div>
+                        <div class="col-md-2 col-xs-2 w3"><img class="sociall" src="assets/social3.png"></div>
+                        <div class="col-md-3 col-xs-2"></div>
+                </div>
+                <div class="col-md-4"><br>
+                        <div class="col-xs-4 footTopMenu"><a href="#">Privacy Policy</a></div>
+                        <div class=" col-xs-4 footTopMenu"><a href="#">Terms of Use</a></div>
+                        <div class=" col-xs-4 footTopMenu"><a href="#"><span style="color: #E55B25;">English</span>/Hindi</a></div>
+                        
+                </div>
+                <div class=" col-xs-12 dipper" ><a href="#" >&copy;&nbsp; Dipper Technologies Pvt Ltd</a></div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</section><!--enclose everything before this-->
+
+
+</div><!-- /#wrapper -->
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/wow.js"></script>
+<script type="text/javascript"> $('.blog').hide()</script>
+<script type="text/javascript">
+  
+              new WOW().init();
+  
+</script>
+</body>
+</html>

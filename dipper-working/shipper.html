@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- title and meta -->
+<meta charset="utf-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="" />
+<title>Dipper | Shipper</title>
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,500,700,900|Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/main.css" />
+<link rel="stylesheet" href="css/animate.css">    
+<link rel="stylesheet" type="text/css" href="css/shipper.css">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<!-- js -->
+<script src="js/classie.js"></script>
+<script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 200,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+
+
+<script type="text/javascript">
+    function toggle_visibilityof3(id,id1,id2,id8,id9,id10){
+        var e= document.getElementById(id);
+        e.style.display='block';
+        var f= document.getElementById(id1);
+        f.style.display='none';
+        var f= document.getElementById(id2);
+        f.style.display='none';
+        var myClassName=" lighter";
+        var d=document.getElementById(id8);
+        d.className=d.className.replace(myClassName,"");
+        d.className=d.className+myClassName;
+        var f=document.getElementById(id9);
+        f.className=f.className.replace(myClassName,"");
+        f.className=f.className+myClassName;
+        var e=document.getElementById(id10);
+        e.className=e.className.replace(myClassName,"");
+        
+
+        
+    }
+    </script>
+
+<script type="text/javascript">
+    function switchman(id4,id5){
+        var myClassName=" darker";
+        var d=document.getElementById(id4);
+        d.className=d.className.replace(myClassName,"");
+        var e=document.getElementById(id5);
+        e.className=e.className.replace(myClassName,"");
+        e.className=e.className+myClassName;
+    }
+</script>
+
+</head>
+
+
+
+<body>
+<div id="wrapper">
+
+<header>
+    <div class="container clearfix">
+        <h1 id="logo">
+            <img id="logoimg" src="assets/logo.gif">
+        </h1>
+        <nav>
+            <a href="">Shipper</a>
+            <a href="">Trucker</a>
+            <a href="" class="bolder">Login/Register</a>
+        </nav>
+    </div>
+</header><!-- /header -->
+
+<section id="topcontainer" >
+ <img src="1.jpg" class="cover" />
+ <div class="topText">
+    <h2 class="head-1">SHIPPER</h2>
+    <h4 class="head-2">Move your freight hassle-free</h4>
+    <button class="head-3">Register</button>
+ </div>
+</section>
+
+<section class="mainbody">
+<section class="firstSec" >
+    <p  data-wow-delay="0.3s"></p>
+    <p>Logistics costs in India are <b>2-3 times</b> the costs in USA,Germany,Japan.<br>
+        We will reduce that and pass <b>benefits</b> to you<br><br>
+        We are creating a marketspace of genius,professional shippers,<br>
+        Whether you make multiple shipments daily or are just and ocassional <b>shipper</b>
+        You are invited to Register
+    </p>
+</section>
+    
+<section class="benefits shipperBenefits">
+    <p id="Shipperbenefit" class="wow animated fadeIn " data-wow-delay="0.3s">BENEFITS</p>
+    <div class="container">
+        <div class="col-md-12 col-xs-6 ">
+            <div class="col-md-4">
+                <div class="circle">
+                    hel
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="circle">
+                    hel
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="circle">
+                    hel
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 col-xs-6">
+             <div class="col-md-4">
+                <div class="circle">
+                    gel
+                </div>
+            </div>
+             <div class="col-md-4">
+                <div class="circle">
+                    gel
+                </div>
+            </div>
+             <div class="col-md-4">
+                <div class="circle">
+                    gel
+                </div>
+            </div>            
+        </div>
+    </div>
+    
+</section>
+
+<!-- 
+<section id="circles ">
+        <div class="col-md-4">
+            <section class="cir wow animated fadeInUpBig" data-wow-delay="0.4s">
+                <section class="cirimgback"><img class="cirimg" src="assets/search.gif"></section>
+                <p class="myText">Whether you make multiple shipments daily or are just and ocassional <b>shipper</b></p>    
+            </section>
+        </div>
+        <div class="col-md-4">
+            <section class="cir wow animated fadeInUpBig" data-wow-delay="0.6s">
+                <section class="cirimgback"><img class="cirimg" src="assets/search.gif"></section>
+                <p class="myText">Whether you make multiple shipments daily or are just and ocassional <b>shipper</b></p>            
+    
+            </section>
+        </div>
+        <div class="col-md-4">
+            <section class="cir wow animated fadeInUpBig" data-wow-delay="0.8s">
+                <section class="cirimgback"><img class="cirimg" src="assets/search.gif"></section>
+                <p class="myText">Whether you make multiple shipments daily or are just and ocassional <b>shipper</b></p>    
+                
+            </section>
+        </div>
+    </section>
+    <section id="circles">
+        <div class="col-md-4">
+            <section class="cir wow animated fadeInUpBig" data-wow-delay="1s">
+                <section class="cirimgback"><img class="cirimg" src="assets/search.gif"></section>
+                <p class="myText">Whether you make multiple shipments daily or are just and ocassional <b>shipper</b></p>
+    
+            </section>
+        </div>
+        <div class="col-md-4">
+            <section class="cir wow animated fadeInUpBig" data-wow-delay="1.2s">
+                <section class="cirimgback"><img class="cirimg" src="assets/search.gif"></section>
+                <p class="myText">Whether you make multiple shipments daily or are just and ocassional <b>shipper</b></p>            
+    
+            </section>
+        </div>
+        <div class="col-md-4">
+            <section class="cir wow animated fadeInUpBig" data-wow-delay="1.4s">
+                <section class="cirimgback"><img class="cirimg" src="assets/search.gif"></section>
+                <p class="myText">Whether you make multiple shipments daily or are just and ocassional <b>shipper</b></p>    
+                
+            </section>
+        </div>
+    </section>
+-->
+<section class="start">
+        <p>How To Start?</p>
+        <section class="part">
+            <div class="col-md-3 rot1">a</div>
+            <div class="col-md-3 rot2">b</div>
+            <div class="col-md-3 rot3">c</div>
+            <div class="col-md-3 rot4">d</div>
+        </section>
+    </section>    
+    <section class="tesblog">
+    <section class="switch">
+        <a id="tswitch" class="init darker" onclick="switchman('bswitch','tswitch')">TESTIMONIALS</a>
+        <a  class="init" onclick="switchman('tswitch','bswitch')" id="bswitch">BLOGS</a>
+    </section>
+    <section class="testimonial">
+        <section id="test1">
+            <p class="comma">"</p>
+            <p class="review">1 v m cvv m vm vxm mvxnvkx vm xvk zvkv v, ,v  vx  g xkx  mfnzkjnzfm knfzk zfnz gfmknfkf kzfnkxf oxgf 
+kdgnkdgnkdgn kfjmf mfnmf xkxgh  khsf fkjksf mfnksf ndfknvdsmhg </p>
+<p class="name"><b>Jade Rube</b><br>Pharma CFO</p>
+        </section>
+        <section id="test2">
+            <p class="comma">"</p>
+            <p class="review">2 v m cvv m vm vxm mvxnvkx vm xvk zvkv v, ,v  vx  g xkx  mfnzkjnzfm knfzk zfnz gfmknfkf kzfnkxf oxgf 
+kdgnkdgnkdgn kfjmf mfnmf xkxgh  khsf fkjksf mfnksf ndfknvdsmhg </p>
+<p class="name"><b>John Cena</b><br>Spacex CEO</p>
+        </section>
+        <section id="test3">
+            <p class="comma">"</p>
+            <p class="review">3 v m cvv m vm vxm mvxnvkx vm xvk zvkv v, ,v  vx  g xkx  mfnzkjnzfm knfzk zfnz gfmknfkf kzfnkxf oxgf 
+kdgnkdgnkdgn kfjmf mfnmf xkxgh  khsf fkjksf mfnksf ndfknvdsmhg </p>
+<p class="name"><b>Anonymous</b><br>Hadoop CEO</p>
+        </section>
+    </section>
+<section class="tescircle">
+    <img  onclick="toggle_visibilityof3('test1','test2','test3','trans2','trans3','trans1')" id="trans1" class="circle1 lighter" src="assets/blogback.png">
+    <img  onclick="toggle_visibilityof3('test2','test1','test3','trans1','trans3','trans2')" id="trans2" class="circle1" src="assets/blogback.png">
+    <img  onclick="toggle_visibilityof3('test3','test2','test1','trans2','trans1','trans3')" id="trans3" class="circle1 lighter" src="assets/blogback.png">
+</section>
+</section>
+
+<footer>
+    <div class="container-fluid footerMain">
+    <div class="col-md-4 ">
+        
+            <div class=" col-xs-3 footTopMenu"><a href="#">Help</a></div>
+            <div class="col-xs-3 footTopMenu"><a href="#">Blog</a></div>
+            <div class=" col-xs-3 footTopMenu"><a href="#">About</a></div>
+            <div class=" col-xs-3 footTopMenu"><a href="#">English/Hindi</a></div>
+        
+    </div>
+    <div class="col-md-4">
+
+        <div class="col-xs-3 footMidMenu"><a href="#"><img class="social" src="assets/social1.png"></a></div>
+        <div class="col-xs-3 footMidMenu"><a href="#"><img class="social" src="assets/social2.png"></a></div>
+        <div class="col-xs-3 footMidMenu"><a href="#"><img class="social" src="assets/social3.png"></a></div>
+        <div class="col-xs-3 footMidMenu"><a href="#"><img class="social" src="assets/social4.png"></a></div>
+    </div>
+    <div class="col-md-4">
+            <div class=" col-xs-6 footDownMenu">  <a href="#">Privacy Policy</a></div>
+            <div class="col-xs-6 footDownMenu"> <a href="#">Terms of Use</a></div>   
+    </div>
+
+</div>
+<div class="container-fluid foot">Copyright &copy; Dipper2015</div>
+</footer>
+</section><!--enclose everything before this-->
+
+
+</div><!-- /#wrapper -->
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/wow.js"></script>
+<script type="text/javascript">
+  
+              new WOW().init();
+  
+</script>
+<script type="text/javascript">/*
+    var width=$(window).width();
+    //alert(width);
+    if(width<760){
+        $('#topcontainer').css("display","none");
+        alert("hel");
+    }
+    else{
+        $('.mySlider').css("display","none");
+    }*/
+</script>
+</body>
+</html>

@@ -1,5 +1,6 @@
+$(document).ready(function() {
 $(document).scroll(function scroll_fix_nav	() {
-	console.log($(window).width());
+	
   if(($(window).width()) >=1001){
   if(window.scrollY >= 143)
   	{
@@ -16,10 +17,11 @@ $(document).scroll(function scroll_fix_nav	() {
 	 $('.k-main-navig').css("background-color" , '#FFFFFF')
 	 }
 		
-	}
+	
+  }
 
 }
-
+});
 // else {
 // 	$(".k-main-navig").css("visibility", "hidden");
 // }
