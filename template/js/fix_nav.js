@@ -22,7 +22,6 @@ $(document).scroll(function scroll_fix_nav	() {
 
 }
 });
-
 // else {
 // 	$(".k-main-navig").css("visibility", "hidden");
 // }
