@@ -6,7 +6,7 @@ $(document).scroll(function scroll_fix_nav	() {
   		if($('[id="k-menu affix"]').attr('class') == 'k-main-navig')
   		{$('[id="k-menu affix"]').toggleClass('k-main-navig navbar-fixed-top');
     	 
-  			$('.navbar-fixed-top').css("background-color" , 'rgba(255, 57, 59, 1)');
+  			$('.navbar-fixed-top').css("background-color" , 'rgba(255, 255, 255, 1)');
     	}
 
     }  
