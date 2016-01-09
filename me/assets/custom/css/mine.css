@@ -1,0 +1,41 @@
+.contact-item{
+	font-size: 16px;
+}
+.image{
+	width: 100px;
+	height:100px;
+}
+td{
+	width: 50%;
+}
+.part{
+	padding: 10px;
+}
+.part p{
+	font-family: Montserrat;
+	padding-top: 5%;
+	font-size: 16px;
+}
+.counts{
+	background-color: #191919;
+}
+.about{
+	min-height: 100vh;
+}
+.aboutMe{
+	font-size: 1.2em;
+}
+.smaller{
+	font-size: 0.6em;
+	line-height: 1em;
+}
+.hash{
+	font-weight: bold;
+}
+
+@media only screen and (min-width: 1124px) {
+	.myPort{
+	height: 250px;
+	width: 25%;
+}	
+}
