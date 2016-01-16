@@ -205,11 +205,13 @@ span.alter-menu-icon { display: block; width: 24px; height: 24px; background: ur
 
 /* == site footer == */
 #k-footer { background: url(img/footer-bg.png) repeat left top scroll #FFF; border-top: 1px solid #EEE; padding: 40px 0; }
+.paddedfooter {padding-left: 50px;}
+.marginfooter {margin-top: -20px;}
 /* == END site footer == */
 
 /* == site subfooter == */
 #k-subfooter { background-color: #111; }
-.copy-text { font-size: 11px; line-height: 16px; margin-bottom: 0; padding: 40px 0; text-transform: uppercase; }
+.copy-text { font-size: 11px; line-height: 16px; margin-bottom: 0; padding: 20px 0; text-transform: uppercase; }
 /* == END site subfooter == */
 
 /* == BLOG == */
@@ -693,7 +695,7 @@ a.list-group-item.active > .badge, .nav-pills > .active > a > .badge { backgroun
 
 }
 /* MD */
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 1101px) and (max-width: 1199px) {
 	#k-head { margin-bottom: 20px; }
 	#k-site-logo { display: block; float: none !important; text-align: center; }
 	.k-main-navig { margin-top: 30px; }
@@ -706,7 +708,7 @@ a.list-group-item.active > .badge, .nav-pills > .active > a > .badge { backgroun
 	.k-carousel-caption .caption-content { padding: 20px 30px; }
 }
 /* SM */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 1041px) and (max-width: 1100px) {
 	/*[class*='col-']:not(:last-child) { margin-bottom: 10px; }*/
 	#k-head { margin-bottom: 20px; }
 	#k-site-logo { display: block; float: none !important; text-align: center; }
@@ -718,7 +720,7 @@ a.list-group-item.active > .badge, .nav-pills > .active > a > .badge { backgroun
 	.k-carousel-caption { display: none; }
 }
 /* XS */
-@media (max-width: 767px) {
+@media (max-width: 1040px) {
 	.footer{background-color: black;}
 	.myheader{
 		top:-20px;
@@ -726,8 +728,8 @@ a.list-group-item.active > .badge, .nav-pills > .active > a > .badge { backgroun
 		position: relative;
 	}
 	.myheader img{
-		height: 50px;
-		width:1200px;
+		max-height: 91px;
+		width:2184px;
 	}
 
 	/*[class*='col-']:not(:last-child) { margin-bottom: 10px; }*/
