@@ -696,7 +696,7 @@ a.list-group-item.active > .badge, .nav-pills > .active > a > .badge { backgroun
 @media (min-width: 992px) and (max-width: 1199px) {
 	#k-head { margin-bottom: 20px; }
 	#k-site-logo { display: block; float: none !important; text-align: center; }
-	.k-main-navig { margin-top: 30px; }
+	.k-main-navig { margin-top: 30px;z-index: 100; }
 	#drop-down-left a { border-top: none; padding-top: 0 !important; }
 	#drop-down-left > li:first-child { margin-left: 0; }
 	.k-logo img { height: 91px; }
@@ -737,6 +737,9 @@ a.list-group-item.active > .badge, .nav-pills > .active > a > .badge { backgroun
 	.k-functional-navig, .k-carousel-caption { display: none; }
 	
 	#mobile-nav-switch { display: block; }
-	#k-menu { display: none; }
+	
+}
+@media (max-width: 1199px) {
+	#k-menu{display: block;z-index: 100;}
 }
 /* == END media queries == */
