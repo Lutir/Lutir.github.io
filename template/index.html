@@ -303,8 +303,9 @@
                     
                                 <h1 class="title-widget">Upcoming Events</h1>
                                 <div class="carousel-controls">
-                            <a class="prev" href="#events-carousel" data-slide="prev"><i class="fa fa-caret-left  fa-2x"></i></a>
-                            <a class="next" href="#events-carousel" data-slide="next"><i class="fa fa-caret-right  fa-2x"></i></a>
+                            <a class="prev" href="#events-carousel" data-slide="prev" onclick="disp2(0,-1);"><i class="fa fa-caret-left  fa-2x"></i></a>
+                            <a class="next" href="#events-carousel" data-slide="next" onclick="disp2(0,1);"><i class="fa fa-caret-right  fa-2x"></i></a>
+                            <span id="car-1" style="float:right;"></span>
                         </div><!--//carousel-controls-->
                         <div class="section-content downloads">
                             <div id="events-carousel" class="testimonial-carousel carousel slide">
@@ -462,8 +463,9 @@
                             <li>
                                 <h1 class="title-median">Quicklinks</h1>
                                 <div class="carousel-controls">
-                            <a class="prev" href="#quicklinks-carousel" data-slide="prev"><i class="fa fa-caret-left fa-2x"></i></a>
-                            <a class="next" href="#quicklinks-carousel" data-slide="next"><i class="fa fa-caret-right fa-2x"></i></a>
+                            <a class="prev" href="#quicklinks-carousel" data-slide="prev" onclick="disp3(0,-1);"><i class="fa fa-caret-left fa-2x"></i></a>
+                            <a class="next" href="#quicklinks-carousel" data-slide="next" onclick="disp3(0,1);"><i class="fa fa-caret-right fa-2x"></i></a>
+                            <span id="car-2" style="float:right;"></span>
                         </div><!--//carousel-controls-->
                         <div class="section-content downloads">
                             <div id="quicklinks-carousel" class="testimonial-carousel carousel slide">
@@ -798,8 +800,9 @@
                 <section class="testimonial" style="min-height:420px">
                         <h1 class="title-widget">Downloads</h1>
                         <div class="carousel-controls">
-                            <a class="prev" href="#testimonial-carousel" data-slide="prev"><i class="fa fa-caret-left fa-2x "></i></a>
-                            <a class="next" href="#testimonial-carousel" data-slide="next"><i class="fa fa-caret-right fa-2x "></i></a>
+                            <a class="prev" href="#testimonial-carousel" data-slide="prev" onclick="disp(0,-1);"><i class="fa fa-caret-left fa-2x "></i></a>
+                            <a class="next" href="#testimonial-carousel" data-slide="next" onclick="disp(0,1);"><i class="fa fa-caret-right fa-2x "></i></a>
+                            <span id="car-4" style="float:right;"></span>
                         </div><!--//carousel-controls-->
                         <div class="section-content downloads">
                             <div id="testimonial-carousel" class="testimonial-carousel carousel slide">
@@ -923,7 +926,7 @@
 
 
         
-        
+
         </div><!-- container end -->
     
     </div><!-- content wrapper end -->
