@@ -2,11 +2,15 @@ CACHE MANIFEST
 index.html
 css/style.css
 css/bootstrap.min.css
-css/font-awesome.min.css
 css/jquery.fancybox.css
 css/font.css
 css/font-awesome.min.css
-font-awesome/css/font-awesome.css  font-awesome/css/font-awesome.min.css
+css/dropdown-menu.css
+css/jquery.fancybox.css
+css/myStyle.css
+css/style.css
+font-awesome/css/font-awesome.css  
+font-awesome/css/font-awesome.min.css
 font-awesome/HELP-US-OUT.txt
 font-awesome/fonts/FontAwesome.otf          
 font-awesome/fonts/fontawesome-webfont.svg  
@@ -49,10 +53,16 @@ js/jquery-2.1.1.min.js
 js/jquery.fancybox.pack.js
 js/fix_nav.js
 js/disp_freq.js
-image/header.png  
+image/header.png
 image/slide-1.jpg  
 image/slide-3.jpg  
 image/slide-5.jpg
 image/logo.png    
 image/slide-2.jpg  
 image/slide-4.jpg
+image/slide-6.jpg
+image/slide-7.JPG
+image/slide-8.jpg
+image/slide-9.jpg
+image/slide-10.jpg
+image/videos.png
