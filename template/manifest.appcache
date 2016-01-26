@@ -47,6 +47,8 @@ js/dropdown-menu.js
 js/jquery.fancybox-media.js
 js/jquery-2.1.1.min.js  
 js/jquery.fancybox.pack.js
+js/fix_nav.js
+js/disp_freq.js
 image/header.png  
 image/slide-1.jpg  
 image/slide-3.jpg  
