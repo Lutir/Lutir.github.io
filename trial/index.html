@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Basic -->
+<meta charset="utf-8">
+<title>SB Baazar</title>
+<!-- Mobile Specific Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Web Fonts  -->
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+<!-- Icon Fonts  -->
+<link rel="stylesheet" href="font/style.css">
+<!-- Vendor CSS -->
+<link rel="stylesheet" href="vendor/waves/waves.css">
+<link rel="stylesheet" href="vendor/slick/slick.css">
+<link rel="stylesheet" href="vendor/slick/slick-theme.css">
+<link rel="stylesheet" href="vendor/bootstrap-select/bootstrap-select.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style-colors.css">
+<link rel="stylesheet" href="css/style-layout5.css">
+<!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+<link rel="stylesheet" type="text/css" href="vendor/rs-plugin/css/settings.css" media="screen" />
+<!-- Head Libs -->
+<!--[if IE]>
+        <link rel="stylesheet" href="css/ie.css">
+        <![endif]-->
+<!--[if lte IE 8]>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+        <![endif]-->
+
+<!-- Modernizr -->
+<script src="vendor/modernizr/modernizr.js"></script>
+</head>
+
+<body >
+<div id="loader-wrapper" class="loader-off">
+<div id="loader"></div>
+</div>
+<!-- Modal Search -->
+<div class="overlay overlay-scale">
+  <button type="button" class="overlay-close"> ✕ </button>
+  <div class="overlay__content">
+    <form id="search-form" class="search-form outer" action="#" method="post">
+      <div class="input-group input-group--wd">
+        <input type="text" class=" input--full" placeholder="search text here ...">
+        <span class="input-group__bar"></span> </div>
+      <button class="btn btn--wd text-uppercase wave waves-effect">Search</button>
+    </form>
+  </div>
+</div>
+<!-- / end Modal Search -->
+<div class="container-fluid" style="padding:0px;margin:0px;"> 
+  <!-- Header section -->
+  <header class="header header--max layout5 layout5-index">
+    <div class="header-line header-line--light hidden-xs">
+      <div class="container" style="opacity:0.8;">
+        <div class="pull-left  hidden-sm ">
+          <div class="social-links social-links--colorize">
+            <ul>
+                <li class="social-links__item"><a class="icon icon-facebook" href="http://www.facebook.com/"></a></li>
+                <li class="social-links__item"><a class="icon icon-twitter" href="http://www.twitter.com/"></a></li>
+                <li class="social-links__item"><a class="icon icon-google" href="http://www.google.com/"></a></li>
+                <li class="social-links__item"><a class="icon icon-linkedin" href="http://www.linkedin.com/"></a></li>
+                <li class="social-links__item"><a class="icon icon-pinterest" href="http://www.pinterest.com/"></a></li>
+                <li class="social-links__item"><a class="icon icon-mail" href="mailto:mail@google.com"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="pull-left search-focus-fade">
+          <div class="user-links">
+            <ul>
+              <li class="user-links__item"><a href="#">Sign In</a></li>
+              <li class="user-links__item"><a href="#">Register</a></li>
+              <li  class="user-links__item user-links__item--separate"><a href="#" class="color-twitter">TWITTER</a> / <a href="#" class="color-facebook">FACEBOOK</a> LOGIN</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__dropdowns-container">
+    
+      <div class="header__dropdowns">
+        <div class="header__search pull-left"> <a href="#" class="btn dropdown-toggle btn--links--dropdown header__dropdowns__button search-open"><span class="icon icon-search"></span></a> </div>
+          
+          
+          <div class="dropdown pull-left"> <a href="#" class="btn dropdown-toggle btn--links--dropdown header__dropdowns__button" data-toggle="dropdown">Account</a>
+            <ul class="dropdown-menu animated fadeIn" role="menu">
+              <li><a href="#">Account</a></li>
+              <li><a href="#">Wishlist</a></li>
+              <li><a href="#">Compare</a></li>
+              <li><a href="#">Checkout</a></li>
+            </ul>
+          </div>
+        <div class="header__cart pull-left"><span class="header__cart__indicator hidden-xs">Rs:0.00</span>
+          <div class="dropdown pull-right"><a href="#" class="btn dropdown-toggle btn--links--dropdown header__cart__button header__dropdowns__button" data-toggle="dropdown"><span class="icon icon-bag-alt"></span><span class="badge badge--menu">0</span></a>
+            <div class="dropdown-menu animated fadeIn shopping-cart" role="menu">
+              <div class="shopping-cart__settings"><a href="#" class="icon icon-gear"></a></div>
+              <div class="shopping-cart__top text-uppercase">Your Cart(0)</div>
+              
+              <div class="shopping-cart__bottom">
+                <div class="pull-left">Subtotal: <span class="shopping-cart__total"> $28.98</span></div>
+                <div class="pull-right">
+                  <button class="btn btn--wd text-uppercase">Checkout</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-wd" id="navbar" >
+      <div class="navbar-header" style="padding:0px;">
+        <div class="container-fluid" style="background-color:#ff4e00;padding-left:15px;padding-right:15px;padding-top:35px;padding-bottom:25px;">
+          <button type="button" class="navbar-toggle" id="slide-nav"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <!--  Logo  -->          
+          <img src="header.png" class="hidden-xs  " />
+          <img src="header-mob.png" class="visible-xs" width="100%" height="100%">
+          <!-- End Logo --> 
+        </div>
+      </div>
+      <div class="slidemenu--dark" id="slidemenu">
+        <div class="container">
+          <div class="slidemenu-close visible-xs">✕</div>
+        <ul class="nav navbar-nav">     
+            <li style="padding-left:20px;"> <a href="index.html" class="dropdown-toggle"><span class="link-name">Home</span><span class="caret caret--dots"></span></a>
+              <ul class="dropdown-menu animated fadeIn" role="menu">
+               <li></li>
+              </ul>
+            </li>
+            <li> <a href="index.html" class="dropdown-toggle"><span class="link-name">Layouts</span><span class="caret caret--dots"></span></a>
+              <ul class="dropdown-menu animated fadeIn" role="menu">
+                <li></li>
+              </ul>
+            </li>
+<li><a href="blog.html"  class="dropdown-toggle"><span class="link-name">BLOG</span><span class="caret caret--dots"></span></a>
+            <ul class="dropdown-menu animated fadeIn" role="menu">
+              <li><a href="blog.html">Blog Posts</a></li>
+              <li><a href="blogpost.html">Blog Post</a></li>
+              <li><a href="blog-right-column.html">Blog With Column</a></li>
+            </ul>
+          </li>            <li><a href="listing.html"  class="dropdown-toggle"><span class="link-name">SHOP</span><span class="caret caret--dots"></span></a>
+              <ul class="dropdown-menu animated fadeIn" role="menu">
+                <li></li>
+              </ul>
+            </li>
+
+          <li><a href="gallery.html" class="wave"><span class="link-name">Gallery</span></a></li>
+          <li><a href="about.html" class="dropdown-toggle"><span  class="link-name">Pages</span><span class="badge badge--menu">!</span><span class="caret caret--dots"></span></a>
+            <ul class="dropdown-menu animated fadeIn" role="menu">
+              <li><a href="about.html">About</a></li>
+              <li><a href="typography.html">Typography</a></li>
+              <li><a href="sitemap.html">Sitemap</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="create-account.html">Create Account</a></li>
+              <li><a href="logination.html">Logination</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div id="pageContent" class="page-content">
+    <section class="content" id="slider"> 
+      
+      <!-- Slider section --> 
+      
+      <!--
+	#################################
+		- THEMEPUNCH BANNER -
+	#################################
+	--> 
+      <!-- START REVOLUTION SLIDER 3.1 rev5 fullwidth mode -->
+      
+      <div class="tp-banner-container layout5" style="height:80vh;">
+        <div class="tp-banner" >
+          <ul>
+            <!-- SLIDE  -->
+            <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide"> 
+              <!-- MAIN IMAGE --> 
+              <img src="s1.jpg"  alt="slide1"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"> 
+              <!-- LAYERS --> 
+              
+              
+            
+            <!-- SLIDE  -->
+            <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide"> 
+              <!-- MAIN IMAGE --> 
+              <img src="s2.jpg"  alt="slide2"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"> 
+              <!-- LAYERS --> 
+              <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide"> 
+              <!-- MAIN IMAGE --> 
+              <img src="s3.jpg"  alt="slide2"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"> 
+              
+    </section>
+    
+    <!-- END REVOLUTION SLIDER --> 
+    
+    <!-- End Slider section --> 
+    <!-- Content section -->
+    <section class="content top-pad-none nav-submenu" style="background-color:#ff4e00;">
+      <div class="container">
+          <nav class="row">
+            <ul class="nav nav-justified" style="background-color:#ff4e00;">
+              
+              <li style="background-color:#ff4e00;"><a href="#">
+                <img src="electronics.png" width="75px" height="75px;" />
+                <br>
+                Electronics
+              </a></li>
+              
+
+              <li style="background-color:#ff4e00;"><a href="#">
+                <img src="grains..png" width="75px" height="75px;" />
+                <br>
+                SBG Grains
+              </a></li>
+
+              <li style="background-color:#ff4e00;"><a href="#">
+                <img src="phinic.png" width="75px" height="75px;" />
+                <br>
+                Phinic
+              </a></li>
+
+              <li style="background-color:#ff4e00;"><a href="#">
+                <img src="daily.png" width="75px" height="75px;" />
+                <br>
+                Staple Food
+              </a></li>
+              
+            </ul>
+          </nav>
+      </div>
+    </section>
+    <section class="content">
+      <div class="container"> 
+        
+        <!-- Modal -->
+        <div class="modal quick-view zoom" id="quickView"  style=" opacity: 1">
+          <div class="modal-dialog">
+            <div class="modal-content"> 
+              Product Description Goes Here..
+            </div>
+          </div>
+        </div>
+        <!-- /.modal -->
+        
+        <h2 class="text-center text-uppercase">Our Products</h2>
+        <div class="row product-carousel-layout5 mobile-special-arrows product-grid four-in-row rows-2 products-listing ">
+          <!--  -->
+          <div class="product-preview-wrapper">
+            <div class="product-preview">
+              <div class="product-preview__image">
+              <a href="product-layout5.html">
+              <img src="prod-1.jpg" data-lazy="prod-1.jpg" alt=""/></a>
+              </div>
+              <div class="product-preview__label product-preview__label--left product-preview__label--new"><span>new</span></div>
+              <div class="product-preview__label product-preview__label--right product-preview__label--sale"><span>sale<br>
+                -8%</span></div>
+
+              <div class="product-preview__info text-center">
+                <div class="product-preview__info__btns"><a href="#" class="btn btn--round"><span class="icon-ecommerce"></span></a> <a href="quick-view.html" class="btn btn--round btn--dark btn-quickview" data-toggle="modal" data-target="#quickView"><span class="icon icon-eye"></span></a></div>
+                <div class="product-preview__info__title">
+                  <h2><a href="#">SBG Chana Daal-500gms</a></h2>
+                </div>
+                <div class="rating"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></div>
+              
+                <div class="price-box "><span class="price-box__new">Rs:22.99</span> <span class="price-box__old">Rs:24.99</span></div>
+                <div class="product-preview__info__description">
+                  
+                </div>
+                <div class="product-preview__info__link"><a href="#" class="compare-link"><span class="icon icon-bars"></span><span class="product-preview__info__link__text">Add to compare</span></a> <a href="#"><span class="icon icon-favorite"></span><span class="product-preview__info__link__text">Add to wishlist</span></a><a href="#" class="btn btn--wd buy-link"><span class="icon icon-ecommerce"></span><span class="product-preview__info__link__text">Add to cart</span></a></div>
+              </div>
+            </div>
+          </div>
+          <!-- / -->
+          <!--  -->
+          <div class="product-preview-wrapper">
+            <div class="product-preview">
+              <div class="product-preview__image"><a href="product-layout5.html"><img src="prod-3.jpg" data-lazy="prod-3.jpg" alt=""/></a></div>
+              <div class="product-preview__label product-preview__label--right product-preview__label--sale"><span>sale<br>
+                -20%</span></div>
+              <div class="product-preview__info text-center">
+                <div class="product-preview__info__btns"><a href="#" class="btn btn--round"><span class="icon-ecommerce"></span></a> <a href="quick-view.html" class="btn btn--round btn--dark btn-quickview" data-toggle="modal" data-target="#quickView"><span class="icon icon-eye"></span></a></div>
+                <div class="product-preview__info__title">
+                  <h2><a href="#">SBG Corn-400gms</a></h2>
+                </div>
+                <div class="rating"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></div>
+                
+                <div class="price-box "><span class="price-box__new">Rs:41.99</span> <span class="price-box__old">Rs:62.49</span></div>
+                <div class="product-preview__info__description">
+                  
+                </div>
+                <div class="product-preview__info__link"><a href="#" class="compare-link"><span class="icon icon-bars"></span><span class="product-preview__info__link__text">Add to compare</span></a> <a href="#"><span class="icon icon-favorite"></span><span class="product-preview__info__link__text">Add to wishlist</span></a><a href="#" class="btn btn--wd buy-link"><span class="icon icon-ecommerce"></span><span class="product-preview__info__link__text">Add to cart</span></a></div>
+              </div>
+            </div>
+          </div>
+          <!-- / -->
+          <!--  -->
+          <div class="product-preview-wrapper">
+            <div class="product-preview">
+              <div class="product-preview__image"><a href="product-layout5.html"><img src="prod-2.jpg" data-lazy="prod-2.jpg" alt=""/></a></div>
+              <div class="product-preview__label product-preview__label--right product-preview__label--sale"><span>sale<br>
+                -30%</span></div>
+              <div class="product-preview__info text-center">
+                <div class="product-preview__info__btns"><a href="#" class="btn btn--round"><span class="icon-ecommerce"></span></a> <a href="quick-view.html" class="btn btn--round btn--dark btn-quickview" data-toggle="modal" data-target="#quickView"><span class="icon icon-eye"></span></a></div>
+                <div class="product-preview__info__title">
+                  <h2><a href="#">SBG Kali Daal-500gms</a></h2>
+                </div>
+                <div class="rating"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></div>
+               
+                <div class="price-box "><span class="price-box__new">Rs:53.99</span> <span class="price-box__old">Rs:79.99</span></div>
+                <div class="product-preview__info__description">
+                  
+                </div>
+                <div class="product-preview__info__link"><a href="#" class="compare-link"><span class="icon icon-bars"></span><span class="product-preview__info__link__text">Add to compare</span></a> <a href="#"><span class="icon icon-favorite"></span><span class="product-preview__info__link__text">Add to wishlist</span></a><a href="#" class="btn btn--wd buy-link"><span class="icon icon-ecommerce"></span><span class="product-preview__info__link__text">Add to cart</span></a></div>
+              </div>
+            </div>
+          </div>
+          <!-- / -->
+          <!--  -->
+          <div class="product-preview-wrapper">
+            <div class="product-preview">
+              <div class="product-preview__image"><a href="product-layout5.html"><img src="prod-4.jpg" data-lazy="prod-4.jpg" alt=""/></a></div>
+              <div class="product-preview__label product-preview__label--right product-preview__label--sale"><span>sale<br>
+                -10%</span></div>
+              <div class="product-preview__info text-center">
+                <div class="product-preview__info__btns"><a href="#" class="btn btn--round"><span class="icon-ecommerce"></span></a> <a href="quick-view.html" class="btn btn--round btn--dark btn-quickview" data-toggle="modal" data-target="#quickView"><span class="icon icon-eye"></span></a></div>
+                <div class="product-preview__info__title">
+                  <h2><a href="#">Best Basmati Rice-1kg</a></h2>
+                </div>
+                <div class="rating"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></div>                
+                <div class="price-box "><span class="price-box__new">Rs:65.00</span> <span class="price-box__old">Rs:84.00</span></div>
+                <div class="product-preview__info__description">
+                  
+                </div>
+                <div class="product-preview__info__link"><a href="#" class="compare-link"><span class="icon icon-bars"></span><span class="product-preview__info__link__text">Add to compare</span></a> <a href="#"><span class="icon icon-favorite"></span><span class="product-preview__info__link__text">Add to wishlist</span></a><a href="#" class="btn btn--wd buy-link"><span class="icon icon-ecommerce"></span><span class="product-preview__info__link__text">Add to cart</span></a></div>
+              </div>
+            </div>
+          </div>
+          <!-- / -->
+          <!--  -->
+          <div class="product-preview-wrapper">
+            <div class="product-preview">
+              <div class="product-preview__image"><a href="product-layout5.html"><img src="prod-5.jpg" data-lazy="prod-5.jpg" alt=""/></a></div>
+              <div class="product-preview__label product-preview__label--left product-preview__label--new"><span>new</span></div>             
+              <div class="product-preview__info text-center">
+                <div class="product-preview__info__btns"><a href="#" class="btn btn--round"><span class="icon-ecommerce"></span></a> <a href="quick-view.html" class="btn btn--round btn--dark btn-quickview" data-toggle="modal" data-target="#quickView"><span class="icon icon-eye"></span></a></div>
+                <div class="product-preview__info__title">
+                  <h2><a href="#">Olive Oil-Gaia</a></h2>
+                </div>
+                <div class="rating"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></div>               
+                <div class="price-box ">Rs:365.00</div>
+                <div class="product-preview__info__description">
+                  
+                </div>
+                <div class="product-preview__info__link"><a href="#" class="compare-link"><span class="icon icon-bars"></span><span class="product-preview__info__link__text">Add to compare</span></a> <a href="#"><span class="icon icon-favorite"></span><span class="product-preview__info__link__text">Add to wishlist</span></a><a href="#" class="btn btn--wd buy-link"><span class="icon icon-ecommerce"></span><span class="product-preview__info__link__text">Add to cart</span></a></div>
+              </div>
+            </div>
+          </div>
+          <!-- / -->
+          <!--  -->
+          <div class="product-preview-wrapper">
+            <div class="product-preview">
+              <div class="product-preview__image"><a href="product-layout5.html"><img src="prod-6.jpg" data-lazy="prod-6.jpg" alt=""/></a></div>
+              <div class="product-preview__label product-preview__label--left product-preview__label--new"><span>new</span></div>
+             
+              <div class="product-preview__info text-center">
+                <div class="product-preview__info__btns"><a href="#" class="btn btn--round"><span class="icon-ecommerce"></span></a> <a href="quick-view.html" class="btn btn--round btn--dark btn-quickview" data-toggle="modal" data-target="#quickView"><span class="icon icon-eye"></span></a></div>
+                <div class="product-preview__info__title">
+                  <h2><a href="#">Kitchen master(Mixer Set)</a></h2>
+                </div>
+                <div class="rating"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></div>
+               
+                <div class="price-box ">Rs:4995.99</div>
+                <div class="product-preview__info__description">
+                  
+                </div>
+                <div class="product-preview__info__link"><a href="#" class="compare-link"><span class="icon icon-bars"></span><span class="product-preview__info__link__text">Add to compare</span></a> <a href="#"><span class="icon icon-favorite"></span><span class="product-preview__info__link__text">Add to wishlist</span></a><a href="#" class="btn btn--wd buy-link"><span class="icon icon-ecommerce"></span><span class="product-preview__info__link__text">Add to cart</span></a></div>
+              </div>
+            </div>
+          </div>
+          <!-- / -->
+          <!--  -->
+          <div class="product-preview-wrapper">
+            <div class="product-preview">
+              <div class="product-preview__image"><a href="product-layout5.html"><img src="prod-7.jpg" data-lazy="prod-7.jpg" alt=""/></a></div>
+              
+              <div class="product-preview__info text-center">
+                <div class="product-preview__info__btns"><a href="#" class="btn btn--round"><span class="icon-ecommerce"></span></a> <a href="quick-view.html" class="btn btn--round btn--dark btn-quickview" data-toggle="modal" data-target="#quickView"><span class="icon icon-eye"></span></a></div>
+                <div class="product-preview__info__title">
+                  <h2><a href="#">Godrej Mixer Set</a></h2>
+                </div>
+                <div class="rating"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></div>
+                
+                <div class="price-box ">Rs:2999.19</div>
+                <div class="product-preview__info__description">
+                  
+                </div>
+                <div class="product-preview__info__link"><a href="#" class="compare-link"><span class="icon icon-bars"></span><span class="product-preview__info__link__text">Add to compare</span></a> <a href="#"><span class="icon icon-favorite"></span><span class="product-preview__info__link__text">Add to wishlist</span></a><a href="#" class="btn btn--wd buy-link"><span class="icon icon-ecommerce"></span><span class="product-preview__info__link__text">Add to cart</span></a></div>
+              </div>
+            </div>
+          </div>
+          <!-- / -->
+          <!--  -->
+          <div class="product-preview-wrapper">
+            <div class="product-preview">
+              <div class="product-preview__image"><a href="product-layout5.html"><img src="prod-8.jpg" data-lazy="prod-8.jpg" alt=""/></a></div>
+             
+              <div class="product-preview__info text-center">
+                <div class="product-preview__info__btns"><a href="#" class="btn btn--round"><span class="icon-ecommerce"></span></a> <a href="quick-view.html" class="btn btn--round btn--dark btn-quickview" data-toggle="modal" data-target="#quickView"><span class="icon icon-eye"></span></a></div>
+                <div class="product-preview__info__title">
+                  <h2><a href="#">Wildcraft Bag </a></h2>
+                </div>
+                <div class="rating"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></div>
+                
+                <div class="price-box ">Rs:2500.59</div>
+                <div class="product-preview__info__description">
+                  
+                </div>
+                <div class="product-preview__info__link"><a href="#" class="compare-link"><span class="icon icon-bars"></span><span class="product-preview__info__link__text">Add to compare</span></a> <a href="#"><span class="icon icon-favorite"></span><span class="product-preview__info__link__text">Add to wishlist</span></a><a href="#" class="btn btn--wd buy-link"><span class="icon icon-ecommerce"></span><span class="product-preview__info__link__text">Add to cart</span></a></div>
+              </div>
+            </div>
+          </div>
+          <!-- / -->
+        </div>
+      </div>
+    </section>
+    
+    <section class="content">
+      <div class="container">
+        <h2 class="text-center text-uppercase">New & Exciting</h2>
+        
+        <div class="divider"></div>        
+        <div class="row hide-outer-animation">
+          <div class="col-md-6">
+            <div class="text-center">
+              <div class="banner banner--image layout5 hover-squared animation" data-animation="fadeInLeft" data-animation-delay="0s" onclick="location.href='#';"> <img src="cover.jpg" alt="" class="img-responsive" />
+<div class="banner--image__text banner--image__text--left banner--image__text--light text-center">
+                  <h4><span>soak up saving</span></h4>
+                  <h5>up to </h5>
+                  <h3 id="responsive_headline">20% off</h3>
+                  <h6>FMCG Products</h6>
+                  <button class="btn btn--border text-uppercase wave waves-effect waves-effect" type="button">SHOP NOW</button>
+                </div>
+                <div class="product-category__hover caption"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="banner banner--icon hover-squared animation" data-animation="fadeInRight" data-animation-delay="0s" onclick="location.href='#';" style="background-color:#3d3d3d;">
+              <div class="banner--icon__icon"> <span class="icon icon-sales"></span> </div>
+              <div class="banner--icon__text text-center">
+                <h4 class="text-uppercase">MEGA SALE</h4>
+                <div class="banner--icon__text__divider"></div>
+                <div class="text-uppercase">UP TO 50% OFF YOUR FAVOURITE BRANDS</div>
+              </div>
+              <div class="product-category__hover caption"></div>
+            </div>
+            <div class="banner banner--icon banner--last banner--light hover-squared animation" data-animation="fadeInRight" data-animation-delay="0s" onclick="location.href='#';">
+              <div class="banner--icon__icon"> <span class="icon icon-box"></span> </div>
+              <div class="banner--icon__text text-center">
+                <h4 class="text-uppercase">Gift CERTIFICATES</h4>
+                <div class="banner--icon__text__divider"></div>
+                <div class="text-uppercase">Gift certificates are the simplest, speediest way to send something special! Get a gift certificate on purchase of 1500 and above! </div>
+              </div>
+              <div class="product-category__hover caption"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="content">
+      <div class="container">
+        <div class="row staggered-animation-container">
+         
+          
+          <div class="col-sm-6 col-md-3 animation" data-animation="fadeInUp" data-animation-delay="0.9s">
+            <h4 class="text-uppercase">New Products</h4>
+            <div class="products-widget card">
+              <div class="products-widget-carousel-layout5 nav-top">
+                <div class="products-widget__item">
+                  <div class="products-widget__item__image pull-left"><a href="#"><img src="na-1.jpg" alt=""/></a></div>
+                  <div class="products-widget__item__info">
+                    <div class="products-widget__item__info__title">
+                      <h2 class="text-uppercase"><a href="#">Titan Edge Watch</a></h2>
+                    </div>
+                    <div class="rating"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></div>
+                    <div class="price-box">Rs:9999.99</div>
+                  </div>
+                </div>
+                <div class="products-widget__item">
+                  <div class="products-widget__item__image pull-left"><a href="#"><img src="na-2.jpg" alt=""/></a></div>
+                  <div class="products-widget__item__info">
+                    <div class="products-widget__item__info__title">
+                      <h2 class="text-uppercase"><a href="#">Prestigue,Induction Cooker</a></h2>
+                    </div>
+                    <div class="rating"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></div>
+                    <div class="price-box">Rs:4000.00</div>
+                  </div>
+                </div>
+                <div class="products-widget__item">
+                  <div class="products-widget__item__image pull-left"><a href="#"><img src="na-3.jpg" alt=""/></a></div>
+                  <div class="products-widget__item__info">
+                    <div class="products-widget__item__info__title">
+                      <h2 class="text-uppercase"><a href="#">Rayban Sunglasses</a></h2>
+                    </div>
+                    <div class="rating"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></div>
+                    <div class="price-box">Rs:2500.00</div>
+                  </div>
+                </div>
+                 <div class="products-widget__item">
+                  <div class="products-widget__item__image pull-left"><a href="#"><img src="na-4.jpg" alt=""/></a></div>
+                  <div class="products-widget__item__info">
+                    <div class="products-widget__item__info__title">
+                      <h2 class="text-uppercase"><a href="#">Ola Cosmetics Set</a></h2>
+                    </div>
+                    <div class="rating"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></div>
+                    <div class="price-box">Rs:999.99</div>
+                  </div>
+                </div>
+                <div class="products-widget__item">
+                  <div class="products-widget__item__image pull-left"><a href="#"><img src="na-5.jpg" alt=""/></a></div>
+                  <div class="products-widget__item__info">
+                    <div class="products-widget__item__info__title">
+                      <h2 class="text-uppercase"><a href="#">Imported Plates/Set</a></h2>
+                    </div>
+                    <div class="rating"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></div>
+                    <div class="price-box">Rs:1200.00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="divider divider--sm visible-xs"></div>
+          <div class="col-sm-6 col-md-3 animation" data-animation="fadeInUp" data-animation-delay="1.2s">
+            <h4 class="text-uppercase">Sale Products</h4>
+            <div class="products-widget card">
+              <div class="products-widget-carousel-layout5 nav-top">
+                <div class="products-widget__item">
+                  <div class="products-widget__item__image pull-left"><a href="#"><img src="of-1.jpg" alt=""/></a></div>
+                  <div class="products-widget__item__info">
+                    <div class="products-widget__item__info__title">
+                      <h2 class="text-uppercase"><a href="#">Basmati Rice-10kg</a></h2>
+                    </div>
+                    <div class="rating"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></div>
+                    <div class="price-box"><span class="price-box__new">Rs:250.00</span> <span class="price-box__old">Rs:350.00</span></div>
+                  </div>
+                </div>
+                <div class="products-widget__item">
+                  <div class="products-widget__item__image pull-left"><a href="#"><img src="of-2.jpg" alt=""/></a></div>
+                  <div class="products-widget__item__info">
+                    <div class="products-widget__item__info__title">
+                      <h2 class="text-uppercase"><a href="#">Ghee-3kg</a></h2>
+                    </div>
+                    <div class="rating"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></div>
+                    <div class="price-box"><span class="price-box__new">Rs:350.00</span> <span class="price-box__old">Rs:400.00</span></div>
+                  </div>
+                </div>
+                <div class="products-widget__item">
+                  <div class="products-widget__item__image pull-left"><a href="#"><img src="of-3.jpg" alt=""/></a></div>
+                  <div class="products-widget__item__info">
+                    <div class="products-widget__item__info__title">
+                      <h2 class="text-uppercase"><a href="#">SBG-Moong Daal-1kg</a></h2>
+                    </div>
+                    <div class="rating"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></div>
+                    <div class="price-box"><span class="price-box__new">Rs:40.00</span> <span class="price-box__old">Rs:55.00</span></div>
+                  </div>
+                </div>
+                <div class="products-widget__item">
+                  <div class="products-widget__item__image pull-left"><a href="#"><img src="of-4.jpg" alt=""/></a></div>
+                  <div class="products-widget__item__info">
+                    <div class="products-widget__item__info__title">
+                      <h2 class="text-uppercase"><a href="#">Fastrack Luggage Trolley</a></h2>
+                    </div>
+                    <div class="rating"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></div>
+                    <div class="price-box"><span class="price-box__new">Rs:3500.00</span> <span class="price-box__old">Rs:6000.00</span></div>
+                  </div>
+                </div>
+                <div class="products-widget__item">
+                  <div class="products-widget__item__image pull-left"><a href="#"><img src="of-5.jpg" alt=""/></a></div>
+                  <div class="products-widget__item__info">
+                    <div class="products-widget__item__info__title">
+                      <h2 class="text-uppercase"><a href="#">Rayban Black SUnglasses-E201</a></h2>
+                    </div>
+                    <div class="rating"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></div>
+                    <div class="price-box"><span class="price-box__new">Rs:5000.00</span> <span class="price-box__old">Rs:8000.00</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="divider divider--sm visible-sm visible-xs"></div>
+          <div class="col-sm-6 col-md-3 animation" data-animation="fadeInUp" data-animation-delay="0.6s">
+            <h4 class="text-uppercase">Testimonials</h4>
+            <div class="testimonials">
+              <div class="testimonials-carousel-layout5 nav-top">
+                <div class="testimonials__item">
+                  <div class="testimonials__item__image-sell"><a href="#"><img src="no.gif" width="75px" height="75px" alt=""/></a>
+                    <div  class="testimonials__item__image-sell__author text-uppercase"><a href="#">Ravi Agrawal – April 22, 2015:</a></div>
+                  </div>
+                  <div class="testimonials__item__text"><em>Awesome Outlet<br>
+Cheap and Best.!<br>
+Great deals available.<br>
+You don’t need to go on multiple shops to buy things.One Roof .All Things.The best time to visit this place is on week days, as the crowd would be less and you can get fresh arrivals. Under one roof, you can get everything and within great deals too. Grocery items, food items, clothes, kids section, electronics, crockery and all maintained in just perfect way.</em></div>
+                </div>
+                <div class="testimonials__item">
+                  <div class="testimonials__item__image-sell"><a href="#"><img src="no.gif" width="75px" height="75px" alt=""/></a>
+                    <div  class="testimonials__item__image-sell__author text-uppercase"><a href="#">Rahul Kumar Singh</a></div>
+                  </div>
+                  <div class="testimonials__item__text"><em>Cheap and Best.!<br>
+Great deals available.<br>
+You don’t need to go on multiple shops to buy things.One Roof .All Things.The best time to visit this place is on week days, as the crowd would be less and you can get fresh arrivals. Under one roof, you can get everything and within great deals too. Grocery items, food items, clothes, kids section, electronics, crockery and all maintained in just perfect way.</em></div>
+                </div>
+              </div>
+            </div>
+          </div>     
+
+          <div class="divider divider--sm visible-xs"></div>
+           <div class="col-sm-6 col-md-3 animation" data-animation="fadeInUp" data-animation-delay="0.3s">
+            <h4 class="text-uppercase">New Arrivals</h4>
+            <div class="text-center">
+              <div class="banner banner--image hover-squared"> <a href="#"><img src="images/drugs/banner-small-01.jpg" alt=""/></a>
+                <div class="product-category__hover caption"></div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="content content--parallax" data-image="blog_back.jpg" style="color:black;">
+      <div class="container">
+          <div class="blog-widget">
+              <h2 class="blog-widget__title text-uppercase" >Recipe Master ;)</h2>
+              <div class="blog-carousel mobile-special-arrows show-2 ">
+                  <div class="blog-widget__item">
+                      <div class="blog-widget__item__image-cell pull-left"><img src="r1.jpg" alt=""/></div>
+                      <div class="blog-widget__item__offset-text pull-right">
+                          <h3 class="blog-widget__item__offset-text__title text-uppercase">Gajar Ka Halua</h3>
+<div class="blog-widget__item__offset-text__date"><span>Sunday, 19 Jan 2016</span></div>
+                          <div class="blog-widget__item__offset-text__teaser">
+                            <p>Gajar Ka Halwa - a traditional slow cooked recipe of carrot halwa with just carrots, milk,SBG ghee, sugar and a few dry fruits along with SBG Grains.</p>
+                          </div>
+                          <a href="#" class="btn btn--wd">READ MORE</a> 
+                      </div>
+                  </div>
+                  <div class="blog-widget__item">
+                      <div class="blog-widget__item__image-cell pull-left"><img src="r2.jpg" alt=""/></div>
+                      <div class="blog-widget__item__offset-text pull-right">
+                          <h3 class="blog-widget__item__offset-text__title text-uppercase">Hyderabadi Biryani</h3>
+<div class="blog-widget__item__offset-text__date"><span>Friday, 1 Jan 2016</span></div>
+                          <div class="blog-widget__item__offset-text__teaser">
+                            <p>Hyderabadi Veg Biryani recipe - a vegetable biryani recipe from the land of the nawabs -hyderabad. the hyderabadi vegetable biryani recipe is light, a bit spiced, aromatic and deliciously yum.</p>
+                          </div>
+                          <a href="#" class="btn btn--wd">READ MORE</a> 
+                      </div>
+                  </div>
+                  
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+    
+    <!-- End Content section --> 
+  </div>
+  <footer class="footer">
+    <div class="footer__links hidden-xs">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="h-links-list">
+              <ul>
+                <li><a href="#">Site Map</a></li>
+                <li><a href="#">Search Terms</a></li>
+                <li><a href="#">Orders and Returns</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">RSS</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="h-links-list text-right">
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Customer Service</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__column-links" style="background-color:#ff4e00;">
+      <div class="back-to-top"  > <a href="#top" class="btn btn--round btn--round--lg" style="background-color:#ff4e00;"><span class="icon-arrow-up" style="background-color:#ff4e00;"></span></a></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 hidden-xs hidden-sm"> 
+            <!--  Logo  -->            
+              <a class="logo logo--footer" href="index.html">
+				        <img src="logo.png" alt=""/> 
+              </a> 
+            <!-- End Logo -->
+            <!-- footer-excerption -->
+            <dl class="footer-excerption">              
+              <dd>SB Bazaar</dd>
+              <dt><em>Raipur,C.G</em></dt>
+            </dl>
+            <!-- /footer-excerption -->  
+          </div>
+          <div class="col-sm-3 col-md-2 mobile-collapse">
+            <h5 class="title text-uppercase mobile-collapse__title">Information </h5>
+            <div class="v-links-list mobile-collapse__content">
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Shipping & Returns</a></li>
+                <li><a href="#">Privacy Notice</a></li>
+                <li><a href="#">Conditions of Use</a></li>                 
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-2 mobile-collapse">
+            <h5 class="title text-uppercase mobile-collapse__title">Service</h5>
+            <div class="v-links-list mobile-collapse__content">
+              <ul>
+                <li><a href="#">Online support</a></li>
+                <li><a href="#">Help & FAQs</a></li>
+                <li><a href="#">Call Center</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-2 mobile-collapse">
+            <h5 class="title text-uppercase mobile-collapse__title">My account</h5>
+            <div class="v-links-list mobile-collapse__content">
+              <ul>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Order history</a></li>
+                <li><a href="#">Advanced search</a></li>                
+                <li><a href="#">Reviews</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3 mobile-collapse mobile-collapse--last">
+            <h5 class="title text-uppercase mobile-collapse__title">Company Info</h5>
+            <div class="v-links-list mobile-collapse__content">
+              <ul>
+                <li class="icon icon-home">C-53,Sector-5,Devendra Nagar,Raipur</li>
+                <li class="icon icon-telephone">1223345,6289209</li>
+                <li class="icon icon-mail"><a href="mailto:info@mydomain.com">admin@sbbazaar.com</a></li>
+                <li class="icon icon-skype"><a href="#">sbbaazar</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__subscribe" style="background-color:#4b0404;color:white;">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-7 col-md-6">
+            <form id="subscribe-form" class="subscribe-form" action="#" method="post">
+              <label class="subscribe-form__label text-uppercase pull-left">Subscribe</label>
+              <input type="text" class="subscribe-form__input input--wd" placeholder="Your e-mail address">
+              <button class="btn btn--wd text-uppercase wave"><span class="hidden-xs">Subscribe</span><span class="icon icon-mail-fill visible-xs"></span></button>
+            </form>
+          </div>
+          <div class="col-sm-5 col-md-6">
+            <div class="social-links social-links--colorize social-links--large">
+              <ul>
+                <li class="social-links__item"><a class="icon icon-facebook" href="http://www.facebook.com/"></a></li>
+                <li class="social-links__item"><a class="icon icon-twitter" href="http://www.twitter.com/"></a></li>
+                <li class="social-links__item"><a class="icon icon-google" href="http://www.google.com/"></a></li>
+                <li class="social-links__item"><a class="icon icon-linkedin" href="http://www.linkedin.com/"></a></li>
+                <li class="social-links__item"><a class="icon icon-pinterest" href="http://www.pinterest.com/"></a></li>
+                <li class="social-links__item"><a class="icon icon-mail" href="mailto:mail@google.com"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>    
+        <div class="footer__bottom" style="background-color:#4b0404;color:white;">      
+      <div class="container">
+        <div class="pull-left text-uppercase">© 2016 <a href="#" style="color:white">SB Bazaar</a>. All Rights Reserved. </div>        
+        <div class="pull-right text-uppercase text-right">with love <span class="icon-favorite color-heart"></span> from <a href="http://themeforest.net/user/etheme">-ritul-</a></div>
+      </div>
+    </div>
+  </footer>
+</div>
+<div class="compare-box" id="compareBox">
+  <div class="container">
+    <div class="compare-box__header">
+      <h3 class="compare-box__header__title">Compare</h3>
+      <div class="compare-box__header__toggle"><span class="compare-box__header__toggle__hide hide-compare">Hide<span class="icon icon-arrow-down"></span></span><span class="compare-box__header__toggle__show show-compare">Show<span class="icon icon-arrow-up"></span></span><span class="compare-box__header__toggle__close close-compare"><span class="icon icon-clear"></span></span></div>
+    </div>
+      
+  </div>
+</div>
+<!-- Vendor --> 
+<!-- jQuery 1.10.1--> 
+<script src="vendor/jquery/jquery.js"></script> 
+<!-- Bootstrap 3--> 
+<script src="vendor/bootstrap/bootstrap.min.js"></script> 
+<!-- Specific Page Vendor --> 
+<script src="vendor/waves/waves.min.js"></script> 
+<script src="vendor/slick/slick.min.js"></script> 
+<script src="vendor/bootstrap-select/bootstrap-select.min.js"></script> 
+<script src="vendor/parallax/jquery.parallax-1.1.3.js"></script> 
+<script src="vendor/waypoints/jquery.waypoints.min.js"></script> 
+<script src="vendor/waypoints/sticky.min.js"></script> 
+<script src="vendor/doubletaptogo/doubletaptogo.js"></script> 
+<script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script><script src="vendor/countdown/jquery.plugin.min.js"></script> 
+<script src="vendor/countdown/jquery.countdown.min.js"></script> 
+<!-- jQuery form validation --> 
+<script src="vendor/form/jquery.form.js"></script> 
+<script src="vendor/form/jquery.validate.min.js"></script> 
+<!-- Custom --> 
+<script src="js/custom.js"></script> 
+<script src="js/custom-layout5.js"></script> 
+
+
+<!-- SLIDER REVOLUTION 4.x SCRIPTS  --> 
+<script type="text/javascript" src="vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script> 
+<script type="text/javascript" src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script> 
+<script type="text/javascript">
+
+				jQuery(document).ready(function() {
+				
+					
+								
+					jQuery('.tp-banner').show().revolution(
+					{
+						dottedOverlay:"none",
+						delay:16000,
+						startwidth:1170,
+						startheight:700,
+						hideThumbs:200,
+						hideTimerBar:"on",
+						
+						thumbWidth:100,
+						thumbHeight:50,
+						thumbAmount:5,
+						
+						navigationType:"none",
+						navigationArrows:"",
+						navigationStyle:"",
+						
+						touchenabled:"on",
+						onHoverStop:"on",
+						
+						swipe_velocity: 0.7,
+						swipe_min_touches: 1,
+						swipe_max_touches: 1,
+						drag_block_vertical: false,
+												
+						parallax:"mouse",
+						parallaxBgFreeze:"on",
+						parallaxLevels:[7,4,3,2,5,4,3,2,1,0],
+												
+						keyboardNavigation:"off",
+						
+						navigationHAlign:"center",
+						navigationVAlign:"bottom",
+						navigationHOffset:0,
+						navigationVOffset:20,
+
+						soloArrowLeftHalign:"left",
+						soloArrowLeftValign:"center",
+						soloArrowLeftHOffset:20,
+						soloArrowLeftVOffset:0,
+
+						soloArrowRightHalign:"right",
+						soloArrowRightValign:"center",
+						soloArrowRightHOffset:20,
+						soloArrowRightVOffset:0,
+								
+						shadow:0,
+						fullWidth:"off",
+						fullScreen:"on",
+
+						spinner:"",
+						
+						stopLoop:"off",
+						stopAfterLoops:-1,
+						stopAtSlide:-1,
+
+						shuffle:"off",
+						
+						autoHeight:"off",						
+						forceFullWidth:"off",						
+												
+												
+												
+						hideThumbsOnMobile:"off",
+						hideNavDelayOnMobile:1500,						
+						hideBulletsOnMobile:"off",
+						hideArrowsOnMobile:"off",
+						hideThumbsUnderResolution:0,
+						
+						hideSliderAtLimit:0,
+						hideCaptionAtLimit:0,
+						hideAllCaptionAtLilmit:0,
+						startWithSlide:0,
+						fullScreenOffsetContainer: ".header"	
+					});
+					
+					
+					
+									
+				});	//ready
+				
+			</script>
+</body>
+</html>
