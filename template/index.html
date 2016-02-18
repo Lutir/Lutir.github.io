@@ -20,6 +20,7 @@
             $('.dep').hide();
         </script>
 		<script type="text/javascript" src="js/fix_nav.js"></script>
+        <script type="text/javascript" src="js/disp_freq.js"></script>
 
   </head>
   
@@ -304,8 +305,9 @@
                     
                                 <h1 class="title-widget">Upcoming Events</h1>
                                 <div class="carousel-controls">
-                            <a class="prev" href="#events-carousel" data-slide="prev"><i class="fa fa-caret-left  fa-2x"></i></a>
-                            <a class="next" href="#events-carousel" data-slide="next"><i class="fa fa-caret-right  fa-2x"></i></a>
+                            <a class="prev" href="#events-carousel" data-slide="prev" onclick="disp2(0,-1);"><i class="fa fa-caret-left  fa-2x"></i></a>
+                            <a class="next" href="#events-carousel" data-slide="next" onclick="disp2(0,1);"><i class="fa fa-caret-right  fa-2x"></i></a>
+                            <span id="car-1" style="float:right;"></span>
                         </div><!--//carousel-controls-->
                         <div class="section-content downloads">
                             <div id="events-carousel" class="testimonial-carousel carousel slide">
@@ -463,8 +465,9 @@
                             <li>
                                 <h1 class="title-median">Quicklinks</h1>
                                 <div class="carousel-controls">
-                            <a class="prev" href="#quicklinks-carousel" data-slide="prev"><i class="fa fa-caret-left fa-2x"></i></a>
-                            <a class="next" href="#quicklinks-carousel" data-slide="next"><i class="fa fa-caret-right fa-2x"></i></a>
+                            <a class="prev" href="#quicklinks-carousel" data-slide="prev" onclick="disp3(0,-1);"><i class="fa fa-caret-left fa-2x"></i></a>
+                            <a class="next" href="#quicklinks-carousel" data-slide="next" onclick="disp3(0,1);"><i class="fa fa-caret-right fa-2x"></i></a>
+                            <span id="car-2" style="float:right;"></span>
                         </div><!--//carousel-controls-->
                         <div class="section-content downloads">
                             <div id="quicklinks-carousel" class="testimonial-carousel carousel slide">
@@ -789,7 +792,7 @@
                         	<li class="widget-container widget_course_search"><!-- widget -->
                             
                             	<h1 class="title-widget">Videos</h1>
-                                <img src="http://placehold.it/350x200">
+                                <img src="image/videos.png">
                                 <p><a href="#" >View</a> more video's from Nit Trichy</p>
                              
                             </li><!-- widget end -->
@@ -799,8 +802,9 @@
                 <section class="testimonial" style="min-height:420px">
                         <h1 class="title-widget">Downloads</h1>
                         <div class="carousel-controls">
-                            <a class="prev" href="#testimonial-carousel" data-slide="prev"><i class="fa fa-caret-left fa-2x "></i></a>
-                            <a class="next" href="#testimonial-carousel" data-slide="next"><i class="fa fa-caret-right fa-2x "></i></a>
+                            <a class="prev" href="#testimonial-carousel" data-slide="prev" onclick="disp(0,-1);"><i class="fa fa-caret-left fa-2x "></i></a>
+                            <a class="next" href="#testimonial-carousel" data-slide="next" onclick="disp(0,1);"><i class="fa fa-caret-right fa-2x "></i></a>
+                            <span id="car-4" style="float:right;"></span>
                         </div><!--//carousel-controls-->
                         <div class="section-content downloads">
                             <div id="testimonial-carousel" class="testimonial-carousel carousel slide">
@@ -860,121 +864,77 @@
             
             </div><!-- row end -->
         
+        <style type="text/css">
+    .thumbnail a img:hover{
+        opacity: 0.8;
+    } 
+</style>
+<br/>
+
+          <div title="Central Library-NIT Trichy" class="thumbnail col-xs-5 col-sm-5 col-md-2 col-md-offset-1 col-xs-offset-1 col-sm-offset-1 col-lg-offset-1" style="min-height:100px;padding-right:5px;padding-left:5px;//background:#9BBFD6">
+         <a href="http://www.nitt.edu/home/students/facilitiesnservices/library">  <img src="image/slide-1.jpg" style="height:120px;width:200px"></img></a>
+          <span>Central Library</span>
+          </div>
+          <!-- 1st -->
+
+           <div class="thumbnail col-xs-5 col-sm-5 col-md-2" style="min-height:100px;padding-right:5px;padding-left:5px;//background:#E4B897;" >
+            <a href="/hostel/"><img src="image/slide-2.jpg" style="height:120px;width:200px"></img></a>
+            <span>Festember</span>
+          </div>
+
+        
+
+<div class="thumbnail col-xs-5 col-sm-5 col-md-2 col-sm-offset-1 col-xs-offset-1 col-md-offset-0" style="min-height:100px;padding-right:5px;padding-left:5px;">
+           <!-- <h3 style="text-align:center;position:relative;top:50%;transform:translateY(-50%)">3</h3>-->    
+         <a href="/orion/"><img src="image/slide-3.jpg" style="height:120px;width:200px"></img></a>
+         <span >Orion</span>
+          </div>
+
+           <div class="thumbnail col-xs-5 col-sm-5 col-md-2" style="/*background:#9BBFD6;*/min-height:100px;padding-right:5px;padding-left:5px" >
+           <a href="/hostel/"><img src="image/slide-4.jpg" style="height:120px;width:200px"></img></a>
+            <span>Hostels</span>
+          </div>
+
+<div class="thumbnail col-xs-5 col-sm-5 col-md-2 col-sm-offset-1 col-xs-offset-1 col-md-offset-0" style="min-height:100px;padding-right:5px;padding-left:5px;//background:#E4B897;">
+            <a href="/helipad/"><img src="image/slide-5.jpg" style="height:120px;width:200px"></img></a>
+            <span>Hockey Ground</span>
+          </div>
+
+           <div class="thumbnail col-xs-5 col-sm-5 col-md-2 col-sm-offset-0 col-xs-offset-0 col-md-offset-1 col-lg-offset-1" style="min-height:100px;padding-right:5px;padding-left:5px;" >
+           <a href="/sports/"><img src="image/slide-6.jpg" style="height:120px;width:200px"></img></a>
+            <span>Sports Center</span>
+          </div>
+
+        
+
+        <div class="thumbnail col-xs-5 col-sm-5 col-md-2 col-sm-offset-1 col-xs-offset-1 col-md-offset-0" style="min-height:100px;padding-right:5px;padding-left:5px;//background:#9BBFD6">
+            <a href="/hospi/"><img src="image/slide-7.JPG" style="height:120px;width:200px"></img></a>
+            <span>Hospital</span>
+          </div>
+
+           <div class="thumbnail col-xs-5 col-sm-5 col-md-2" style="/*background:#E4B897;;*/min-height:100px;padding-right:5px;padding-left:5px" >
+           <a href="/workshop/"><img src="image/slide-8.jpg" style="height:120px;width:200px"></img></a>
+            <span>Workshops</span>
+          </div>
+          
+    
+        <div class="thumbnail col-xs-5 col-sm-5 col-md-2 col-sm-offset-1 col-xs-offset-1 col-md-offset-0" style="min-height:100px;padding-right:5px;padding-left:5px;">
+           <a href="/mess/"><img src="image/slide-9.jpg" style="height:120px;width:200px"></img></a>
+            <span>Messes</span>
+          </div>
+
+           <div class="thumbnail col-xs-5 col-sm-5 col-md-2" style="min-height:100px;padding-right:5px;padding-left:5px;//background:#9BBFD6" >
+           <a href="/lhc/"><img src="image/slide-10.jpg" style="height:120px;width:200px"></img></a>
+            <span>Lecture Hall</span>
+          </div>
+
+
+        
+
         </div><!-- container end -->
     
     </div><!-- content wrapper end -->
     
-    <div id="k-footer"><!-- footer -->
-    
-    	<div class="container"><!-- container -->
-        
-        	<div class="row no-gutter"><!-- row -->
-            
-            	<div class="col-lg-6 col-md-6"><!-- widgets column left -->
-            
-                    <div class="col-padded col-naked">
-                    
-                        <ul class="list-unstyled clear-margins"><!-- widgets -->
-                        
-                        	<li class="widget-container widget_nav_menu"><!-- widgets list -->
-                    
-                                <h1 class="title-widget">Useful links</h1>
-                                
-                                <ul>
-                                	<li><a href="#" title="menu item">Placement Exam Schedule</a></li>
-                                    <li><a href="#" title="menu item">Superintendent's Hearing Audio</a></li>
-                                    <li><a href="#" title="menu item">Budget Central</a></li>
-                                    <li><a href="#" title="menu item">Job Opportunities - Application</a></li>
-                                    <li><a href="#" title="menu item">College Acceptances as of Oct 12</a></li>
-                                </ul>
-                    
-							</li>
-                            
-                        </ul>
-                         
-                    </div>
-                    
-                </div><!-- widgets column left end -->
-                
-                <div class="col-lg-6 col-md-6"><!-- widgets column center -->
-                
-                    <div class="col-padded col-naked">
-                    
-                        <ul class="list-unstyled clear-margins"><!-- widgets -->
-                        
-                        	<li class="widget-container widget_recent_news"><!-- widgets list -->
-                    
-                                <h1 class="title-widget">Contact</h1>
-                                
-                                <div itemscope itemtype="http://data-vocabulary.org/Organization"> 
-                                
-                                	<h2 class="title-median m-contact-subject" itemprop="name">National Institute of Technology</h2>
-                                
-                                	<div class="m-contact-address" itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
-                                		<span class="m-contact-street" itemprop="street-address">Thanjavur Main Road</span>
-                                		<span class="m-contact-city-region"><span class="m-contact-city" itemprop="locality">Tiruchirapalli</span>, <span class="m-contact-region" itemprop="region">Tamil Nadu</span></span>
-                                		<span class="m-contact-zip-country"><span class="m-contact-zip" itemprop="postal-code">620015</span> <span class="m-contact-country" itemprop="country-name">India</span></span>
-                                	</div>
-                                     
-                                	<div class="m-contact-tel-fax">
-                                    	<span class="m-contact-tel">Tel: <span itemprop="tel">631-551-3678</span></span>
-                                    	<span class="m-contact-fax">Fax: <span itemprop="fax">631-551-3688</span></span>
-                                    </div>
-                                    
-                                </div>
-                                
-                                <div class="social-icons">
-                                
-                                	<ul class="list-unstyled list-inline">
-                                    
-                                    	<li><a href="#" title="Contact us"><i class="fa fa-envelope"></i></a></li>
-                                        <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                                    
-                                    </ul>
-                                
-                                </div>
-                    
-							</li>
-                            
-                        </ul>
-                        
-                    </div>
-                    
-                </div><!-- widgets column center end -->
-                <script type="text/javascript">
-                /*
-                <div class="col-lg-4 col-md-4"><!-- widgets column right -->
-                
-                    <div class="col-padded col-naked">
-             
-
-                        <ul class="list-unstyled clear-margins"><!-- widgets -->
-                        
-                        	<li class="widget-container widget_sofa_flickr"><!-- widgets list -->
-                    
-                                <h1 class="title-widget">Flickr Stream</h1>
-                                
-                                <ul class="k-flickr-photos list-unstyled">
-                                	
-                                </ul>
-                    
-							</li>
-                            
-                        </ul> 
-                        
-                    </div>
-                
-                </div><!-- widgets column right end -->
-                */
-                </script>
-
-            
-            </div><!-- row end -->
-        
-        </div><!-- container end -->
-    
-    </div><!-- footer end -->
     <footer class="footer">
         <div class="footer-content">
             <div class="container-fluid">
