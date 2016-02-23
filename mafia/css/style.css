@@ -64,6 +64,11 @@ a{
 	background-color: black;
 	color: white;
 }
+.bg-main{
+	background-image: url('../images/home-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 .event-family-bg{
 	background-image: url('../images/family.png');
 	background-repeat: no-repeat;
@@ -198,11 +203,20 @@ a{
       -moz-transition: all 0.6s;
       transition: all 0.6s;
 }
+
+.contact-img{
+	width: 150px;
+	margin: 0 auto;
+}
 .small{
 	font-size:14px !important;
 }
 .navbar{
-	margin:0px;
+	
+	width: 100%;
+	z-index: 9999;
+	background-color: black;
+	
 }
 .navButton{
 	border-radius: 0px;
@@ -243,6 +257,17 @@ footer{
 	color: white;
 	font-weight: 700;
 }
+/*Parallax*/
+.parallax{
+	 height: 660px;
+	 
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+
 /*hover effects*/
 .item-wrap {
   margin-bottom: 10px; }
@@ -405,7 +430,13 @@ figure.effect-goliath {
   opacity: 0.7 !important; }
 
 
-
+@media only screen and (max-width: 1000px) {
+	.events_bg{
+		background-color: black;
+		background-image: none;
+	}
+	
+}
 @media only screen and (max-width: 500px) {
 	.extraPad{
 		margin: 0px;
@@ -414,4 +445,8 @@ figure.effect-goliath {
 		width: auto;
 		height: auto;
 	}
+	.extraPad .item-wrap{
+		margin: auto;
+	}
+	
 }
