@@ -17,10 +17,12 @@ $(document).ready(function() {
 	context.fillStyle = "rgb(255, 255, 255)";
 	context.fillRect(0,0,canvasWidth,canvasHeight);
 	var img=document.getElementById('hello');
+	
 	var playAnimation=true;
 	var i=0;
-	var count=Math.random()*1000;
-	var p=canvas.offset().top-$(window).scrollTop();
+	var count=50;
+	
+	
 	//alert(p);
 	
 	function bullet(){
@@ -30,7 +32,7 @@ $(document).ready(function() {
 		var temp2=Math.random();
 		var y=-100+temp2*1000;
 		console.log(x,y);
-		context.fillStyle="rgb(100,120,140)";
+		
 		
 		if(i<count){
 			context.drawImage(img,x,y);
@@ -40,6 +42,7 @@ $(document).ready(function() {
 			clearInterval(k);
 		}
 	};
+
 	if(playAnimation){
 	var k= setInterval(bullet,130);
 	}

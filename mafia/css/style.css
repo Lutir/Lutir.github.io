@@ -1,5 +1,5 @@
 @font-face{
-	font-family: "BIG JOHN";
+	font-family: "big";
 	src:url('../fonts/BIG JOHN.otf');
 }
 @font-face{
@@ -19,7 +19,7 @@
 	
 }
 h1,h2,h3,h4{
-	font-family: "BIG JOHN";
+	font-family: "big";
 }
 
 .border{
@@ -69,8 +69,14 @@ a{
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.event-family-bg{
+.event-junkyard-bg{
 	background-image: url('../images/family.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+.event-family-bg{
+	background-image: url('../images/family-mafia.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	
@@ -116,6 +122,7 @@ a{
 }
 .box{
 	background-color: rgba(0,0,0,0.7);
+
 }
 .bg-1{
 	background-color: #101010;
@@ -252,12 +259,49 @@ a{
 .mini-section{
 	min-height:60vh;
 }
+.rounded{
+	border-radius: 9999px;
+	width: 40px;
+	height: 40px;
+	
+	
+	margin: -25px 10px -20px 20px;
+}
+.pragyan,#myCanvas{
+	position: relative;
+}
+#myCanvas{
+	position: absolute;
+	z-index: -10;
+}
+.pragyan{
+	z-index: 0;
+	
+}
+
+
 footer{
 	background-color: rgba(0,0,0,0.98);
 	font-family: "slim joe";
 	color: white;
 	font-weight: 700;
 }
+.img-footer{
+	margin: 0px 5px 0px 5px;
+}
+
+/*preloader*/
+
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: #202020 url("../images/preloader.gif") no-repeat center center; }
+
 /*Parallax*/
 .parallax{
 	 height: 660px;
@@ -436,6 +480,9 @@ figure.effect-goliath {
 		background-color: black;
 		background-image: none;
 	}
+	.box{
+		min-height: 40vh;
+	}
 	
 }
 @media only screen and (max-width: 500px) {
@@ -453,5 +500,18 @@ figure.effect-goliath {
 		background-color: black;
 		background-image: url('../images/mob-sil.png');
 	}
-		
+	.left-section,.right-section{
+	font-size: 14px;
+	}
+	.right-section{
+		border-left: 2px solid rgba(255,255,255,0.6);	
+		padding-left: 10px;
+	}
+	a.none.left-details{
+		font-size: 18px;
+		padding-right: 10px;
+	}
+	.box{
+		min-height: 80vh;
+	}
 }

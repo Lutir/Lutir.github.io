@@ -15,7 +15,7 @@
 </head>
 <body>
 
-
+<div id="preloader"></div>
 
 
 
@@ -31,7 +31,10 @@
         <span class="icon-bar" style="background-color: white"></span>
         <span class="icon-bar" style="background-color: white"></span>
       </button>
-      <a class="navbar-brand" href="#"> <img src="">  -Website-</a>
+
+      <a class="navbar-brand" href="#">
+      <img src="images/logo.jpg" class="rounded">  
+       -Pragyan-</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -68,25 +71,27 @@
 	</div>
     <div class="section">
         <img src="images/glass.png" id="hello" width="10px" height="10px" class="hidden" >
+        <img src="images/text.png" id="pragyan" width="200px;" height="200px;" class="hidden" >
+        <img src="images/mob-text.png" id="pragyan1" width="200px;" height="200px;" class="hidden" >
     	<canvas id="myCanvas"></canvas>
-    	<!-- <div class="container-fluid" style="position: absolute;bottom: 100%;">
+    	<div class="container-fluid pragyan" >
     		<div class="row">
     			<div class="space-medium"></div>
-    			<h2 class="text-center">Welcome to --Website Name--</h2>
+    			<h2 class="text-center">Welcome to -Pragyan-16-</h2>
     			<div class="border"></div>
-    			<div class="space-large"></div>
+    			<div class="space-medium"></div>
     			
     			<div class="col-md-8 col-md-offset-2 text-center">
-    				<img src="images/logo.jpg" width="300px" height="300px">
+    			     <p class="left-details">Pragyan is an ISO 9001:2008 and ISO 20121:2012 certified student-run organisation. As a techno-management fest, Pragyan has evolved into a significant embodiment that reveals to the world and students alike, the infinite opportunities in science and management. It is a four-day fest dedicated to giving a stellar experience in the field of techno-management.The fest offers a plethora of programmes; ranging from events, workshops, exhibitions, guest lectures, crossfires to offbeat contests and infotainment.This year the theme for pragyan is -'Mafia'. Attended by some of the most renown personalities of our time and with an international outreach in 60 countries, Pragyan is a great platform for the realisation of dreams and new findings. The talent displayed so far, promises not just a change in the future, but the future itself. Every edition of Pragyan has transcended its former and this tradition remains to continue into the future.</p>
     			</div>
     			
 
     		</div>
-    	</div> -->
+    	</div>
     </div>
     <div class="section section-big bg events_bg" id="events">
     	<div class="container-fluid  text-center">
-                    <div class="space-small"></div>
+                    <div class="space-medium"></div>
     				<h2 class="animated wow fadeIn">EVENTS</h2>
 
     				<div class="border-small animated wow fadeIn"></div>
@@ -113,7 +118,7 @@
                            </figcaption>
                         </figure>
                      </div>
-                  <button type="button" class="btn btn-primary myButton animated wow fadeIn" data-wow-delay="0.5s"> <a href="family-event.html" class="noned"> The Family </a></button>
+                  <button type="button" class="btn btn-primary myButton animated wow fadeIn" data-wow-delay="0.5s" onclick="location.href='family-event.html'"> The Family </button>
                         </div>
                   </div>
                     <div class="space-large"></div>
@@ -133,7 +138,7 @@
                            </figcaption>
                         </figure>
                      </div>
-                     <button type="button" class="btn btn-primary myButton" style="font-size: 16px;"> <a href="home-event.html" class="noned"> Home-Sweet-Home </a></button>
+                     <button type="button" class="btn btn-primary myButton" style="font-size: 16px;" onclick="location.href='home-event.html'">  Home-Sweet-Home </button>
                      <div class="space-medium"></div>
                   </div>
                     <div class="col-md-1"></div>
@@ -155,7 +160,7 @@
                            </figcaption>
                         </figure>
                      </div>
-                     <button type="button" class="btn btn-primary myButton" style="font-size: 16px;"> <a class="noned" href="murphy-event.html"> Murphy's Law </a></button>
+                     <button type="button" class="btn btn-primary myButton" style="font-size: 16px;" onclick="location.href='murphy-event.html'">  Murphy's Law </button>
                      <div class="space-medium"></div>
                   </div>
                     <div class="col-md-1"></div>
@@ -173,7 +178,7 @@
                            </figcaption>
                         </figure>
                      </div>
-                     <button type="button" class="btn btn-primary myButton" style="font-size: 16px;"> <a href="junkyard-event.html" class="noned"> Junkyard Wars</a></button>
+                     <button type="button" class="btn btn-primary myButton" style="font-size: 16px;" onclick="location.href='junkyard-event.html'"> Junkyard Wars</button>
                   </div>
                         
                       <div class="space-medium"></div>
@@ -282,7 +287,9 @@
             <h4 class="left-details animated wow fadeInLeft" data-wow-delay="0.9s"><b>Simons</b></h4>
                 </div>
                 <div class="col-md-4 col-sm-4">
-                    <img src="images/kunal.jpg" class="img-responsive contact-img animated wow fadeInUp" data-wow-delay="1.1s" alt="Image">
+                    
+                    <img src="images/kunal.jpg" class="img-responsive contact-img animated wow fadeInUp" data-wow-delay="1.1s" alt="Image" border="3px solid white">
+                    
             <div class="space-vsmall"></div>
             <p class="left-details uppercase animated wow fadeInDown" data-wow-delay="1.3s">MARKETING/EVENTS HEAD</p>
             <h4 class="left-details animated wow fadeInDown" data-wow-delay="1.5s"><b>Kunal</b></h4>
@@ -297,6 +304,13 @@
         </div>
     </div>
     <footer >
+        <div class="space-small"></div>
+        <!-- <div class="container text-center">
+            <div class="col-md-offset-3 col-md-1"><a href="index.html" class="img-footer">Home</a><a href="index.html#events" class="img-footer">Events</a></div>
+            <div class="col-md-4"><img src="images/twitter.png" width="40px" height="40px" class="img-footer"><img src="images/fb.png" width="40px" height="40px" class="img-footer"><img src="images/linkedin.png" width="40px" height="40px" class="img-footer"> </div>
+            <div class="col-md-1">sfs</div>
+            <div class="col-md-offset-3"></div>
+        </div> -->
         <div class="space-small"></div>
         <div class="text-container text-center animated wow bounce">Made with &#10084; by Ritul ;)</div>
         <div class="space-small"></div>
@@ -317,6 +331,13 @@
 		
 	</script>
 	<script type="text/javascript">
+    jQuery(window).load(function () {
+
+        /* Preloader */
+        $('#preloader').fadeOut('slow',function(){$(this).remove();});
+
+    });
+
         $(function() {
             $(document).ready(function() {      
             //$('#fullpage').fullpage();
