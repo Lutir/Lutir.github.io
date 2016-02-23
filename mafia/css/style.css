@@ -173,7 +173,7 @@ a{
 
 .god-bg{
 	background-image: url('../images/coins.jpg');
-	
+	background-position: 50% 50%;
 	
 	background-size: cover;
 	color: white;
@@ -448,5 +448,9 @@ figure.effect-goliath {
 	.extraPad .item-wrap{
 		margin: auto;
 	}
-	
+		.events_bg{
+		background-color: black;
+		background-image: url('../images/mob-sil.png');
+	}
+		
 }
