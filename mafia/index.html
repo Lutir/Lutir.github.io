@@ -33,19 +33,18 @@
         <span class="icon-bar" style="background-color: white"></span>
       </button>
 
-      <a class="navbar-brand" href="#">
-      <img src="images/logo.jpg" class="rounded">  
-       -Pragyan-</a>
+      <a class="navbar-brand" href="index.html">
+      <img src="images/logo.jpg" class="rounded" style="position: relative;bottom: 10px;">  
+       <img src="images/pragyan.png" width="120px;" height="50px;" style="position: relative;bottom: 15px;"></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a class="navButton" href="index.html">Home <span class="sr-only">(current)</span></a></li>
-        <li><a class="navButton" href="#events">Events</a></li>
-        <!-- <li><a class="navButton" href="#workshop">Workshops</a></li> -->
-        <li><a class="navButton" href="#lectures">Lectures</a></li>
-        <li><a class="navButton" href="#contact">Contact</a></li>
+        <li><a class="navButton" href="index.html#events">Events</a></li>
+        <li><a class="navButton" href="index.html#lectures">Lectures</a></li>
+        <li><a class="navButton" href="index.html#contact">Contact</a></li>
       </ul>
         <ul class="nav navbar-nav navbar-right" >
         
@@ -61,28 +60,21 @@
         <div class="text" style="position: absolute;top:60%;left: 50%;transform: translateX(-50%);">
             <h2>The War Starts Here !</h2>
         </div>
-	<!-- <div class="video-container">
-    <h2 style="z-index:2000;position: absolute;top:60%;left:50%;transform:translateX(-50%);">The Wars Begins !!</h2>
-		<video autoplay loop muted width="100%">
-			<source src="vi.mp4" type="video/mp4">
-			
-		</video>
-	</div> -->
+	
 
 	</div>
     <div class="section">
         <img src="images/glass.png" id="hello" width="10px" height="10px" class="hidden" >
-        <img src="images/text.png" id="pragyan" width="200px;" height="200px;" class="hidden" >
-        <img src="images/mob-text.png" id="pragyan1" width="200px;" height="200px;" class="hidden" >
     	<canvas id="myCanvas"></canvas>
     	<div class="container-fluid pragyan" >
     		<div class="row">
     			<div class="space-medium"></div>
-    			<h2 class="text-center animated wow fadeInUp" data-wow-delay="0.3s">Welcome to -Pragyan-16-</h2>
-    			<div class="border animated wow fadeInLeft" data-wow-delay="0.5s"></div>
-    			<div class="space-medium"></div>
     			
-    			<div class="col-md-8 col-md-offset-2 text-center animated wow fadeInDown" data-wow-delay="0.7s">
+    			
+    			<div class="col-md-8 col-md-offset-2 text-center animated wow fadeInDown pragyan-text" data-wow-delay="0.7s">
+                    <h2 class="text-center animated wow fadeInUp" data-wow-delay="0.3s">Welcome to -Pragyan-16-</h2>
+                <div class="border animated wow fadeInLeft" data-wow-delay="0.5s"></div>
+                <div class="space-medium"></div>
     			     <p class="left-details ">Pragyan is an ISO 9001:2008 and ISO 20121:2012 certified student-run organisation. As a techno-management fest, Pragyan has evolved into a significant embodiment that reveals to the world and students alike, the infinite opportunities in science and management. It is a four-day fest dedicated to giving a stellar experience in the field of techno-management.The fest offers a plethora of programmes; ranging from events, workshops, exhibitions, guest lectures, crossfires to offbeat contests and infotainment.This year the theme for pragyan is -'Mafia'. Attended by some of the most renown personalities of our time and with an international outreach in 60 countries, Pragyan is a great platform for the realisation of dreams and new findings. The talent displayed so far, promises not just a change in the future, but the future itself. Every edition of Pragyan has transcended its former and this tradition remains to continue into the future.</p>
     			</div>
     			
@@ -245,35 +237,7 @@
 
     </div>
 
-    <!-- <div class="bg mini-section text-center" id="contact">
-        <div class="space-medium"></div>
-        <h2>Contact</h2>
-        <div class="border-small"></div>
-        <div class="space-small"></div>
-        <div class="row">
-        <div class="col-md-4">
-            <img src="images/head.jpg" class="img-responsive contact-img" alt="Image">
-            <div class="space-vsmall"></div>
-            <p class="left-details uppercase">OVERALL CO-ORDINATOR</p>
-            <h4 class="left-details"><b>Simons</b></h4>
-        </div> 
-        <div class="col-md-4">
-            <img src="images/kunal.jpg" class="img-responsive contact-img" alt="Image">
-            <div class="space-vsmall"></div>
-            <p class="left-details uppercase">MARKETING/EVENTS HEAD</p>
-            <h4 class="left-details"><b>Kunal</b></h4>
-        </div> 
-        <div class="col-md-4">
-            
-            <img src="images/mallik.jpg" class="img-responsive contact-img" alt="Image">
-            <div class="space-vsmall"></div>
-            <p class="left-details uppercase">TECH EXPERT</p>
-            <h4 class="left-details"><b>Rami Mallik</b></h4>
-
-        </div>
-        </div>
-        <div class="space-medium"></div>
-    </div> -->
+    
     <div class="mini-section bg text-center" id="contact">
         <div class="container">
         <div class="space-medium"></div>
@@ -306,10 +270,11 @@
             <div class="space-vsmall"></div>
         </div>
     </div>
+    
     <footer >
         <div class="space-small"></div>
         <div class="container-fluid text-center">
-            
+            <div class="row">
             <div class="col-md-1 col-xs-4 animated wow fadeInLeft" data-wow-delay="0.2s"> <a href="index.html" class="none">Homepage </a> </div>
             <div class="col-md-2 col-xs-4 animated wow fadeInLeft" data-wow-delay="0.4s"> <a href="schedule.html" class="none"> Schedule </a></div>
             <div class="col-md-1 col-xs-4 animated wow fadeInLeft" data-wow-delay="0.6s">  <a href="register.html" class="none" > Register</a></div>
@@ -325,7 +290,7 @@
             <div class="col-md-1 col-xs-4 animated wow fadeInRight" data-wow-delay="0.6s"> <a href="about.html" class="none"> About Us</a></div>
             <div class="col-md-2 col-xs-4 animated wow fadeInRight text-center" data-wow-delay="0.2s"> <a href="sitemap.html" class="none"> Sitemap</a></div>
             <div class="col-md-1 col-xs-4 animated wow fadeInRight" data-wow-delay="0.4s"> Pragyan-16' </div>
-            
+            </div>
         </div>
         <div class="space-small"></div>
         <div class="text-container text-center animated wow fadeIn made" data-wow-delay="0.9s">Made with &#10084; by Ritul ;)</div>

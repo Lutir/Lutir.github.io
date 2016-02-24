@@ -31,7 +31,7 @@ $(document).ready(function() {
 		var x=-100+temp*1200;
 		var temp2=Math.random();
 		var y=-100+temp2*1000;
-		console.log(x,y);
+		//console.log(x,y);
 		
 		
 		if(i<count){
