@@ -4,7 +4,8 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Homepage</title>
+	<title>Event | The Family </title>
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">	
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -17,7 +18,7 @@
 
 <div id="container" class="bg">
 <!-- navbar goes here -->
-<nav class="navbar navbar-invert myNav animated bounce" >
+<nav class="navbar navbar-invert myNav animated bounce" data-spy="affix" data-offset-top="0" >
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -27,29 +28,32 @@
         <span class="icon-bar" style="background-color: white"></span>
         <span class="icon-bar" style="background-color: white"></span>
       </button>
-      <a class="navbar-brand" href="#"> <img class="animated wow fadeIn" src="">  -Website-</a>
+
+      <a class="navbar-brand" href="#">
+      <img src="images/logo.jpg" class="rounded">  
+       -Pragyan-</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a class="navButton" href="index.html">Home <span class="sr-only">(current)</span></a></li>
-        <li><a class="navButton" href="index.html#events">Events</a></li>
-        <!-- <li><a class="navButton" href="index.html#workshop">Workshops</a></li> -->
-        <li><a class="navButton" href="index.html#lectures">Lectures</a></li>
-        <li><a class="navButton" href="index.html#contact">Contact</a></li>
+        <li><a class="navButton" href="#events">Events</a></li>
+        <!-- <li><a class="navButton" href="#workshop">Workshops</a></li> -->
+        <li><a class="navButton" href="#lectures">Lectures</a></li>
+        <li><a class="navButton" href="#contact">Contact</a></li>
       </ul>
-      
-      <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right" >
         
         <li><a class="navButton" href="login.html">Login</a></li>
         <li><a class="navButton" href="register.html">Register</a></li>
-      </ul>
-        </li>
-      </ul>
+      </ul>  
+      
+      
     </div><!-- /.navbar-collapse -->
+
   </div><!-- /.container-fluid -->
-</nav>	
+</nav>
 
 <div class="section bg event-family-bg">
 	<div class="container center">
@@ -90,7 +94,31 @@
 <!--main outer body-->
 </div>
 
-
+<footer >
+        <div class="space-small"></div>
+        <div class="container-fluid text-center">
+            
+            <div class="col-md-1 col-xs-4 animated wow fadeInLeft" data-wow-delay="0.2s"> <a href="index.html" class="none">Homepage </a> </div>
+            <div class="col-md-2 col-xs-4 animated wow fadeInLeft" data-wow-delay="0.4s"> <a href="schedule.html" class="none"> Schedule </a></div>
+            <div class="col-md-1 col-xs-4 animated wow fadeInLeft" data-wow-delay="0.6s">  <a href="register.html" class="none" > Register</a></div>
+            <div class="space-medium visible-xs"></div>
+            <div class="col-md-4 col-xs-12 animated wow fadeInUp" data-wow-delay="0.7s"> 
+             <a href="https://www.pragyan.org/blog/" target="_blank"> <img src="images/blog.png" width="40px" height="40px" class="img-footer"></a>
+             <a href="https://twitter.com/nitt_pragyan" target="_blank"> <img src="images/twitter.png" width="40px" height="40px" class="img-footer"></a>
+             <a href="https://www.facebook.com/pragyan.nitt" target="_blank"> <img src="images/fb.png" width="40px" height="40px" class="img-footer"></a>
+             <a href="https://www.linkedin.com/company/pragyan---nit-trichy-technical-fest" target="_blank"> <img src="images/linkedin.png" width="40px" height="40px" class="img-footer"></a>
+             <a href="https://plus.google.com/+PragyanOrg_NITT/" target="_blank"> <img src="images/google.png" width="40px" height="40px" class="img-footer"></a>
+              </div>
+            <div class="space-medium visible-xs"></div>
+            <div class="col-md-1 col-xs-4 animated wow fadeInRight" data-wow-delay="0.6s"> <a href="about.html" class="none"> About Us</a></div>
+            <div class="col-md-2 col-xs-4 animated wow fadeInRight text-center" data-wow-delay="0.2s"> <a href="sitemap.html" class="none"> Sitemap</a></div>
+            <div class="col-md-1 col-xs-4 animated wow fadeInRight" data-wow-delay="0.4s"> Pragyan-16' </div>
+            
+        </div>
+        <div class="space-small"></div>
+        <div class="text-container text-center animated wow fadeIn made" data-wow-delay="0.9s">Made with &#10084; by Ritul ;)</div>
+        
+    </footer>
 
 
 

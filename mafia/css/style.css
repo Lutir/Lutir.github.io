@@ -3,6 +3,10 @@
 	src:url('../fonts/BIG JOHN.otf');
 }
 @font-face{
+	font-family: "lovato";
+	src:url('../fonts/lovato.otf');
+}
+@font-face{
 	font-family: "slim joe";
 	src:url('../fonts/Slim Joe.otf');
 }
@@ -91,6 +95,27 @@ a{
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.schedule-bg{
+	background-image: url('../images/schedule.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.workshop-bg{
+	background-image: url('../images/workshop.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.about-bg{
+	background-image: url('../images/about.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.sitemap-bg{
+	background-image: url('../images/sitemap.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
 .left-details,.head{
 	font-family: "noah";
 	font-size: 21px;
@@ -119,6 +144,10 @@ a{
 	background-color: white;
 	margin-bottom: 10px;
 	
+}
+.text-container p a,.text-container ul li a{
+	font-size: 20px;
+	font-family: noah;
 }
 .box{
 	background-color: rgba(0,0,0,0.7);
@@ -226,6 +255,23 @@ a{
 	background-color: black;
 	
 }
+
+.schedule-0{
+	font-size: 16px;
+	font-family: "lovato";
+}
+.schedule-1{
+	padding-left: 9%;
+	font-size: 15px;
+	font-family: "kirvy";
+}
+.schedule-small{
+	font-size: 14px;
+}
+.schedule-large{
+	font-size:24px;
+}
+
 .navButton{
 	border-radius: 0px;
 	background-color: black;
@@ -281,13 +327,25 @@ a{
 
 
 footer{
-	background-color: rgba(0,0,0,0.98);
-	font-family: "slim joe";
+	background-color: rgba(0,0,0,0.9);
+	font-family: "lovato";
 	color: white;
 	font-weight: 700;
+	font-size: 20px;
+	padding-bottom: 0px;
+}
+footer a{
+	font-family: lovato;
+}
+.made{
+	font-size: 16px;
+	padding: 5px 0 5px 0;
+
+	background-color: rgba(0,0,0,0.98);
 }
 .img-footer{
 	margin: 0px 5px 0px 5px;
+	font-size: 18px;
 }
 
 /*preloader*/
