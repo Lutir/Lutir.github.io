@@ -52,14 +52,7 @@ jQuery(document).ready(function () {
 
 
 
-    /* Magnific Popup */
-
-    jQuery('.gallery-item').magnificPopup({
-        type: 'image',
-        gallery:{
-            enabled:true
-        }
-    });
+    
 
 
 
