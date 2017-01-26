@@ -92,14 +92,80 @@
                 </ul>
               </div>
             </div> <!-- end col -->
-
+      
             <div class="menu-socials hidden-sm hidden-xs">
               <ul>
                 <li>
-                  <a href="#">LOGIN</a>
+                  <a href="#" class="scan-now" hidden="true">Scan</a>
                 </li>
                 <li>
-                  <a href="#">SIGNUP</a>
+                  <a href="#" class="user-info" hidden="true">Hey</a>
+                </li>
+                <li>
+                  <a data-toggle="modal" href='#login-id' class="login-button">LOGIN</a>                  
+                  <div class="modal fade" id="login-id">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                          <h4 class="modal-title text-center">Login</h4>
+                        </div>
+                        <div class="modal-body">
+                          
+                            <legend>Username</legend>
+                          
+                            <div class="form-group">                              
+                              <input type="text" class="form-control login-username" id="" placeholder="Enter Username..">
+                            </div>
+                          
+                            <legend>Password</legend>
+                          
+                            <div class="form-group">                              
+                              <input type="password" class="form-control" id="" placeholder="Enter Password..">
+                            </div>
+                            
+                          <div class="text-center">
+                              <button type="submit" class="btn btn-primary login" data-dismiss="modal">Login</button>   
+                          </div>
+
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a class="signup-button" data-toggle="modal" href='#signup-id'>SIGNUP</a>   
+                  <div class="modal fade" id="signup-id">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                          <h4 class="modal-title text-center">Registeration</h4>
+                        </div>
+                        <div class="modal-body">
+                          
+                                                        
+                            <legend>Username</legend>                              
+                              <input type="text" class="form-control reg-username" id="" placeholder="Enter username..">
+                            <legend>Email</legend>                              
+                              <input type="email" class="form-control" id="" placeholder="Enter email..">
+                            <legend>Password</legend>                              
+                              <input type="password" class="form-control" id="" placeholder="Enter password..">                            
+                          <div class="text-center">
+                            <button type="submit" class="btn btn-primary register" data-dismiss="modal">Register</button>
+                          </div>
+                          
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </li>                
               </ul>
             </div>
@@ -1183,7 +1249,7 @@
   <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script type="text/javascript" src="js/rev-slider.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
-
+  <script type="text/javascript" src="js/custom.js"></script>
   <!-- Google Map -->
   <script type="text/javascript">
     $(document).ready( function(){
@@ -1236,6 +1302,4 @@
 
 
 </body>
-
-<!-- Mirrored from deothemes.com/envato/enigma/html/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Dec 2016 09:02:49 GMT -->
 </html>
