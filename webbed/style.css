@@ -1,0 +1,103 @@
+body{
+	background-color: #014D7D;
+	font-family: "lovato";	
+	color: #fff;
+}
+
+.main{
+	
+ }
+
+ div::after {
+  content: "";
+  background: url(logo.png);
+  	background-repeat: no-repeat;
+  	background-position: center;
+  	background-size: 350px 600px;
+  opacity: 0.5;
+  top: 100px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+@font-face{
+	font-family: "big";
+	src:url('../fonts/BIG JOHN.otf');
+}
+@font-face{
+	font-family: "lovato";
+	src:url('../fonts/lovato.otf');
+}
+@font-face{
+	font-family: "slim joe";
+	src:url('../fonts/Slim Joe.otf');
+}
+@font-face{
+	font-family: "kirvy";
+	src:url('../fonts/Kirvy-Regular.otf');
+}
+@font-face{
+	font-family: "noah";
+	src:url('../fonts/orange.ttf');
+}
+
+.rules-btn{
+	background: #1a237e;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+
+}
+
+.rules-btn:hover{
+	background: #9fa8da;
+	border: 1px solid #000;
+	color: rgba(0,0,0,0.6);
+	transition: all 0.5s ease;
+}
+
+.rules-modal,.judge-modal{
+	color: #000;	
+
+}
+.rules-head,.judge-head{
+	font-weight: 800;
+}
+
+.rules h3,.judge h3,{
+	font-weight: 800;
+}
+
+.rules ul,.judge ul h3,{
+	font-size: 16px;
+}
+
+/*//innercontent*/
+
+.head{
+	font-size: 24px;
+	padding-left:80px;
+	padding-top: 20px;
+}
+
+.basic-head,.additional-head{
+	font-size: 22px;
+		padding-left:100px;
+		padding-top: 5px;
+}
+
+.basics,.additional{
+	font-size: 16px;
+		padding-left:140px;
+		padding-top: 5px;	
+}
+
+.name{
+	padding: 10px;
+	margin: 10px;
+	font-size: 18px;
+	font-weight: 800;	
+}

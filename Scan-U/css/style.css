@@ -4130,5 +4130,10 @@ p.footer-address {
 .footer-type-3 a:hover {
   color: #111;
 }
+/*----------------------------*/
+/*custom style*/
+/*-----------------------------*/
 
-/*# sourceMappingURL=style.css.map */
+.camera-container{
+  background-color: red;
+}

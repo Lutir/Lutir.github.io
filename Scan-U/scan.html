@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="css/responsive.css" />
   <link rel="stylesheet" href="css/spacings.css" />
   <link rel="stylesheet" href="css/animate.css" />
-
+  <link rel="stylesheet" href="css/custom.css" />
   <!-- Favicons -->
   
 
@@ -117,11 +117,15 @@
 
   </header> <!-- end navigation -->
 
-  <div class="container main-wrapper-onepage main oh">
+  <div class="container camera-container">
     
     <div id="results">Your captured image will appear here...</div>
 
     <div id="my_camera"></div>
+    <form>
+      <input type=button value="Take Snapshot" onClick="take_snapshot()">
+    </form>    
+  </div>
 
     <script type="text/javascript" src="js/webcam.js"></script>
     
@@ -135,26 +139,17 @@
       });
       Webcam.attach( '#my_camera' );
     </script>
-    
-    <!-- A button for taking snaps -->
-    <form>
-      <input type=button value="Take Snapshot" onClick="take_snapshot()">
-    </form>
-    
-    <!-- Code to handle taking the snapshot and displaying it locally -->
+
     <script language="JavaScript">
       function take_snapshot() {
         // take snapshot and get image data
         Webcam.snap( function(data_uri) {
           // display results in page
-          document.getElementById('results').innerHTML = 
-            '<h2>Here is your image:</h2>' + 
-            '<img src="'+data_uri+'"/>';
+          document.getElementById('results').innerHTML =             
+            '<img src="'+data_uri+'" width="160px" height="120px" />';
         } );
       }
     </script>
-
-  </div>
 
    <!-- jQuery Scripts -->
   <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -168,54 +163,9 @@
   <script type="text/javascript" src="js/scripts.js"></script>
   <script type="text/javascript" src="js/custom.js"></script>
   <!-- Google Map -->
-  <script type="text/javascript">
-    $(document).ready( function(){
-
-      var gmapDiv = $("#google-map");
-      var gmapMarker = gmapDiv.attr("data-address");
-
-      gmapDiv.gmap3({
-        zoom: 10,
-        address: gmapMarker,
-        oomControl: true,
-        navigationControl: true,
-        scrollwheel: false,
-        styles: [
-          {
-          "featureType":"all",
-          "elementType":"all",
-            "stylers":[
-              { "saturation":"-70" }
-            ]
-        }]
-      })
-      .marker({
-        address: gmapMarker,
-        icon: "img/map_pin.png"
-      })
-      .infowindow({
-        content: "V Tytana St, Manila, Philippines"
-      })
-      .then(function (infowindow) {
-        var map = this.get(0);
-        var marker = this.get(1);
-        marker.addListener('click', function() {
-          infowindow.open(map, marker);
-        });
-      });
-    });
-  </script>
+  
 
 
-  <script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
-  <script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-  <script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-  <script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
-  <script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-  <script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-  <script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-  <script type="text/javascript" src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
-  <script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-
+  
 </body>
 </html>
