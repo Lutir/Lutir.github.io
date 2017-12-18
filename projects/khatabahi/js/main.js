@@ -18,7 +18,7 @@
 
 	// Go to next section
 	var gotToNextSection = function(){
-		var el = $('.fh5co-learn-more'),
+		var el = $('.learn-more'),
 			w = el.width(),
 			divide = -w/2;
 		el.css('margin-left', divide);
@@ -26,7 +26,7 @@
 
 	// Loading page
 	var loaderPage = function() {
-		$(".fh5co-loader").fadeOut("slow");
+		$(".loader").fadeOut("slow");
 	};
 
 	// FullHeight
@@ -42,16 +42,16 @@
 	var toggleBtnColor = function() {
 
 	
-		if ( $('#fh5co-hero').length > 0 ) {	
-			$('#fh5co-hero').waypoint( function( direction ) {
+		if ( $('#hero').length > 0 ) {	
+			$('#hero').waypoint( function( direction ) {
 				if( direction === 'down' ) {
-					$('.fh5co-nav-toggle').addClass('dark');
+					$('.nav-toggle').addClass('dark');
 				}
-			} , { offset: - $('#fh5co-hero').height() } );
+			} , { offset: - $('#hero').height() } );
 
-			$('#fh5co-hero').waypoint( function( direction ) {
+			$('#hero').waypoint( function( direction ) {
 				if( direction === 'up' ) {
-					$('.fh5co-nav-toggle').removeClass('dark');
+					$('.nav-toggle').removeClass('dark');
 				}
 			} , { 
 				offset:  function() { return -$(this.element).height() + 0; }
@@ -79,13 +79,13 @@
 	var mobileMenuOutsideClick = function() {
 
 		$(document).click(function (e) {
-	    var container = $("#fh5co-offcanvas, .js-fh5co-nav-toggle");
+	    var container = $("#offcanvas, .js-nav-toggle");
 	    if (!container.is(e.target) && container.has(e.target).length === 0) {
 
 	    	if ( $('body').hasClass('offcanvas-visible') ) {
 
     			$('body').removeClass('offcanvas-visible');
-    			$('.js-fh5co-nav-toggle').removeClass('active');
+    			$('.js-nav-toggle').removeClass('active');
 				
 	    	}
 	    
@@ -98,15 +98,15 @@
 
 	// Offcanvas
 	var offcanvasMenu = function() {
-		$('body').prepend('<div id="fh5co-offcanvas" />');
-		$('#fh5co-offcanvas').prepend('<ul id="fh5co-side-links">');
-		$('body').prepend('<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>');
+		$('body').prepend('<div id="offcanvas" />');
+		$('#offcanvas').prepend('<ul id="side-links">');
+		$('body').prepend('<a href="#" class="js-nav-toggle nav-toggle"><i></i></a>');
 
 		$('.left-menu li, .right-menu li').each(function(){
 
 			var $this = $(this);
 
-			$('#fh5co-offcanvas ul').append($this.clone());
+			$('#offcanvas ul').append($this.clone());
 
 		});
 	};
@@ -114,10 +114,10 @@
 	// Burger Menu
 	var burgerMenu = function() {
 
-		$('body').on('click', '.js-fh5co-nav-toggle', function(event){
+		$('body').on('click', '.js-nav-toggle', function(event){
 			var $this = $(this);
 
-			$('body').toggleClass('fh5co-overflow offcanvas-visible');
+			$('body').toggleClass('overflow offcanvas-visible');
 			$this.toggleClass('active');
 			event.preventDefault();
 
@@ -126,14 +126,14 @@
 		$(window).resize(function() {
 			if ( $('body').hasClass('offcanvas-visible') ) {
 		   	$('body').removeClass('offcanvas-visible');
-		   	$('.js-fh5co-nav-toggle').removeClass('active');
+		   	$('.js-nav-toggle').removeClass('active');
 		   }
 		});
 
 		$(window).scroll(function(){
 			if ( $('body').hasClass('offcanvas-visible') ) {
 		   	$('body').removeClass('offcanvas-visible');
-		   	$('.js-fh5co-nav-toggle').removeClass('active');
+		   	$('.js-nav-toggle').removeClass('active');
 		   }
 		});
 
@@ -197,10 +197,51 @@
 		} , { offset: '95%' } );
 	};
 	
+	var createModal = function (title,head1,head2,head3, flag){	
+		$('.modal-title').html(title);
+		$('.modal-body .mh1').html(head1);
+		$('.modal-body .mh2').html(head2);
+		$('.modal-body .mh3').html(head3);
+		if(flag){
+			$('.mfeatures').hide();
+		}
+		else{
+			$('.mfeatures').show();
+		}
+		$('#modal-main').modal('show');
+	}
+	var hideShow = function(){
+		$('.level-2').hide();
+		$('.mback').hide();
+		$('.mfeatures').click(() => {
+			$('.level-1').hide('slow');
+			$('.level-2').show('slow');
+			$('.mfeatures').hide('slow');
+			$('.mback').show('slow');
+		});
+		$('.mback').click(() => {
+			$('.level-2').hide('slow');
+			$('.level-1').show('slow');
+			$('.mback').hide('slow');
+			$('.mfeatures').show('slow');
+		})
+		// $('#modal-main').modal('show');
+		$('.project-item').click(() => {
+			// createModal('loda','lofs');
+		});
+		$('.p1').click(() =>{
+			createModal('Khatabahi 9.01','Desktop Application', 'Rs. 250 per month', 'KhataBahi Accounting Software is the best value for money accounting software for small business. It comes complete with Accounting modules, Sales & Purchasing modules, and also the Inventory modules. KhataBahi Accounting software is powerful, yet easy-to-use business software, and is applicable for any kind of business. This business accounting software will help you process sales and purchases, track receivables, payables and GST.', false);
+		});
+		$('.p2').click(() => {
+			createModal('Khatabahi 9.02','Offline', 'Rs. 300 per month', 'KhataBahi Accounting Software is the best value for money accounting software for small business. It comes complete with Accounting modules, Sales & Purchasing modules, and also the Inventory modules. KhataBahi Accounting software is powerful, yet easy-to-use business software, and is applicable for any kind of business. This business accounting software will help you process sales and purchases, track receivables, payables and GST.', false);
+		});
+		$('.p3').click(() => {
+			createModal('EHCM ERP(HR & PAYROLL)','Crowd Version', 'Free', 'This product basically manages HR Working and payroll system in any organization .This product can be uses for managing multiple company or multiple location all from a single window.', true);
+		});
+	}
 	
-
 	// Document on load.
-	$(function(){
+	$(function(){		
 		gotToNextSection();
 		loaderPage();
 		fullHeight();
@@ -211,9 +252,11 @@
 		burgerMenu();
 		testimonialFlexslider();
 		goToTop();
-
+		hideShow();
 		// Animate
 		contentWayPoint();
+		
+		// Modal styles				
 
 	});
 
