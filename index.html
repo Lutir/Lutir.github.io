@@ -40,6 +40,9 @@
                 font-family: 'Lato', sans-serif ;
 
             }
+            .dark{
+                color: #000 !important;
+            }
             #modal-full{
                 font-family: 'Lato', sans-serif;
                 font-weight: 300;
@@ -55,13 +58,13 @@
                 font-weight: 300;
             }
             .off-white{
-                background: rgb(243, 245, 242);
+                background: rgb(236, 236, 236);
                 color: #000;
                   transition: all 0.5s ease;
 
             }
             .off-white:hover{
-                background: rgb(248, 248, 248) !important;
+                background: rgb(207, 207, 207) !important;
                 transition: all 0.5s ease;
             }
             .orange{
@@ -71,7 +74,7 @@
 
             }
             .orange:hover{
-                background: rgb(255, 150, 3) !important;
+                background: rgb(255, 149, 0) !important;
               transition: all 0.5s ease;
             }
             .blue{
@@ -91,7 +94,7 @@
 
             }
             .red:hover{
-                background: #E71D36 !important;
+                background: rgb(223, 7, 32) !important;
               transition: all 0.5s ease;
             }
             .red{
@@ -101,7 +104,7 @@
 
             }
             .green:hover{
-                background: rgb(4, 192, 173) !important;
+                background: rgb(0, 187, 168) !important;
               transition: all 0.5s ease;
             }
             .overlay{
@@ -155,9 +158,9 @@
                         </div>
                         <div class="uk-padding-large">
                             <span>
-                                <img uk-img alt="yocket-logo" width="100px"  class="modal-logo" src="#" uk-scrollspy="cls: uk-animation-slide-bottom-small; repeat: true; delay: 100" />
+                                <img uk-img alt="image-logo" width="100px"  class="modal-logo" src="#" uk-scrollspy="cls: uk-animation-slide-bottom-small; repeat: true; delay: 100" />
                             </span>
-                            <h1 class="modal-head" uk-scrollspy="cls: uk-animation-slide-bottom-small; repeat: true; delay: 200">Software Engineer Intern @Yocket</h1>
+                            <h1 class="modal-head" uk-scrollspy="cls: uk-animation-slide-bottom-small; repeat: true; delay: 200"></h1>
                             <h5 uk-scrollspy="cls: uk-animation-slide-bottom-small; repeat: true; delay: 300">
                                     <span class="uk-icon uk-icon-image" style="background-image: url(img/date.jpg);"></span>
                                     <span class="modal-duration"></span>
@@ -179,6 +182,9 @@
                                     <li class="uk-active"><a href="#">Projects</a></li>
                                     <li>
                                         <a href="#">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="files/Ritul_Jain_Resume.pdf" target="_blank">Resume</a>
                                     </li>
                                     <li><a href="#">*</a></li>
                                 </ul>
@@ -350,12 +356,13 @@
 "I worked on optimizing and modified the existing mobile API’s which were used in the Android and IOS apps to provide cross-platform usage.",
 "<b>Technologies Used -</b> Laravel, React.js, Node.js, Bootstrap, and PHP"],
                     'link': 'https://docbox.co.in',
-                    'duration': 'May 2016 - August 2016'
+                    'duration': 'May 2016 - August 2016',
+                    'gray': true
                 },
                 {
                     'name': 'Software Engineer Intern @Hewlett Packard Enterprise',
                     'logo': 'img/hpe.svg',
-                    'content': ["<b>HPE Synergy</b> combines storage, compute and network equipment in one chassis, along with management software that can quickly configure the hardware automatically to provide just the resources needed to run an application. Sounds cool right? During my internship, I modelled an interface between the <b>composable infrastructure</b> of HPE Synergy and the end-users by allowing the user control the Synergy Block virtually.",
+                    'content': ["<b>HPE Synergy</b> combines storage, compute and network equipment in one chassis, along with management software that can quickly configure the hardware automatically to provide just the resources needed to run an application. Sounds cool right?","During my internship, I modelled an interface between the <b>composable infrastructure</b> of HPE Synergy and the end-users by allowing the user control the Synergy Block virtually.",
                     "Integrated Websockets and React.js and designed a unified API that handled functionalities like BIOS functioning, configuration management, etc for HPE Synergy architecture.",
                     "<b>Technologies Used -</b> React.js, Node.js, C++, Java Spring Framework, and Materialize.css"],
                     'duration': 'May 2017 - July 2017'
@@ -382,7 +389,8 @@
                     'name': 'Dalal Street @Project',
                     'link': 'https://dalal.pragyan.org',
                     'content': ['Dalal Street is an online event which is organised as a part of Pragyan - The technical fest of NIT trichy.', 'It is an online stock trading platform where candidates participate and try to climb the leaderboard in a short span of 5-6 days.', 'The platform was developed using React.js and Websockets to ensure live updation of stock values. I worked on developing reactive components for the platform which were integrated to the backend using Go and Websockets.', '<b>Technology Stack -</b> React.js, Materialize.css'],
-                    'duration': 'Jan 2017 - August 2017'
+                    'duration': 'Jan 2017 - August 2017',
+                    'gray': true
                 },
                 {
                     'name': 'Web Development Intern @Dipper Pvt Ltd',
@@ -417,7 +425,8 @@
                 {
                     'name': 'DietKraft',
                     'content': ['<p><b>Here is a Short Story</b></p>After completing my Graduation, I finally came back home after 8 years of hostel life and was living with my family. At my home, I watched my mom (who is a Dietitian) struggle with managing Patients and their Diet Charts. While interning at Senov Tech, I got this great idea which led to the creation of DietKraft - A dietitian CRM which allows one to create Custom Dietcharts and Manage Patients through an online portal. I used Laravel and React.js to develop this amazing portal.When I was done with the portal, my mom started using the portal and loved it! She referred it to some of her old colleagues and it was a great hit! By the end of the month, I had 4 people using my Portal which I made as a pet-project to help my mom! Watching a project which I had created from scratch, being used by people in Real Life! That feeling was amazing.'],
-                    'duration': 'June 2018 - September 2018'
+                    'duration': 'June 2018 - September 2018',
+                    'gray': true
                 }
             ]
             
@@ -429,8 +438,11 @@
                 $('.modal-head').text(data[id].name);
                 $('.modal-content').text('');
                 let animationSpeed = 100;
+                if(data[id].gray)
+                    $('.modal-content').append('<h1 class="dark" uk-scrollspy="cls: uk-animation-slide-bottom-small; repeat: true; delay: '+animationSpeed+'">What did I work on?</h1>');
+                else
+                    $('.modal-content').append('<h1 uk-scrollspy="cls: uk-animation-slide-bottom-small; repeat: true; delay: '+animationSpeed+'">What did I work on?</h1>');
 
-                $('.modal-content').append('<h1 uk-scrollspy="cls: uk-animation-slide-bottom-small; repeat: true; delay: '+animationSpeed+'">What did I work on?</h1>');
                 animationSpeed+=100;
                 $('.modal-content').append('<ul class="uk-list uk-list-bullet">');
                 (data[id].content).map((x)=>{
