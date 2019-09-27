@@ -65,39 +65,21 @@
     color: #ff9800 !important;
 }
 
-.orange-t:hover{
-    text-decoration: underline;
-    color: #ff9900;
-}
 
 .blue-t{
     color: #0099ff !important;
 }
 
-.blue-t:hover{
-    text-decoration: underline;
-    color: #0099ff;
-}
 
 .red-t{
     color: #ff3c00 !important;
-}
-.red-t:hover{
-    text-decoration: underline;
-    color: #ff3c00;
 }
 
 .green-t{
     color: #03db15 !important;
 }
-.violet-t:hover{
-    text-decoration: underline;
-    color: #711ff5;
-}
-.green-t:hover{
-    text-decoration: underline;
-    color: #03db15;
-}
+
+
 .violet-t{
     color: #711ff5 !important;
 }
