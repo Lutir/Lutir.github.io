@@ -10,6 +10,11 @@
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <style>
+            progress::-webkit-progress-value {
+  background: red;
+}
+        </style>
     </head>
     <body>
         <div class="main">
@@ -47,7 +52,91 @@
                                 In my free time, I love to <i class="orange-t">sketch</i>, play an <i class="blue-t">instrument</i> or read about <i class="violet-t">interesting</i> things! If you share the same interest as me, please feel free to connect with me!
                         </h3>
                     </div>
-                    
+                    <div class="uk-container uk-container-small uk-padding skillset">
+                        <hr>
+                        <h2>
+                            Skillset <span uk-icon="icon: code; ratio: 2"></span>
+
+                        </h2>
+
+                        <div class="uk-child-width-expand@s" uk-grid>
+                                <div>
+                                    <h3>Programming Languages</h3>
+                                    <hr>
+                                    <ul uk-list class="progress-list">
+                                        <li>
+                                            <span>C++</span>    
+                                            <progress id="programming-1" class="uk-progress" value="10" max="100" data-percent="90"></progress>
+                                        </li>
+                                        <li>
+                                                <span>Python</span>    
+                                                <progress id="programming-2" class="uk-progress" value="10" max="100" data-percent="75"></progress>
+                                            </li>
+                                            <li>
+                                                    <span>Javascript</span>    
+                                                    <progress id="programming-3" class="uk-progress" value="10" max="100" data-percent="100"></progress>
+                                                </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3>MVC Frameworks</h3>
+                                    <hr>
+                                    <ul uk-list class="progress-list">
+                                        <li>
+                                            <span>Laravel</span>    
+                                            <progress id="mvc-1" class="uk-progress mvc" value="10" max="100" data-percent="90"></progress>
+                                        </li>
+                                        <li>
+                                                <span>CakePHP</span>    
+                                                <progress id="mvc-2" class="uk-progress mvc" value="10" max="100" data-percent="80"></progress>
+                                            </li>
+                                            <li>
+                                                    <span>RAILS</span>    
+                                                    <progress id="mvc-3" class="uk-progress mvc" value="10" max="100" data-percent="70"></progress>
+                                                </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="uk-child-width-expand@s" uk-grid>
+                                    <div>
+                                        <h3>Web Frameworks</h3>
+                                        <hr>
+                                        <ul uk-list class="progress-list">
+                                            <li>
+                                                <span>React.js</span>    
+                                                <progress id="web-1" class="uk-progress web" value="10" max="100" data-percent="90"></progress>
+                                            </li>
+                                            <li>
+                                                    <span>Vue.js</span>    
+                                                    <progress id="web-2" class="uk-progress web" value="10" max="100" data-percent="75"></progress>
+                                                </li>
+                                                <li>
+                                                        <span>Node.js</span>    
+                                                        <progress id="web-3" class="uk-progress web" value="10" max="100" data-percent="80"></progress>
+                                                    </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h3>CSS Frameworks</h3>
+                                        <hr>
+                                        <ul uk-list class="progress-list">
+                                            <li>
+                                                <span>Bootstrap</span>    
+                                                <progress id="css-1" class="uk-progress css" value="10" max="100" data-percent="100" style="color: red;"></progress>
+                                            </li>
+                                            <li>
+                                                    <span>Materialize</span>    
+                                                    <progress id="css-2" class="uk-progress css" value="10" max="90" data-percent="80"></progress>
+                                                </li>
+                                                <li>
+                                                        <span>UIKit</span>    
+                                                        <progress id="css-3" class="uk-progress css" value="10" max="100" data-percent="70"></progress>
+                                                    </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                    </div>
                     <div class="uk-container uk-padding" >
                             <div class="uk-card uk-card-body blue">
                                     <small class="uk-card-title uk-align-left uk-margin-remove-bottom">Designed and developed by Ritul</small>
@@ -69,5 +158,38 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit-icons.min.js"></script>
         <script src="js/main.js"></script>
+        <script>
+
+            let makeProgressBar = (id) => {
+                var bar = document.getElementById(id);
+                let percent = $('#'+id).data('percent');
+                var animate = setInterval(function () {
+
+                    bar.value += 10;
+                    console.log(bar.max, bar.value, bar.min)
+                    if (bar.value >= percent) {
+                        clearInterval(animate);
+                    }
+
+                }, 100);
+            }
+
+            UIkit.util.ready(function () {
+
+                makeProgressBar('programming-1');                
+                makeProgressBar('programming-2');                
+                makeProgressBar('programming-3');  
+                makeProgressBar('mvc-1');              
+                makeProgressBar('mvc-2');              
+                makeProgressBar('mvc-3');
+                makeProgressBar('css-1');              
+                makeProgressBar('css-2');              
+                makeProgressBar('css-3');
+                makeProgressBar('web-1');              
+                makeProgressBar('web-2');              
+                makeProgressBar('web-3');              
+
+            });
+        </script>
     </body>
 </html>

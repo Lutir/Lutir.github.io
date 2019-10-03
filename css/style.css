@@ -54,9 +54,25 @@
 
 /* about.html styles */
 
-.about-me h1, .about-me h3{
+.about-me h1, .about-me h3, .skillset h2, .skillset h3{
     font-weight: 300;
     font-family: 'Lato';
+}
+
+.progress-list{
+    list-style: none;
+    font-family: 'Lato';
+    font-size: 18px;
+}
+
+.progress-list li{
+    margin: 0px;
+    padding: 0px;
+}
+
+.mvc{
+    color: #ff9800 !important;
+    background: #ff9800;
 }
 
 /* color styles */
