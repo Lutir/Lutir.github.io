@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "/Users/pokedex/Desktop/meh"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "/Users/pokedex/Desktop/hacktober/how-many-days-until-halloween"
+		},
+		{
+			"path": "/Users/pokedex/Desktop/hacktober/HacktoberFest_19"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Lutir.github.io"
+	}
+}
