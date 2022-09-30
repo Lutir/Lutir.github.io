@@ -1,5 +1,12 @@
 
 /* modal styles */
+.hidden {
+    opacity: 0;
+    height: 40vh;
+}
+.center {
+    text-align: center;
+}
 
 .modal-logo{
     width: auto;
